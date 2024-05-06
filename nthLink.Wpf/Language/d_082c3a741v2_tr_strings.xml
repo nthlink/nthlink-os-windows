@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Gizliliğiniz her şeyden önce gelir</string>
+      
+  <string name="privacy_notice_text">nthLink, kişisel olarak tanımlanabilir bilgileri veya ziyaret ettiğiniz web sitelerini / çevrimiçi hizmetleri TOPLAMAZ. nthLink, cihazınızı en iyi destekleyebilecek en yakın sunucuları bulmak ve bağlandığınızda uygun web sayfasını görüntülemek gibi aldığınız hizmetleri özelleştirmek için IP adresinizi, cihazın varsayılan dilini, tanımlama bilgilerini ve temel cihaz bilgilerini ( örneğin işletim sistemi bilgileri) kullanır. nthLink sunucusu.</string>
+      
+  <string name="privacy_notice_submit">Kabul et ve devam et</string>
+      
+  <string name="connection_hint_connect">Bağlanmak için dokunun</string>
+      
+  <string name="connection_hint_disconnect">Bağlantıyı kesmek için dokunun</string>
+      
+  <string name="connection_label_connect">Bağlamak</string>
+      
+  <string name="connection_label_disconnect">Bağlantıyı kes</string>
+      
+  <string name="connection_server_state_connected">Bağlı</string>
+      
+  <string name="connection_server_state_connecting">Bağlanıyor…</string>
+      
+  <string name="connection_server_state_disconnecting">Bağlantı kesiliyor…</string>
+      
+  <string name="connection_error">bağlantı hatası</string>
+      
+  <string name="feedback_page_title">Geri bildirim</string>
+      
+  <string name="feedback_issue_category_title">Sorun kategorisi</string>
+      
+    
+  <string name="feedback_description_title">Açıklama</string>
+      
+  <string name="feedback_note_text">Açıklamanız, e-posta adresiniz (varsa) ve ek bilgiler nthLink ekibine gönderilecektir. Veri toplama politikamız için lütfen nthLink web sitesinin Gizlilik Politikasına bakın.</string>
+      
+  <string name="feedback_submit">Göndermek</string>
+      
+  <string name="feedback_submit_failed_message">nthlink sunucusuna bağlanılamıyor.</string>
+      
+  <string name="feedback_submit_success_message">Geliştirmemize yardımcı olduğunuz için teşekkürler! Sizden haber almayı seviyoruz.</string>
+      
+  <string name="feedback_init_failed_message">Sunucu yok</string>
+      
+  <string name="about_page_title">Hakkında</string>
+      
+  <string name="about_version">Sürüm %s</string>
+      
+  <string name="about_text">nthLink, bir grup deneyimli yazılım ve bilgi güvenliği mühendisi tarafından insan hakları avukatlarının sansürlü bilgi edinmelerine ve dış dünyaya bakış açılarını ifade etmelerine destek olmak amacıyla 2016 yılında başlatıldı.\n\nGeliştirme ekibimiz, hem sansür atlatma teknolojisinin gelişmişliği hem de hizmetin güvenilirliği konusunda üstündür. Bu uzmanlık alanındaki yılların deneyimiyle, hedeflenen coğrafyalardaki kullanıcılara, aksi takdirde sansürlenmiş bilgilere basit, güvenli ve güvenilir erişim sağlıyoruz.</string>
+      
+  <string name="menu_drawer_item_1">Ev</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Yardım</string>
+      
+  <string name="menu_drawer_item_5">Uygulamayı Değerlendir</string>
+      
+  <string name="menu_web_item_1">Bağlantıyı kopyala</string>
+      
+  <string name="menu_web_item_2">Tarayıcıda aç</string>
+      
+  <string name="menu_web_item_3">Linki paylaş</string>
+      
+  <string name="menu_connection_item_1">Açılış sayfası</string>
+      
+  <string name="word_loading">Yükleniyor</string>
+      
+  <string name="word_coped_link">Kopuk bağlantı</string>
+      
+  <string name="word_play_preview_1">Engeli kırın Sesleri serbest bırakın</string>
+      
+  <string name="word_play_preview_2">Bilgileri korumak için güçlü şifreleme</string>
+      
+  <string name="word_play_preview_3">İnternete güvenli ve güvenilir erişim</string>
+      
+  <string name="word_play_preview_4">Dünya çapındaki haberleri güvenle görüntüleyin</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Genel geribildirim</item>
+            
+    <item>Bağlanamıyor</item>
+            
+    <item>Bağlantı hızı yavaş</item>
+            
+    <item>Öneriler</item>
+            
+    <item>Diğer</item>
+        
+  </string-array>
+  
+</resources>

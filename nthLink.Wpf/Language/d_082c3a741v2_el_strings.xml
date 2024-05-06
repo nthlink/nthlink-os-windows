@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Το απόρρητό σας προέχει</string>
+      
+  <string name="privacy_notice_text">Το nthLink ΔΕΝ συλλέγει στοιχεία προσωπικής ταυτοποίησης ή ιστότοπους / διαδικτυακές υπηρεσίες που επισκέπτεστε. Το nthLink χρησιμοποιεί τη διεύθυνση IP, την προεπιλεγμένη γλώσσα της συσκευής, τα cookies και τις βασικές πληροφορίες συσκευής ( π.χ. πληροφορίες λειτουργικού συστήματος) για να προσαρμόσει τις υπηρεσίες που λαμβάνετε, όπως τον εντοπισμό των πλησιέστερων διακομιστών που μπορούν να υποστηρίξουν καλύτερα τη συσκευή σας και την εμφάνιση της κατάλληλης ιστοσελίδας κατά τη σύνδεση στον διακομιστή nthLink.</string>
+      
+  <string name="privacy_notice_submit">Αποδεχτείτε και συνεχίστε</string>
+      
+  <string name="connection_hint_connect">Πατήστε Για Σύνδεση</string>
+      
+  <string name="connection_hint_disconnect">Πατήστε Για Αποσύνδεση</string>
+      
+  <string name="connection_label_connect">Σύνδεση</string>
+      
+  <string name="connection_label_disconnect">Αποσύνδεση</string>
+      
+  <string name="connection_server_state_connected">Συνδεδεμένος</string>
+      
+  <string name="connection_server_state_connecting">Σύνδεση…</string>
+      
+  <string name="connection_server_state_disconnecting">Αποσύνδεση…</string>
+      
+  <string name="connection_error">σφάλμα_σύνδεσης</string>
+      
+  <string name="feedback_page_title">Ανατροφοδότηση</string>
+      
+  <string name="feedback_issue_category_title">Κατηγορία θέματος</string>
+      
+    
+  <string name="feedback_description_title">Περιγραφή</string>
+      
+  <string name="feedback_note_text">Η περιγραφή, η διεύθυνση email σας (εάν παρέχεται) και πρόσθετες πληροφορίες θα σταλούν στην ομάδα του nthLink. Ανατρέξτε στην Πολιτική Απορρήτου του ιστότοπου nthLink για την πολιτική συλλογής δεδομένων μας.</string>
+      
+  <string name="feedback_submit">Αποστολή</string>
+      
+  <string name="feedback_submit_failed_message">Δεν είναι δυνατή η σύνδεση με τον διακομιστή nthlink.</string>
+      
+  <string name="feedback_submit_success_message">Ευχαριστούμε που μας βοηθάτε να βελτιωθούμε! Μας αρέσει να ακούμε νέα σας.</string>
+      
+  <string name="feedback_init_failed_message">Δεν έχετε διακομιστή</string>
+      
+  <string name="about_page_title">Σχετικά με</string>
+      
+  <string name="about_version">Έκδοση %s</string>
+      
+  <string name="about_text">Το nthLink ξεκίνησε το 2016 ως ένα έργο από μια ομάδα έμπειρων μηχανικών ασφάλειας λογισμικού και πληροφοριών για την υποστήριξη δικηγόρων για τα ανθρώπινα δικαιώματα ώστε να λαμβάνουν λογοκριμένες πληροφορίες και να εκφράσουν τις προοπτικές τους στον έξω κόσμο.\n\nΗ ομάδα ανάπτυξης μας υπερέχει τόσο στην πολυπλοκότητα της τεχνολογίας παράκαμψης της λογοκρισίας όσο και στην αξιοπιστία της υπηρεσίας. Με πολυετή εμπειρία σε αυτόν τον εξειδικευμένο τομέα, παρέχουμε στους χρήστες σε στοχευμένες γεωγραφικές περιοχές απλή, ασφαλή και αξιόπιστη πρόσβαση σε λογοκριμένες πληροφορίες.</string>
+      
+  <string name="menu_drawer_item_1">Σπίτι</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Βοήθεια</string>
+      
+  <string name="menu_drawer_item_5">Βαθμολόγησε την εφαρμογή</string>
+      
+  <string name="menu_web_item_1">Αντιγραφή συνδέσμου</string>
+      
+  <string name="menu_web_item_2">Άνοιγμα σε πρόγραμμα περιήγησης</string>
+      
+  <string name="menu_web_item_3">Μοιράζομαι ένα σύνδεσμο</string>
+      
+  <string name="menu_connection_item_1">Σελίδα προορισμού</string>
+      
+  <string name="word_loading">Φόρτωση</string>
+      
+  <string name="word_coped_link">Αντιμετωπισμένος σύνδεσμος</string>
+      
+  <string name="word_play_preview_1">Σπάστε το φράγμα Ελευθερώστε τις φωνές</string>
+      
+  <string name="word_play_preview_2">Ισχυρή κρυπτογράφηση για την προστασία των πληροφοριών</string>
+      
+  <string name="word_play_preview_3">Ασφαλής και αξιόπιστη πρόσβαση στο Διαδίκτυο</string>
+      
+  <string name="word_play_preview_4">Δείτε με ασφάλεια ειδήσεις σε όλο τον κόσμο</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Γενική ανατροφοδότηση</item>
+            
+    <item>Δεν μπορεί να συνδεθεί</item>
+            
+    <item>Η ταχύτητα σύνδεσης είναι αργή</item>
+            
+    <item>Προτάσεις</item>
+            
+    <item>Άλλο</item>
+        
+  </string-array>
+  
+</resources>

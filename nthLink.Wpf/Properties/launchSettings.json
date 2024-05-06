@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "nthLink.Wpf": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">nthLink</string>
+
+    <string name="privacy_notice_title">Your privacy comes first</string>
+    <string name="privacy_notice_text">nthLink DOES NOT collect personally identifiable information or websites / online services that you visit. nthLink uses your IP address, device’s default language, cookies, and basic device information ( e.g. operating system information ) to customize the services that you receive such as locating the nearest servers that can best support your device and displaying the proper web page upon connecting to the nthLink server.</string>
+    <string name="privacy_notice_submit">Accept and continue</string>
+
+    <string name="connection_hint_connect">Tap To Connect</string>
+    <string name="connection_hint_disconnect">Tap To Disconnect</string>
+    <string name="connection_label_connect">Connect</string>
+    <string name="connection_label_disconnect">Disconnect</string>
+	<string name="connection_server_state_connected">Connected</string>
+	<string name="connection_server_state_connecting">Connecting…</string>
+
+	<string name="connection_server_state_disconnecting">Disconnecting…</string>
+
+	<string name="connection_error">Connection error</string>
+
+    <string name="feedback_page_title">Feedback</string>
+    <string name="feedback_issue_category_title">Issue category</string>
+    <string name="feedback_email_title" translatable="false">Email</string>
+    <string name="feedback_description_title">Description</string>
+    <string name="feedback_note_text">Your description, email address (if provided), and additional information will be sent to the nthLink team. Please refer to the nthLink website\'s Privacy Policy for our data collection policy.</string>
+    <string name="feedback_submit">Send</string>
+    <string name="feedback_submit_failed_message">Can\'t connect to nthlink server.</string>
+    <string name="feedback_submit_success_message">Thanks for helping us improve! We love hearing from you.</string>
+    <string name="feedback_init_failed_message">Don\'t have a server</string>
+
+    <string name="about_page_title">About</string>
+    <string name="about_version">Version %s</string>
+    <string name="about_text">nthLink was started in 2016 as a project by a group of experienced software and information security engineers to support human rights lawyers to obtain censored information and to express their perspectives to the outside world.\n\nOur development team excels in both the sophistication of censorship circumvention technology and the reliability of the service. With years of experience in this specialty area, we provide the users in targeted geographies simple, safe, and reliable access to otherwise censored information.</string>
+
+    <string name="menu_drawer_item_1">Home</string>
+    <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+    <string name="menu_drawer_item_3">@string/about_page_title</string>
+    <string name="menu_drawer_item_4">Help</string>
+    <string name="menu_drawer_item_5">Rate App</string>
+
+    <string name="menu_web_item_1">Copy link</string>
+    <string name="menu_web_item_2">Open in browser</string>
+    <string name="menu_web_item_3">Share link</string>
+
+    <string name="menu_connection_item_1">Landing Page</string>
+
+    <string name="word_loading">Loading</string>
+    <string name="word_coped_link">Coped link</string>
+
+    <string-array name="issue_categories">
+        <item>General feedback</item>
+        <item>Cannot connect</item>
+        <item>Connection speed is slow</item>
+        <item>Suggestions</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

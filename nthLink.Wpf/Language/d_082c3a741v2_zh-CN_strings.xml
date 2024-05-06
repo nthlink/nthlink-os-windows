@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">您的隐私至上</string>
+      
+  <string name="privacy_notice_text">nthLink 不会收集您访问的个人身份信息或网站 / 在线服务。nthLink 使用您的 IP 地址、设备的默认语言、cookie 和基本设备信息（例如操作系统信息）来定制您收到的服务，例如定位最能支持您的设备的最近服务器并在连接到 nthLink 服务器时显示正确的网页。</string>
+      
+  <string name="privacy_notice_submit">接受并继续</string>
+      
+  <string name="connection_hint_connect">点击“连接”</string>
+      
+  <string name="connection_hint_disconnect">点击“断开”</string>
+      
+  <string name="connection_label_connect">连接</string>
+      
+  <string name="connection_label_disconnect">断开</string>
+      
+  <string name="connection_server_state_connected">已连接</string>
+      
+  <string name="connection_server_state_connecting">正在连接…</string>
+      
+  <string name="connection_server_state_disconnecting">正在断开…</string>
+      
+  <string name="connection_error">连接错误</string>
+      
+  <string name="feedback_page_title">反馈</string>
+      
+  <string name="feedback_issue_category_title">问题类别</string>
+      
+    
+  <string name="feedback_description_title">描述</string>
+      
+  <string name="feedback_note_text">您的描述、电子邮件地址（如果提供）和其他信息将发送给 nthLink 团队。有关我们的数据收集政策，请参阅 nthLink 网站的隐私政策。</string>
+      
+  <string name="feedback_submit">发送</string>
+      
+  <string name="feedback_submit_failed_message">无法连接到 nthlink 服务器。</string>
+      
+  <string name="feedback_submit_success_message">感谢您帮助我们改进！我们乐于收到您的回音。</string>
+      
+  <string name="feedback_init_failed_message">没有服务器</string>
+      
+  <string name="about_page_title">关于</string>
+      
+  <string name="about_version">版本 %s</string>
+      
+  <string name="about_text">nthLink 由一群经验丰富的软件和信息安全工程师于 2016 年启动，旨在支持人权律师获取审查信息并向外界表达他们的观点。我们的开发团队在审查规避技术的复杂性和服务的可靠性方面都表现出色。凭借在该专业领域多年的经验，我们为目标地区的用户提供简单、安全和可靠的访问权限，以访问被审查的信息。</string>
+      
+  <string name="menu_drawer_item_1">主页</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">帮助</string>
+      
+  <string name="menu_drawer_item_5">评价应用</string>
+      
+  <string name="menu_web_item_1">复制链接</string>
+      
+  <string name="menu_web_item_2">在浏览器中打开</string>
+      
+  <string name="menu_web_item_3">分享链接</string>
+      
+  <string name="menu_connection_item_1">登陆页面</string>
+      
+  <string name="word_loading">正在加载</string>
+      
+  <string name="word_coped_link">复制链接</string>
+      
+  <string name="word_play_preview_1">打破障碍释放声音</string>
+      
+  <string name="word_play_preview_2">强加密保护信息</string>
+      
+  <string name="word_play_preview_3">安全可靠地访问互联网</string>
+      
+  <string name="word_play_preview_4">安全地查看世界各地的新闻</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>一般反馈</item>
+            
+    <item>无法连接</item>
+            
+    <item>连接速度很慢</item>
+            
+    <item>建议</item>
+            
+    <item>其他</item>
+        
+  </string-array>
+  
+</resources>

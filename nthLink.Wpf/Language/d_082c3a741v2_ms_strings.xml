@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Privasi anda diutamakan</string>
+      
+  <string name="privacy_notice_text">nthLink TIDAK mengumpul maklumat peribadi atau laman web / perkhidmatan dalam talian yang anda lawati. nthLink menggunakan alamat IP anda, bahasa lalai peranti, kuki dan maklumat asas peranti ( cth. maklumat sistem pengendalian ) untuk menyesuaikan perkhidmatan yang anda terima seperti mencari pelayan terdekat yang paling bagus menyokong peranti anda dan memaparkan laman web yang betul semasa menyambung pelayan nthLink.</string>
+      
+  <string name="privacy_notice_submit">Terima dan teruskan</string>
+      
+  <string name="connection_hint_connect">Ketik Untuk Menyambung</string>
+      
+  <string name="connection_hint_disconnect">Ketik Untuk Putuskan sambungan</string>
+      
+  <string name="connection_label_connect">Sambung</string>
+      
+  <string name="connection_label_disconnect">Putuskan sambungan</string>
+      
+  <string name="connection_server_state_connected">Bersambung</string>
+      
+  <string name="connection_server_state_connecting">Menyambung…</string>
+      
+  <string name="connection_server_state_disconnecting">Memutuskan sambungan…</string>
+      
+  <string name="connection_error">ralat_sambungan</string>
+      
+  <string name="feedback_page_title">Maklum balas</string>
+      
+  <string name="feedback_issue_category_title">Kategori isu</string>
+      
+    
+  <string name="feedback_description_title">Penerangan</string>
+      
+  <string name="feedback_note_text">Penerangan anda, alamat e-mel (jika disediakan) dan maklumat tambahan akan dihantar kepada pasukan nthLink. Sila rujuk Dasar Privasi laman web nthLink untuk dasar pengumpulan data kami.</string>
+      
+  <string name="feedback_submit">Hantar</string>
+      
+  <string name="feedback_submit_failed_message">Tidak dapat menyambung ke pelayan nthlink.</string>
+      
+  <string name="feedback_submit_success_message">Terima kasih kerana membantu kami bertambah baik! Kami suka dapat maklum balas daripada anda.</string>
+      
+  <string name="feedback_init_failed_message">Tidak mempunyai pelayan</string>
+      
+  <string name="about_page_title">Tentang</string>
+      
+  <string name="about_version">Versi %s</string>
+      
+  <string name="about_text">nthLink dimulakan pada 2016 sebagai projek oleh sekumpulan jurutera perisian dan keselamatan maklumat yang berpengalaman untuk menyokong peguam hak asasi manusia mendapatkan maklumat yang ditapis dan untuk menyatakan perspektif mereka kepada dunia luar.\n\nPasukan pembangunan kami cemerlang dalam kecanggihan teknologi pemintasan penapisan dan kebolehpercayaan perkhidmatan. Dengan pengalaman bertahun-tahun dalam bidang khusus ini, kami menyediakan pengguna dalam kawasan sasaran akses mudah, selamat dan boleh dipercayai kepada maklumat yang ditapis sebaliknya.</string>
+      
+  <string name="menu_drawer_item_1">Laman Utama</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Bantuan</string>
+      
+  <string name="menu_drawer_item_5">Nilai Aplikasi</string>
+      
+  <string name="menu_web_item_1">Salin pautan</string>
+      
+  <string name="menu_web_item_2">Buka dalam penyemak imbas</string>
+      
+  <string name="menu_web_item_3">Kongsi pautan</string>
+      
+  <string name="menu_connection_item_1">Laman Penambat</string>
+      
+  <string name="word_loading">Memuatkan</string>
+      
+  <string name="word_coped_link">Pautan yang disalin</string>
+      
+  <string name="word_play_preview_1">Pecahkan halangan Bebas bersuara</string>
+      
+  <string name="word_play_preview_2">Penyulitan yang kuat untuk melindungi maklumat</string>
+      
+  <string name="word_play_preview_3">Akses yang selamat dan boleh dipercayai ke Internet</string>
+      
+  <string name="word_play_preview_4">Lihat berita di seluruh dunia dengan selamat</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Maklum balas am</item>
+            
+    <item>Tidak boleh disambungkan</item>
+            
+    <item>Kelajuan sambungan adalah perlahan</item>
+            
+    <item>Cadangan</item>
+            
+    <item>Lain-lain</item>
+        
+  </string-array>
+  
+</resources>

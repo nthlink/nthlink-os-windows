@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Privasi Anda sangat diutamakan</string>
+      
+  <string name="privacy_notice_text">nthLink TIDAK mengumpulkan informasi pengenal pribadi atau situs web / layanan online yang Anda kunjungi. nthLink menggunakan alamat IP Anda, bahasa default perangkat, cookie, dan informasi perangkat dasar ( misalnya informasi sistem operasi) untuk menyesuaikan layanan yang Anda terima seperti mencari server terdekat yang paling mendukung perangkat Anda dan menampilkan halaman web yang tepat saat tersambung ke server nthLink.</string>
+      
+  <string name="privacy_notice_submit">Terima dan lanjutkan</string>
+      
+  <string name="connection_hint_connect">Ketuk Untuk Terhubung</string>
+      
+  <string name="connection_hint_disconnect">Ketuk Untuk Memutuskan</string>
+      
+  <string name="connection_label_connect">Hubungkan</string>
+      
+  <string name="connection_label_disconnect">Putuskan</string>
+      
+  <string name="connection_server_state_connected">Terhubung</string>
+      
+  <string name="connection_server_state_connecting">Menghubungkan…</string>
+      
+  <string name="connection_server_state_disconnecting">Memutuskan sambungan…</string>
+      
+  <string name="connection_error">koneksi_error</string>
+      
+  <string name="feedback_page_title">Masukan</string>
+      
+  <string name="feedback_issue_category_title">Kategori masalah</string>
+      
+    
+  <string name="feedback_description_title">Keterangan</string>
+      
+  <string name="feedback_note_text">Deskripsi Anda, alamat email (jika disediakan), dan informasi tambahan akan dikirim ke tim nthLink. Silakan merujuk ke Kebijakan Privasi situs web nthLink untuk kebijakan pengumpulan data kami.</string>
+      
+  <string name="feedback_submit">Kirim</string>
+      
+  <string name="feedback_submit_failed_message">Tidak dapat terhubung ke server nthlink.</string>
+      
+  <string name="feedback_submit_success_message">Terima kasih telah membantu kami meningkatkan! Kami senang mendengar dari Anda.</string>
+      
+  <string name="feedback_init_failed_message">Tidak memiliki server</string>
+      
+  <string name="about_page_title">Tentang</string>
+      
+  <string name="about_version">Versi %s</string>
+      
+  <string name="about_text">nthLink dimulai pada tahun 2016 sebagai proyek oleh sekelompok insinyur perangkat lunak dan keamanan informasi yang berpengalaman untuk mendukung pengacara hak asasi manusia untuk mendapatkan informasi yang disensor dan untuk mengekspresikan perspektif mereka ke dunia luar.\n\nTim pengembangan kami unggul dalam kecanggihan teknologi pengelakan sensor dan keandalan layanan. Dengan pengalaman bertahun-tahun di bidang khusus ini, kami menyediakan akses yang sederhana, aman, dan andal kepada pengguna di wilayah yang ditargetkan ke informasi yang disensor.</string>
+      
+  <string name="menu_drawer_item_1">Rumah</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Bantuan</string>
+      
+  <string name="menu_drawer_item_5">Nilai Aplikasi</string>
+      
+  <string name="menu_web_item_1">Salin tautan</string>
+      
+  <string name="menu_web_item_2">Buka di browser</string>
+      
+  <string name="menu_web_item_3">Bagikan tautan</string>
+      
+  <string name="menu_connection_item_1">Halaman Arahan</string>
+      
+  <string name="word_loading">Memuat</string>
+      
+  <string name="word_coped_link">Tautan disalin</string>
+      
+  <string name="word_play_preview_1">Patahkan penghalang Bebaskan suara</string>
+      
+  <string name="word_play_preview_2">Enkripsi yang kuat untuk melindungi informasi</string>
+      
+  <string name="word_play_preview_3">Akses Internet yang aman dan andal</string>
+      
+  <string name="word_play_preview_4">Lihat berita di seluruh dunia dengan aman</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Masukan umum</item>
+            
+    <item>Tidak dapat terhubung</item>
+            
+    <item>Kecepatan koneksi lambat</item>
+            
+    <item>Saran</item>
+            
+    <item>Lainnya</item>
+        
+  </string-array>
+  
+</resources>

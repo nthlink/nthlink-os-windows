@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">ความเป็นส่วนตัวของคุณมาก่อน</string>
+      
+  <string name="privacy_notice_text">nthLink ไม่เก็บรวบรวมข้อมูลส่วนบุคคลหรือเว็บไซต์ / บริการออนไลน์ที่คุณเยี่ยมชม nthLink ใช้ที่อยู่ IP ของคุณ ภาษาเริ่มต้นของอุปกรณ์ คุกกี้ และข้อมูลอุปกรณ์พื้นฐาน ( เช่น ข้อมูลระบบปฏิบัติการ ) เพื่อปรับแต่งบริการที่คุณได้รับ เช่น ค้นหาเซิร์ฟเวอร์ที่ใกล้ที่สุดที่สามารถรองรับอุปกรณ์ของคุณได้ดีที่สุด และแสดงหน้าเว็บที่เหมาะสมเมื่อเชื่อมต่อกับ เซิร์ฟเวอร์ nthLink</string>
+      
+  <string name="privacy_notice_submit">ยอมรับและดำเนินการต่อ</string>
+      
+  <string name="connection_hint_connect">แตะเพื่อเชื่อมต่อ</string>
+      
+  <string name="connection_hint_disconnect">แตะเพื่อยกเลิกการเชื่อมต่อ</string>
+      
+  <string name="connection_label_connect">เชื่อมต่อ</string>
+      
+  <string name="connection_label_disconnect">ตัดการเชื่อมต่อ</string>
+      
+  <string name="connection_server_state_connected">เชื่อมต่อแล้ว</string>
+      
+  <string name="connection_server_state_connecting">กำลังเชื่อมต่อ…</string>
+      
+  <string name="connection_server_state_disconnecting">กำลังตัดการเชื่อมต่อ…</string>
+      
+  <string name="connection_error">การเชื่อมต่อล้มเหลว</string>
+      
+  <string name="feedback_page_title">ข้อเสนอแนะ</string>
+      
+  <string name="feedback_issue_category_title">หมวดหมู่ปัญหา</string>
+      
+    
+  <string name="feedback_description_title">คำอธิบาย</string>
+      
+  <string name="feedback_note_text">คำอธิบาย ที่อยู่อีเมลของคุณ (หากมี) และข้อมูลเพิ่มเติมจะถูกส่งไปยังทีมงาน nthLink โปรดดูนโยบายความเป็นส่วนตัวของเว็บไซต์ nthLink สำหรับนโยบายการเก็บรวบรวมข้อมูลของเรา</string>
+      
+  <string name="feedback_submit">ส่ง</string>
+      
+  <string name="feedback_submit_failed_message">ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ nthlink</string>
+      
+  <string name="feedback_submit_success_message">ขอบคุณที่ช่วยเราปรับปรุง! เราชอบที่จะได้ยินจากคุณ</string>
+      
+  <string name="feedback_init_failed_message">ไม่มีเซิร์ฟเวอร์</string>
+      
+  <string name="about_page_title">เกี่ยวกับ</string>
+      
+  <string name="about_version">เวอร์ชัน %s</string>
+      
+  <string name="about_text">nthLink เริ่มต้นในปี 2559 โดยเป็นโครงการโดยกลุ่มวิศวกรซอฟต์แวร์ที่มีประสบการณ์และความปลอดภัยข้อมูล เพื่อสนับสนุนนักกฎหมายด้านสิทธิมนุษยชนในการรับข้อมูลที่ถูกเซ็นเซอร์และเพื่อแสดงมุมมองต่อโลกภายนอก\n\nทีมพัฒนาของเรามีความเป็นเลิศทั้งในด้านความซับซ้อนของเทคโนโลยีการหลบเลี่ยงการเซ็นเซอร์และความน่าเชื่อถือของบริการ ด้วยประสบการณ์หลายปีในด้านพิเศษนี้ เราให้ผู้ใช้ในพื้นที่เป้าหมายทางภูมิศาสตร์ที่เข้าถึงได้ง่าย ปลอดภัย และเชื่อถือได้ในการเข้าถึงข้อมูลที่มีการเซ็นเซอร์อย่างอื่น</string>
+      
+  <string name="menu_drawer_item_1">บ้าน</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">ช่วย</string>
+      
+  <string name="menu_drawer_item_5">ให้คะแนนแอป</string>
+      
+  <string name="menu_web_item_1">คัดลอกลิงค์</string>
+      
+  <string name="menu_web_item_2">เปิดในเบราว์เซอร์</string>
+      
+  <string name="menu_web_item_3">แบ่งปันลิงค์</string>
+      
+  <string name="menu_connection_item_1">หน้า Landing Page</string>
+      
+  <string name="word_loading">กำลังโหลด</string>
+      
+  <string name="word_coped_link">ลิงก์ที่ถูกจัดการ</string>
+      
+  <string name="word_play_preview_1">ทลายกำแพง ปลดปล่อยเสียง</string>
+      
+  <string name="word_play_preview_2">การเข้ารหัสที่แข็งแกร่งเพื่อปกป้องข้อมูล</string>
+      
+  <string name="word_play_preview_3">การเข้าถึงอินเทอร์เน็ตที่ปลอดภัยและเชื่อถือได้</string>
+      
+  <string name="word_play_preview_4">ดูข่าวทั่วโลกอย่างปลอดภัย</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>ข้อเสนอแนะทั่วไป</item>
+            
+    <item>ไม่สามารถเชื่อมต่อ</item>
+            
+    <item>ความเร็วในการเชื่อมต่อช้า</item>
+            
+    <item>คำแนะนำ</item>
+            
+    <item>อื่น ๆ</item>
+        
+  </string-array>
+  
+</resources>

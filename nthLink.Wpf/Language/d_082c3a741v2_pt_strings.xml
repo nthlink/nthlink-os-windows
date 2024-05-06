@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Sua privacidade vem em primeiro lugar</string>
+      
+  <string name="privacy_notice_text">O nthLink NÃO coleta informações de identificação pessoal ou sites / serviços online que você visita. O nthLink usa seu endereço IP, idioma padrão do dispositivo, cookies e informações básicas do dispositivo (por exemplo, informações do sistema operacional) para personalizar os serviços que você recebe, como localizar os servidores mais próximos que melhor suportam seu dispositivo e exibir a página da Web adequada ao conectar-se ao servidor nthLink.</string>
+      
+  <string name="privacy_notice_submit">Aceitar e continuar</string>
+      
+  <string name="connection_hint_connect">Toque para conectar</string>
+      
+  <string name="connection_hint_disconnect">Toque para desconectar</string>
+      
+  <string name="connection_label_connect">Conectar</string>
+      
+  <string name="connection_label_disconnect">Desconectar</string>
+      
+  <string name="connection_server_state_connected">Conectado</string>
+      
+  <string name="connection_server_state_connecting">Conectando…</string>
+      
+  <string name="connection_server_state_disconnecting">Desconectando…</string>
+      
+  <string name="connection_error">erro de conexão</string>
+      
+  <string name="feedback_page_title">Feedback</string>
+      
+  <string name="feedback_issue_category_title">Categoria do problema</string>
+      
+    
+  <string name="feedback_description_title">Descrição</string>
+      
+  <string name="feedback_note_text">Sua descrição, endereço de e-mail (se fornecido) e informações adicionais serão enviadas para a equipe nthLink. Consulte a Política de Privacidade do site nthLink para verificar nossa política de coleta de dados.</string>
+      
+  <string name="feedback_submit">Enviar</string>
+      
+  <string name="feedback_submit_failed_message">Não é possível conectar ao servidor nthlink.</string>
+      
+  <string name="feedback_submit_success_message">Obrigado por nos ajudar a melhorar! Adoramos te escutar.</string>
+      
+  <string name="feedback_init_failed_message">Não tem servidor</string>
+      
+  <string name="about_page_title">Sobre</string>
+      
+  <string name="about_version">Versão %s</string>
+      
+  <string name="about_text">O nthLink foi iniciado em 2016 como um projeto de um grupo de experientes engenheiros de software e segurança da informação para apoiar advogados de direitos humanos a obter informações censuradas e expressar suas perspectivas para o mundo exterior.\n\nNossa equipe de desenvolvimento se destaca tanto na sofisticação da tecnologia de evasão de censura quanto na confiabilidade do serviço. Com anos de experiência nesta área de especialidade, fornecemos aos usuários em regiões específicas acesso simples, seguro e confiável a informações censuradas.</string>
+      
+  <string name="menu_drawer_item_1">Início</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Ajuda</string>
+      
+  <string name="menu_drawer_item_5">Avaliar aplicativo</string>
+      
+  <string name="menu_web_item_1">Copiar link</string>
+      
+  <string name="menu_web_item_2">Abrir no navegador</string>
+      
+  <string name="menu_web_item_3">Compartilhar link</string>
+      
+  <string name="menu_connection_item_1">Página de destino</string>
+      
+  <string name="word_loading">Carregando</string>
+      
+  <string name="word_coped_link">Link copiado</string>
+      
+  <string name="word_play_preview_1">Quebre a barreira Liberte as vozes</string>
+      
+  <string name="word_play_preview_2">Criptografia forte para proteger as informações</string>
+      
+  <string name="word_play_preview_3">Acesso seguro e confiável à Internet</string>
+      
+  <string name="word_play_preview_4">Visualize notícias com segurança em todo o mundo</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Comentários gerais</item>
+            
+    <item>Não pode conectar</item>
+            
+    <item>A velocidade de conexão é lenta</item>
+            
+    <item>Sugestões</item>
+            
+    <item>Outros</item>
+        
+  </string-array>
+  
+</resources>

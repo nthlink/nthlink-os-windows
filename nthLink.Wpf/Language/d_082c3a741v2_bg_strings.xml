@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Вашата поверителност е на първо място</string>
+      
+  <string name="privacy_notice_text">nthLink НЕ събира лична информация или уебсайтове / онлайн услуги, които посещавате. nthLink използва вашия IP адрес, езика по подразбиране на устройството, бисквитки и основна информация за устройството ( напр. информация за операционната система), за да персонализира услугите, които получавате, като например намиране на най-близките сървъри, които могат най-добре да поддържат вашето устройство, и показване на правилната уеб страница при свързване към сървъра nthLink.</string>
+      
+  <string name="privacy_notice_submit">Приемете и продължете</string>
+      
+  <string name="connection_hint_connect">Докоснете за свързване</string>
+      
+  <string name="connection_hint_disconnect">Докоснете, за да прекъснете връзката</string>
+      
+  <string name="connection_label_connect">Свържете се</string>
+      
+  <string name="connection_label_disconnect">Прекъснете връзката</string>
+      
+  <string name="connection_server_state_connected">Свързани</string>
+      
+  <string name="connection_server_state_connecting">Свързва се…</string>
+      
+  <string name="connection_server_state_disconnecting">Прекъсване на връзката…</string>
+      
+  <string name="connection_error">грешка_връзка</string>
+      
+  <string name="feedback_page_title">Обратна връзка</string>
+      
+  <string name="feedback_issue_category_title">Категория на проблема</string>
+      
+    
+  <string name="feedback_description_title">Описание</string>
+      
+  <string name="feedback_note_text">Вашето описание, имейл адрес (ако е предоставен) и допълнителна информация ще бъдат изпратени до екипа на nthLink. Моля, вижте Политиката за поверителност на уебсайта nthLink за нашата политика за събиране на данни.</string>
+      
+  <string name="feedback_submit">Изпрати</string>
+      
+  <string name="feedback_submit_failed_message">Не мога да се свържа със сървъра nthlink.</string>
+      
+  <string name="feedback_submit_success_message">Благодарим ви, че ни помагате да се подобрим! Обичаме да чуваме от вас.</string>
+      
+  <string name="feedback_init_failed_message">Нямате сървър</string>
+      
+  <string name="about_page_title">Относно</string>
+      
+  <string name="about_version">Версия %s</string>
+      
+  <string name="about_text">nthLink стартира през 2016 г. като проект от група опитни инженери по софтуер и информационна сигурност, за да подпомогне адвокатите по правата на човека да получат цензурирана информация и да изразят своите перспективи пред външния свят.\n\nНашият екип от разработчици се отличава както със сложността на технологията за заобикаляне на цензурата, така и с надеждността на услугата. С дългогодишен опит в тази специализирана област, ние предоставяме на потребителите в целеви географски райони прост, безопасен и надежден достъп до иначе цензурирана информация.</string>
+      
+  <string name="menu_drawer_item_1">У дома</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Помощ</string>
+      
+  <string name="menu_drawer_item_5">Оценете приложението</string>
+      
+  <string name="menu_web_item_1">Копирай връзка</string>
+      
+  <string name="menu_web_item_2">Отворете в браузъра</string>
+      
+  <string name="menu_web_item_3">Сподели линк</string>
+      
+  <string name="menu_connection_item_1">Целева страница</string>
+      
+  <string name="word_loading">Зареждане</string>
+      
+  <string name="word_coped_link">Справена връзка</string>
+      
+  <string name="word_play_preview_1">Разбийте бариерата Освободете гласовете</string>
+      
+  <string name="word_play_preview_2">Силно криптиране за защита на информацията</string>
+      
+  <string name="word_play_preview_3">Безопасен и надежден достъп до Интернет</string>
+      
+  <string name="word_play_preview_4">Безопасно гледайте новини по целия свят</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Обща обратна връзка</item>
+            
+    <item>Не мога да се свържа</item>
+            
+    <item>Скоростта на връзката е бавна</item>
+            
+    <item>Предложения</item>
+            
+    <item>Друго</item>
+        
+  </string-array>
+  
+</resources>

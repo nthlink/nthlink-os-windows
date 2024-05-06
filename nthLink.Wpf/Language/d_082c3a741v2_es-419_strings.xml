@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Tu privacidad es lo primero</string>
+      
+  <string name="privacy_notice_text">nthLink NO recopila información de identificación personal o sitios web/servicios en línea que usted visita. nthLink utiliza su dirección IP, el idioma predeterminado del dispositivo, las cookies y la información básica del dispositivo (por ejemplo, información del sistema operativo) para personalizar los servicios que recibe, como ubicar los servidores más cercanos que pueden admitir mejor su dispositivo y mostrar la página web adecuada al conectarse a el servidor nthLink.</string>
+      
+  <string name="privacy_notice_submit">Aceptar y continuar</string>
+      
+  <string name="connection_hint_connect">Toque para conectar</string>
+      
+  <string name="connection_hint_disconnect">Toque para desconectar</string>
+      
+  <string name="connection_label_connect">Conectar</string>
+      
+  <string name="connection_label_disconnect">Desconectar</string>
+      
+  <string name="connection_server_state_connected">Conectado</string>
+      
+  <string name="connection_server_state_connecting">Conectando…</string>
+      
+  <string name="connection_server_state_disconnecting">Desconectando…</string>
+      
+  <string name="connection_error">error_de_conexión</string>
+      
+  <string name="feedback_page_title">Comentarios</string>
+      
+  <string name="feedback_issue_category_title">Categoría de problema</string>
+      
+    
+  <string name="feedback_description_title">Descripción</string>
+      
+  <string name="feedback_note_text">Su descripción, dirección de correo electrónico (si se proporciona) e información adicional se enviarán al equipo de nthLink. Consulte la Política de privacidad del sitio web de nthLink para conocer nuestra política de recopilación de datos.</string>
+      
+  <string name="feedback_submit">Enviar</string>
+      
+  <string name="feedback_submit_failed_message">No se puede conectar al servidor nthlink.</string>
+      
+  <string name="feedback_submit_success_message">¡Gracias por ayudarnos a mejorar! Nos encanta saber de usted.</string>
+      
+  <string name="feedback_init_failed_message">No tengo un servidor</string>
+      
+  <string name="about_page_title">Acerca de</string>
+      
+  <string name="about_version">Versión %s</string>
+      
+  <string name="about_text">nthLink se inició en 2016 como un proyecto de un grupo de ingenieros experimentados en software y seguridad de la información para ayudar a los abogados de derechos humanos a obtener información censurada y expresar sus puntos de vista al mundo exterior.\n\nNuestro equipo de desarrollo sobresale tanto en la sofisticación de la tecnología de elusión de la censura como en la confiabilidad del servicio. Con años de experiencia en esta área de especialidad, brindamos a los usuarios en geografías específicas acceso simple, seguro y confiable a información que de otro modo estaría censurada.</string>
+      
+  <string name="menu_drawer_item_1">Inicio</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Ayudar</string>
+      
+  <string name="menu_drawer_item_5">Calificar aplicación</string>
+      
+  <string name="menu_web_item_1">Copiar link</string>
+      
+  <string name="menu_web_item_2">Abierta en el navegador</string>
+      
+  <string name="menu_web_item_3">Compartir enlace</string>
+      
+  <string name="menu_connection_item_1">Página de destino</string>
+      
+  <string name="word_loading">Cargando</string>
+      
+  <string name="word_coped_link">Enlace copiado</string>
+      
+  <string name="word_play_preview_1">Romper la barrera Liberar las voces</string>
+      
+  <string name="word_play_preview_2">Cifrado fuerte para proteger la información.</string>
+      
+  <string name="word_play_preview_3">Acceso seguro y confiable a Internet</string>
+      
+  <string name="word_play_preview_4">Ver noticias de todo el mundo de forma segura</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Retroalimentación general</item>
+            
+    <item>No se puede conectar</item>
+            
+    <item>La velocidad de conexión es lenta</item>
+            
+    <item>Sugerencias</item>
+            
+    <item>Otro</item>
+        
+  </string-array>
+  
+</resources>

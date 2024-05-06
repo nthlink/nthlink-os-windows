@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Personvernet ditt kommer først</string>
+      
+  <string name="privacy_notice_text">nthLink samler IKKE inn personlig identifiserbar informasjon eller nettsteder / netttjenester som du besøker. nthLink bruker din IP-adresse, enhetens standardspråk, informasjonskapsler og grunnleggende enhetsinformasjon ( f.eks. operativsysteminformasjon) for å tilpasse tjenestene du mottar, for eksempel å finne de nærmeste serverne som best kan støtte enheten din og vise den riktige nettsiden når du kobler til nthLink-serveren.</string>
+      
+  <string name="privacy_notice_submit">Godta og fortsett</string>
+      
+  <string name="connection_hint_connect">Trykk for å koble til</string>
+      
+  <string name="connection_hint_disconnect">Trykk for å koble fra</string>
+      
+  <string name="connection_label_connect">Koble</string>
+      
+  <string name="connection_label_disconnect">Koble fra</string>
+      
+  <string name="connection_server_state_connected">Tilkoblet</string>
+      
+  <string name="connection_server_state_connecting">Kobler til…</string>
+      
+  <string name="connection_server_state_disconnecting">Kobler fra …</string>
+      
+  <string name="connection_error">tilkoblingsfeil</string>
+      
+  <string name="feedback_page_title">Tilbakemelding</string>
+      
+  <string name="feedback_issue_category_title">Problemkategori</string>
+      
+    
+  <string name="feedback_description_title">Beskrivelse</string>
+      
+  <string name="feedback_note_text">Din beskrivelse, e-postadresse (hvis oppgitt) og tilleggsinformasjon vil bli sendt til nthLink-teamet. Vennligst se nthLink-nettstedets retningslinjer for personvern for våre retningslinjer for datainnsamling.</string>
+      
+  <string name="feedback_submit">Sende</string>
+      
+  <string name="feedback_submit_failed_message">Kan ikke koble til nthlink-serveren.</string>
+      
+  <string name="feedback_submit_success_message">Takk for at du hjelper oss med å forbedre oss! Vi elsker å høre fra deg.</string>
+      
+  <string name="feedback_init_failed_message">Har ikke en server</string>
+      
+  <string name="about_page_title">Om</string>
+      
+  <string name="about_version">Versjon %s</string>
+      
+  <string name="about_text">nthLink ble startet i 2016 som et prosjekt av en gruppe erfarne programvare- og informasjonssikkerhetsingeniører for å støtte menneskerettighetsadvokater med å innhente sensurert informasjon og uttrykke sine perspektiver til omverdenen.\n\nUtviklingsteamet vårt utmerker seg både i sofistikeringen av teknologi for omgåelse av sensur og påliteligheten til tjenesten. Med mange års erfaring innen dette spesialområdet gir vi brukerne i målrettede geografier enkel, sikker og pålitelig tilgang til ellers sensurert informasjon.</string>
+      
+  <string name="menu_drawer_item_1">Hjem</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Hjelp</string>
+      
+  <string name="menu_drawer_item_5">Vurder app</string>
+      
+  <string name="menu_web_item_1">Kopier link</string>
+      
+  <string name="menu_web_item_2">Åpne i nettleseren</string>
+      
+  <string name="menu_web_item_3">Dele lenke</string>
+      
+  <string name="menu_connection_item_1">Destinasjonsside</string>
+      
+  <string name="word_loading">Laster</string>
+      
+  <string name="word_coped_link">Håndtert lenke</string>
+      
+  <string name="word_play_preview_1">Bryt barrieren Frigjør stemmene</string>
+      
+  <string name="word_play_preview_2">Sterk kryptering for å beskytte informasjonen</string>
+      
+  <string name="word_play_preview_3">Trygg og pålitelig tilgang til Internett</string>
+      
+  <string name="word_play_preview_4">Se nyheter rundt om i verden trygt</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Generell tilbakemelding</item>
+            
+    <item>Kan ikke koble til</item>
+            
+    <item>Tilkoblingshastigheten er lav</item>
+            
+    <item>Forslag</item>
+            
+    <item>Annen</item>
+        
+  </string-array>
+  
+</resources>

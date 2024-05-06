@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Din integritet kommer först</string>
+      
+  <string name="privacy_notice_text">nthLink samlar INTE in personligt identifierbar information eller webbplatser / onlinetjänster som du besöker. nthLink använder din IP-adress, enhetens standardspråk, cookies och grundläggande enhetsinformation ( t.ex. operativsysteminformation ) för att anpassa de tjänster som du får, som att hitta närmaste servrar som bäst kan stödja din enhet och visa rätt webbsida när du ansluter till nthLink-servern.</string>
+      
+  <string name="privacy_notice_submit">Acceptera och fortsätt</string>
+      
+  <string name="connection_hint_connect">Tryck för att ansluta</string>
+      
+  <string name="connection_hint_disconnect">Tryck för att koppla från</string>
+      
+  <string name="connection_label_connect">Ansluta</string>
+      
+  <string name="connection_label_disconnect">Koppla ifrån</string>
+      
+  <string name="connection_server_state_connected">Ansluten</string>
+      
+  <string name="connection_server_state_connecting">Ansluter…</string>
+      
+  <string name="connection_server_state_disconnecting">Kopplar bort...</string>
+      
+  <string name="connection_error">connection_error</string>
+      
+  <string name="feedback_page_title">Respons</string>
+      
+  <string name="feedback_issue_category_title">Problemkategori</string>
+      
+    
+  <string name="feedback_description_title">Beskrivning</string>
+      
+  <string name="feedback_note_text">Din beskrivning, e-postadress (om tillhandahållen) och ytterligare information kommer att skickas till nthLink-teamet. Se nthLink-webbplatsens sekretesspolicy för vår datainsamlingspolicy.</string>
+      
+  <string name="feedback_submit">Skicka</string>
+      
+  <string name="feedback_submit_failed_message">Kan inte ansluta till nthlink-servern.</string>
+      
+  <string name="feedback_submit_success_message">Tack för att du hjälper oss att förbättras! Vi älskar att höra från dig.</string>
+      
+  <string name="feedback_init_failed_message">Har ingen server</string>
+      
+  <string name="about_page_title">Handla om</string>
+      
+  <string name="about_version">Version %s</string>
+      
+  <string name="about_text">nthLink startades 2016 som ett projekt av en grupp erfarna mjukvaru- och informationssäkerhetsingenjörer för att stödja människorättsadvokater att få censurerad information och att uttrycka sina perspektiv till omvärlden.\n\nVårt utvecklingsteam utmärker sig både när det gäller sofistikeringen av teknik för kringgående av censur och tjänstens tillförlitlighet. Med många års erfarenhet inom detta specialområde ger vi användarna i riktade geografier enkel, säker och pålitlig tillgång till annars censurerad information.</string>
+      
+  <string name="menu_drawer_item_1">Hem</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Hjälp</string>
+      
+  <string name="menu_drawer_item_5">Betygsätt app</string>
+      
+  <string name="menu_web_item_1">Kopiera länk</string>
+      
+  <string name="menu_web_item_2">Öppna i webbläsaren</string>
+      
+  <string name="menu_web_item_3">Dela länk</string>
+      
+  <string name="menu_connection_item_1">Landningssida</string>
+      
+  <string name="word_loading">Läser in</string>
+      
+  <string name="word_coped_link">Klarad länk</string>
+      
+  <string name="word_play_preview_1">Bryt barriären Frigör rösterna</string>
+      
+  <string name="word_play_preview_2">Stark kryptering för att skydda informationen</string>
+      
+  <string name="word_play_preview_3">Säker och pålitlig tillgång till Internet</string>
+      
+  <string name="word_play_preview_4">Se nyheter runt om i världen på ett säkert sätt</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Allmän feedback</item>
+            
+    <item>Kan inte ansluta</item>
+            
+    <item>Anslutningshastigheten är långsam</item>
+            
+    <item>Förslag</item>
+            
+    <item>Övrig</item>
+        
+  </string-array>
+  
+</resources>

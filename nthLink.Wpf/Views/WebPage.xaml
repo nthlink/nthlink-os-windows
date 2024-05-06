@@ -1,0 +1,95 @@
+﻿<UserControl x:Class="nthLink.Wpf.Views.WebPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:nthLink.Wpf.ViewModels"
+             d:DataContext="{d:DesignInstance Type=viewModels:WebPageViewModel, IsDesignTimeCreatable=False}"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style x:Key="WebButton" TargetType="Button" BasedOn="{StaticResource TransparentButton}">
+            <Setter Property="Background" Value="#F1F1F1"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="Gray"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <!--Notify-->
+            <RowDefinition Height="Auto"/>
+            <!--Url-->
+            <RowDefinition Height="Auto"/>
+            <!--Hot News-->
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--Notify-->
+        <Grid Grid.Row="0">
+            <ItemsControl ItemsSource="{Binding NotifyMessageItemsSource}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate DataType="{x:Type viewModels:NotifyItemViewModel}">
+                        <Button Style="{StaticResource TransparentButton}" Command="{Binding OpenUrlCommand}">
+                            <Border Grid.Column="1"
+                                Margin="0,7,0,0"
+                                CornerRadius="6" 
+                                Background="{StaticResource AppWhite}">                               
+                                <Grid Width="259" Height="26">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Path Grid.Column="0" 
+                                      Margin="4"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"
+                                  Data="M4.44807 10.88C3.87361 10.8771 3.40782 10.3961 3.40214 9.8H5.48359C5.48469 9.94438 5.45816 10.0875 5.40554 10.2212C5.26902 10.5463 4.99019 10.7834 4.65621 10.8584H4.65361H4.64581H4.63644H4.63176C4.5713 10.8715 4.50981 10.8787 4.44807 10.88ZM8.61098 9.26H0.285156V8.18L1.32588 7.64V4.67C1.29847 3.90813 1.46427 3.15213 1.8067 2.4776C2.14756 1.85202 2.73019 1.4078 3.40734 1.2572V0.0800018H5.48879V1.2572C6.83081 1.58876 7.57025 2.80052 7.57025 4.67V7.64L8.61098 8.18V9.26Z"
+                                  Fill="#424F5E"/>
+                                    <TextBlock Grid.Column="1" 
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Center"
+                                           FontSize="12"
+                                           Text="{Binding NotifyString}"
+                                           Foreground="#424F5E"/>
+                                </Grid>
+                            </Border>
+                        </Button>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Grid>
+        <!--Url-->
+        <Grid Grid.Row="1">
+            <ItemsControl ItemsSource="{Binding WebItemsSource}">
+                <ItemsControl.ItemContainerStyle>
+                    <Style TargetType="ContentPresenter">
+                        <Setter Property="Margin" Value="0,10,0,0"/>
+                        <Setter Property="Width" Value="259"/>
+                        <Setter Property="Height" Value="100"/>
+                    </Style>
+                </ItemsControl.ItemContainerStyle>
+            </ItemsControl>
+        </Grid>
+        <!--Hot News-->
+        <Grid Grid.Row="2">
+            <ItemsControl ItemsSource="{Binding NewsItemsSource}" Margin="0,16,0,0">
+                <ItemsControl.ItemContainerStyle>
+                    <Style TargetType="ContentPresenter">
+                        <Setter Property="Margin" Value="0,7,0,0"/>
+                        <Setter Property="Width" Value="259"/>
+                        <Setter Property="Height" Value="62"/>
+                    </Style>
+                </ItemsControl.ItemContainerStyle>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Background="{StaticResource AppWhite}">
+                            <ContentControl Content="{Binding}"/>
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Grid>
+    </Grid>
+</UserControl>

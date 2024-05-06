@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">የእርስዎ ግላዊነት ይቀድማል</string>
+      
+  <string name="privacy_notice_text">nthLink እርስዎ የሚጎበኟቸውን በግል ሊለዩ የሚችሉ መረጃዎችን ወይም ድር ጣቢያዎችን / የመስመር ላይ አገልግሎቶችን አይሰበስብም። nthLink የሚቀበሏቸውን አገልግሎቶች ለማበጀት ማለትም የእርስዎን መገልገያ መሳሪያ በጥሩ ሁኔታ ሊያግዝ የሚችል ሰርቨር ለማመላከት እና ከnthLink ሰርቨር ጋር ሲገናኝ ተገቢ ድረ ገጾችን ለማሳየት የእርስዎን የአይፒ አድራሻ፣ የመሣሪያ ነባሪ ቋንቋ፣ ኩኪዎች እና መሰረታዊ መረጃ ( ለምሳሌ የስርዓተ ክወና መረጃ) ይጠቀማል። </string>
+      
+  <string name="privacy_notice_submit">ተቀበል እና ቀጥል።</string>
+      
+  <string name="connection_hint_connect">ለመገናኘት ነካ ያድርጉ</string>
+      
+  <string name="connection_hint_disconnect">ግንኙነቱን ለማቋረጥ ይንኩ።</string>
+      
+  <string name="connection_label_connect">ተገናኝ</string>
+      
+  <string name="connection_label_disconnect">ግንኙነት አቋርጥ</string>
+      
+  <string name="connection_server_state_connected">ተገናኝቷል።</string>
+      
+  <string name="connection_server_state_connecting">በማገናኘት ላይ…</string>
+      
+  <string name="connection_server_state_disconnecting">ግንኙነት በማቋረጥ ላይ…</string>
+      
+  <string name="connection_error">የግንኙነት_ስህተት</string>
+      
+  <string name="feedback_page_title">ግብረ መልስ</string>
+      
+  <string name="feedback_issue_category_title">የችግር ምድብ</string>
+      
+    
+  <string name="feedback_description_title">መግለጫ</string>
+      
+  <string name="feedback_note_text">የእርስዎ መግለጫ፣ የኢሜይል አድራሻ (ተሰጥቶ ከሆነ) እና ተጨማሪ መረጃ ለ nthLink ቡድን ይላካል። እባኮትን ለመረጃ አሰባሰብ መመሪያችን የnthLink ድረ ገጽን የግላዊነት ፖሊሲ ይመልከቱ።</string>
+      
+  <string name="feedback_submit">ላክ</string>
+      
+  <string name="feedback_submit_failed_message">ከ nthlink ሰርቨር ጋር መገናኘት አልተቻለም።</string>
+      
+  <string name="feedback_submit_success_message">እንድናሻሽል ስለረዱን እናመሰግናለን! ከእርስዎ መስማት እንወዳለን።</string>
+      
+  <string name="feedback_init_failed_message">ሰርቨር የለዎትም</string>
+      
+  <string name="about_page_title">ስለ</string>
+      
+  <string name="about_version">ስሪት %s</string>
+      
+  <string name="about_text">nthLink በ 2016 የሰብአዊ መብት ጠበቆች ሳንሱር መረጃ እንዲያገኙ እና አመለካከታቸውን ለውጭው ዓለም እንዲገልጹ ለማገዝ ልምድ ባላቸው የሶፍትዌር እና የኢንፎርሜሽን ደህንነት መሐንዲሶች ቡድን በፕሮጀክት ተጀምሯል።\n\nየእኛ የእድገት ቡድን በሳንሱር ችግር አፈታት ቴክኖሎጂ ውስብስብነት እና በአገልግሎቱ አስተማማኝነት የላቀ ነው። የዓመታት ልምድ ባገኘንበት በዚህ መስክ ለታላሚ አካባቢዎች ቀላል፣ ደህንነቱ የተጠበቀ እና አስተማማኝ የመረጃ መዳረሻን ለተጠቃሚዎች እናቀርባለን።</string>
+      
+  <string name="menu_drawer_item_1">ዋና ገጽ</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">እገዛ</string>
+      
+  <string name="menu_drawer_item_5">መተግበሪያ ደረጃ ይስጡ</string>
+      
+  <string name="menu_web_item_1">አገናኝ ቅዳ</string>
+      
+  <string name="menu_web_item_2">በአሳሽ ውስጥ ክፈት</string>
+      
+  <string name="menu_web_item_3">አገናኝ አጋራ</string>
+      
+  <string name="menu_connection_item_1">ማረፊያ ገጽ</string>
+      
+  <string name="word_loading">በመጫን ላይ</string>
+      
+  <string name="word_coped_link">የታገዘ አገናኝ</string>
+      
+  <string name="word_play_preview_1">ማገጃውን ሰብረው ድምጾቹን ነፃ ያድርጉ</string>
+      
+  <string name="word_play_preview_2">መረጃውን ለመጠበቅ ጠንካራ ምስጠራ</string>
+      
+  <string name="word_play_preview_3">ደህንነቱ የተጠበቀ እና አስተማማኝ የበይነመረብ መዳረሻ</string>
+      
+  <string name="word_play_preview_4">በዓለም ዙሪያ ያሉ ዜናዎችን ደህንነትዎ ተጠብቆ ይመልከቱ</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>አጠቃላይ አስተያየት</item>
+            
+    <item>መገናኘት አልተቻለም</item>
+            
+    <item>የግንኙነት ፍጥነት ቀርፋፋ ነው።</item>
+            
+    <item>ጥቆማዎች</item>
+            
+    <item>ሌላ</item>
+        
+  </string-array>
+  
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">您的隱私至上</string>
+      
+  <string name="privacy_notice_text">nthLink 不會收集您訪問的個人身份信息或網站 / 在線服務。 nthLink 使用您的 IP 地址、設備的默認語言、cookie 和基本設備信息（例如操作系統信息）來定制您收到的服務，例如定位最能支持您的設備的最近服務器以及在連接到時顯示正確的網頁 nthLink 服務器。</string>
+      
+  <string name="privacy_notice_submit">接受並繼續</string>
+      
+  <string name="connection_hint_connect">點擊連接</string>
+      
+  <string name="connection_hint_disconnect">點擊斷開</string>
+      
+  <string name="connection_label_connect">連接</string>
+      
+  <string name="connection_label_disconnect">斷開</string>
+      
+  <string name="connection_server_state_connected">已連接</string>
+      
+  <string name="connection_server_state_connecting">正在連接…</string>
+      
+  <string name="connection_server_state_disconnecting">斷開…</string>
+      
+  <string name="connection_error">連接錯誤</string>
+      
+  <string name="feedback_page_title">回饋</string>
+      
+  <string name="feedback_issue_category_title">問題類別</string>
+      
+    
+  <string name="feedback_description_title">描述</string>
+      
+  <string name="feedback_note_text">您的描述、電子郵件地址（如果提供）和其他信息將發送給 nthLink 團隊。有關我們的數據收集政策，請參閱 nthLink 網站的隱私政策。</string>
+      
+  <string name="feedback_submit">發送</string>
+      
+  <string name="feedback_submit_failed_message">無法連接到 nthlink 服務器。</string>
+      
+  <string name="feedback_submit_success_message">感謝您幫助我們改進！我們歡迎您的來信。</string>
+      
+  <string name="feedback_init_failed_message">沒有服務器</string>
+      
+  <string name="about_page_title">關於</string>
+      
+  <string name="about_version">版本 %s</string>
+      
+  <string name="about_text">nthLink 由一群經驗豐富的軟件和信息安全工程師於 2016 年啟動，旨在支持人權律師獲取審查信息並向外界表達他們的觀點。我們的開發團隊在審查規避技術的複雜性和服務的可靠性方面都表現出色。憑藉在該專業領域多年的經驗，我們為目標地區的用戶提供簡單、安全和可靠的訪問權限，以訪問其他被審查的信息。</string>
+      
+  <string name="menu_drawer_item_1">首頁</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">幫助</string>
+      
+  <string name="menu_drawer_item_5">評價應用</string>
+      
+  <string name="menu_web_item_1">複製鏈接</string>
+      
+  <string name="menu_web_item_2">在瀏覽器中打開</string>
+      
+  <string name="menu_web_item_3">分享鏈接</string>
+      
+  <string name="menu_connection_item_1">登陸頁面</string>
+      
+  <string name="word_loading">正在加載</string>
+      
+  <string name="word_coped_link">應對鏈接</string>
+      
+  <string name="word_play_preview_1">打破障礙釋放聲音</string>
+      
+  <string name="word_play_preview_2">強加密保護信息</string>
+      
+  <string name="word_play_preview_3">安全可靠地訪問 Internet</string>
+      
+  <string name="word_play_preview_4">安全地查看世界各地的新聞</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>一般反饋</item>
+            
+    <item>無法連接</item>
+            
+    <item>連接速度很慢</item>
+            
+    <item>建議</item>
+            
+    <item>其他</item>
+        
+  </string-array>
+  
+</resources>

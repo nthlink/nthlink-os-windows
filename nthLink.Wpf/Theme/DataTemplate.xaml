@@ -1,0 +1,50 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:customControl="clr-namespace:nthLink.Wpf.CustomControl"
+                    xmlns:viewModels="clr-namespace:nthLink.Wpf.ViewModels">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/nthLink.Wpf;component/Theme/Color.xaml"/>
+        <ResourceDictionary Source="/nthLink.Wpf;component/Theme/Button.xaml"/>
+        <ResourceDictionary Source="/nthLink.Wpf;component/Theme/Converter.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    <DataTemplate DataType="{x:Type viewModels:NewsItemViewModel}">
+        <Button Style="{StaticResource TransparentButton}"
+                Width="259"
+                Command="{Binding OpenUrlCommand}">
+            <Border>
+                <Grid>
+                    <!--<Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="{Binding ImageSource}"
+                           MaxWidth="64" MaxHeight="64"
+                           Margin="10"/>-->
+                    <TextBlock Grid.Column="1" 
+                               Margin="10,0,10,0"
+                               TextWrapping="Wrap"
+                               FontSize="14"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               Text="{Binding Preview}"
+                               Foreground="Black"/>
+                </Grid>
+            </Border>
+        </Button>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type viewModels:WebViewModel}">
+        <Grid Background="{StaticResource AppWhite}">
+            <customControl:ChromiumWebBrowserEx 
+                IsHitTestVisible="False"/>
+        </Grid>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type viewModels:WebItemViewModel}">
+        <Grid Background="{StaticResource AppWhite}">
+            <customControl:ChromiumWebBrowserEx
+                IsHitTestVisible="False"/>
+            <Button Style="{StaticResource TransparentButton}" 
+                    Background="#01000000" 
+                    Command="{Binding OpenUrlCommand}"/>
+        </Grid>
+    </DataTemplate>
+</ResourceDictionary>

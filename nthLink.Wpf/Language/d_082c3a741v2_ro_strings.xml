@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Intimitatea ta este pe primul loc</string>
+      
+  <string name="privacy_notice_text">nthLink NU colectează informații de identificare personală sau site-uri web / servicii online pe care le vizitați. nthLink folosește adresa dvs. IP, limba implicită a dispozitivului, cookie-urile și informațiile de bază ale dispozitivului ( de exemplu, informații despre sistemul de operare) pentru a personaliza serviciile pe care le primiți, cum ar fi localizarea celor mai apropiate servere care vă pot sprijini cel mai bine dispozitivul și afișarea paginii web adecvate la conectarea la serverul nthLink.</string>
+      
+  <string name="privacy_notice_submit">Acceptați și continuați</string>
+      
+  <string name="connection_hint_connect">Atingeți pentru a conecta</string>
+      
+  <string name="connection_hint_disconnect">Atingeți pentru a deconecta</string>
+      
+  <string name="connection_label_connect">Conectați</string>
+      
+  <string name="connection_label_disconnect">Deconectați</string>
+      
+  <string name="connection_server_state_connected">Conectat</string>
+      
+  <string name="connection_server_state_connecting">Se conectează...</string>
+      
+  <string name="connection_server_state_disconnecting">Se deconectează...</string>
+      
+  <string name="connection_error">eroare de conexiune</string>
+      
+  <string name="feedback_page_title">Părere</string>
+      
+  <string name="feedback_issue_category_title">Categoria problemei</string>
+      
+    
+  <string name="feedback_description_title">Descriere</string>
+      
+  <string name="feedback_note_text">Descrierea, adresa de e-mail (dacă este furnizată) și informațiile suplimentare vor fi trimise echipei nthLink. Vă rugăm să consultați Politica de confidențialitate a site-ului web nthLink pentru politica noastră de colectare a datelor.</string>
+      
+  <string name="feedback_submit">Trimite</string>
+      
+  <string name="feedback_submit_failed_message">Nu se poate conecta la serverul nthlink.</string>
+      
+  <string name="feedback_submit_success_message">Vă mulțumim că ne ajutați să ne îmbunătățim! Ne place să avem vești de la tine.</string>
+      
+  <string name="feedback_init_failed_message">Nu ai un server</string>
+      
+  <string name="about_page_title">Despre</string>
+      
+  <string name="about_version">Versiunea %s</string>
+      
+  <string name="about_text">nthLink a fost lansat în 2016 ca un proiect de către un grup de ingineri experimentați în domeniul software și al securității informațiilor pentru a sprijini avocații pentru drepturile omului să obțină informații cenzurate și să își exprime perspectivele către lumea exterioară.\n\nEchipa noastră de dezvoltare excelează atât în ceea ce privește sofisticarea tehnologiei de eludare a cenzurii, cât și fiabilitatea serviciului. Cu ani de experiență în acest domeniu de specialitate, oferim utilizatorilor din zonele geografice vizate acces simplu, sigur și de încredere la informații cenzurate altfel.</string>
+      
+  <string name="menu_drawer_item_1">Acasă</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Ajutor</string>
+      
+  <string name="menu_drawer_item_5">Evaluați aplicația</string>
+      
+  <string name="menu_web_item_1">Copiază legătură</string>
+      
+  <string name="menu_web_item_2">Deschis în browser</string>
+      
+  <string name="menu_web_item_3">Distribuie linkul</string>
+      
+  <string name="menu_connection_item_1">Pagina de destinație</string>
+      
+  <string name="word_loading">Se încarcă</string>
+      
+  <string name="word_coped_link">Link copiat</string>
+      
+  <string name="word_play_preview_1">Rupe bariera Eliberează vocile</string>
+      
+  <string name="word_play_preview_2">Criptare puternică pentru a proteja informațiile</string>
+      
+  <string name="word_play_preview_3">Acces sigur și de încredere la Internet</string>
+      
+  <string name="word_play_preview_4">Vizualizați în siguranță știrile din întreaga lume</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Feedback general</item>
+            
+    <item>Nu se poate conecta</item>
+            
+    <item>Viteza de conectare este mică</item>
+            
+    <item>Sugestii</item>
+            
+    <item>Alte</item>
+        
+  </string-array>
+  
+</resources>

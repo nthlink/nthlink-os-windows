@@ -1,0 +1,208 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
+		<OutputPath>..\ReleaseWorkSpace\ReleaseData\$(PlatformTarget)</OutputPath>
+		<OutputType>WinExe</OutputType>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+		<OutputType>Exe</OutputType>
+	</PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<UseWPF>true</UseWPF>
+		<RootNamespace>nthLink.Wpf</RootNamespace>
+		<StartupObject>nthLink.Wpf.Program</StartupObject>
+		<Platforms>x64;86</Platforms>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<ApplicationIcon>Resource\Icon.ico</ApplicationIcon>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<SelfContained>false</SelfContained>
+		<Version>6.2.5.0</Version>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(PlatformTarget)' == 'x64'">
+		<RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x64</RuntimeIdentifier>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(PlatformTarget)' == 'x86'">
+		<RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x86</RuntimeIdentifier>
+	</PropertyGroup>
+	<!--Language-->
+	<ItemGroup>
+		<EmbeddedResource Include="Language\d_082c3a741v2_am_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_ar_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_bg_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_ca_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_cs_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_da_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_de_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_el_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_es-419_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_es_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_fa_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_fi_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_fr-CA_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_fr_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_hi_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_hr_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_hu_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_id_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_it_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_ja_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_ko_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_lt_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_lv_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_ms_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_nl_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_no_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_pl_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_pt-PT_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_pt_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_ro_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_ru_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_sk_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_sl_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_sr_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_sv_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_th_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_tr_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_uk_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_vi_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_zh-CN_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\d_082c3a741v2_zh-TW_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Language\en-us_strings.xml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<!--App Style-->
+	<ItemGroup>
+		<Resource Include="Resource\Icon.ico" />
+		<Page Remove="Theme\Generic.xaml" />
+		<EmbeddedResource Include="Theme\Generic.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<!--Image-->
+	<ItemGroup>
+		<EmbeddedResource Include="Resource\Image\Icon.png">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Resource\Image\News.png">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Resource\Image\nthlink_Title.png">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Resource\Image\EarthBackground.png">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Resource\Image\nthlink-color-dark-bg.png">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<!--Reference-->
+
+	<ItemGroup>
+		<PackageReference Include="CefSharp.Wpf.NETCore" Version="123.0.60" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\nthLink-sdk-windows\nthLink.Header\nthLink.Header.csproj" />
+		<ProjectReference Include="..\nthLink-sdk-windows\nthLink.SDK\nthLink.SDK.csproj" />
+	</ItemGroup>
+
+	<Target Name="TeonPostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="IF EXIST &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\nfapi.dll&quot; ( COPY /Y &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\nfapi.dll&quot; &quot;$(TargetDir)nfapi.dll&quot; )" />
+		<Exec Command="IF EXIST &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\nfdriver.sys&quot; ( COPY /Y &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\nfdriver.sys&quot; &quot;$(TargetDir)nfdriver.sys&quot; )" />
+		<Exec Command="IF EXIST &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\Redirector.dll&quot; ( COPY /Y &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\Redirector.dll&quot; &quot;$(TargetDir)Redirector.dll&quot; )" />
+		<Exec Command="IF EXIST &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\rootGo.dll&quot; ( COPY /Y &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\rootGo.dll&quot; &quot;$(TargetDir)rootGo.dll&quot; )" />
+		<Exec Command="IF EXIST &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\rootGo.h&quot; ( COPY /Y &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\rootGo.h&quot; &quot;$(TargetDir)rootGo.h&quot; )" />
+		<Exec Command="IF EXIST &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\leaf.dll&quot; ( COPY /Y &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\leaf.dll&quot; &quot;$(TargetDir)leaf.dll&quot; )" />
+	</Target>
+</Project>

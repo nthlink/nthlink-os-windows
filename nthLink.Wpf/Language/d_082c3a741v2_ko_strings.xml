@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">귀하의 개인 정보가 우선입니다</string>
+      
+  <string name="privacy_notice_text">nthLink는 귀하가 방문하는 개인 식별 정보 또는 웹사이트 / 온라인 서비스를 수집하지 않습니다. nthLink 서버에 연결하여 귀하의 IP 주소, 장치의 기본 언어, 쿠키 및 기본 장치 정보 ( 예: 운영 체제 정보)를 사용하여 귀하의 장치를 가장 잘 지원할 수 있는 가장 가까운 서버를 찾고 연결 시 적절한 웹 페이지를 표시하는 등 귀하가 받는 서비스를 사용자 정의합니다.</string>
+      
+  <string name="privacy_notice_submit">수락 및 계속</string>
+      
+  <string name="connection_hint_connect">탭하여 연결</string>
+      
+  <string name="connection_hint_disconnect">탭하여 연결 해제</string>
+      
+  <string name="connection_label_connect">연결</string>
+      
+  <string name="connection_label_disconnect">연결 해제</string>
+      
+  <string name="connection_server_state_connected">연결됨</string>
+      
+  <string name="connection_server_state_connecting">연결 중…</string>
+      
+  <string name="connection_server_state_disconnecting">연결 해제 중…</string>
+      
+  <string name="connection_error">연결 오류</string>
+      
+  <string name="feedback_page_title">피드백</string>
+      
+  <string name="feedback_issue_category_title">문제 카테고리</string>
+      
+    
+  <string name="feedback_description_title">설명</string>
+      
+  <string name="feedback_note_text">귀하의 설명, 이메일 주소(제공된 경우) 및 추가 정보가 nthLink 팀으로 전송됩니다. 당사의 데이터 수집 정책은 nthLink 웹사이트의 개인정보 보호정책을 참조하십시오.</string>
+      
+  <string name="feedback_submit">보내기</string>
+      
+  <string name="feedback_submit_failed_message">nthlink 서버에 연결할 수 없습니다.</string>
+      
+  <string name="feedback_submit_success_message">개선하는 데 도움을 주셔서 감사합니다! 우리는 당신의 의견을 듣는 것을 좋아합니다.</string>
+      
+  <string name="feedback_init_failed_message">서버 없음</string>
+      
+  <string name="about_page_title">정보</string>
+      
+  <string name="about_version">버전 %s</string>
+      
+  <string name="about_text">nthLink는 인권변호사들이 검열된 정보를 입수하고 외부 세계에 대한 관점을 표현할 수 있도록 지원하기 위해 경험 많은 소프트웨어 및 정보 보안 엔지니어 그룹이 2016년 프로젝트로 시작했습니다.\n\n우리 개발 팀은 검열 우회 기술의 정교함과 서비스의 신뢰성 모두에서 탁월합니다. 이 전문 분야에서 다년간의 경험을 바탕으로 대상 지역의 사용자에게 검열된 정보에 간단하고 안전하며 신뢰할 수 있는 액세스를 제공합니다.</string>
+      
+  <string name="menu_drawer_item_1">홈</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">도움말</string>
+      
+  <string name="menu_drawer_item_5">앱 평가</string>
+      
+  <string name="menu_web_item_1">링크 복사</string>
+      
+  <string name="menu_web_item_2">브라우저에서 열기</string>
+      
+  <string name="menu_web_item_3">링크 공유</string>
+      
+  <string name="menu_connection_item_1">랜딩 페이지</string>
+      
+  <string name="word_loading">로딩 중</string>
+      
+  <string name="word_coped_link">대응 링크</string>
+      
+  <string name="word_play_preview_1">장벽을 허물고 목소리를 내십시오</string>
+      
+  <string name="word_play_preview_2">정보를 보호하는 강력한 암호화</string>
+      
+  <string name="word_play_preview_3">안전하고 안정적인 인터넷 액세스</string>
+      
+  <string name="word_play_preview_4">전 세계의 뉴스를 안전하게 시청하세요.</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>일반 피드백</item>
+            
+    <item>연결할 수 없습니다</item>
+            
+    <item>연결 속도가 느립니다</item>
+            
+    <item>제안</item>
+            
+    <item>기타</item>
+        
+  </string-array>
+  
+</resources>

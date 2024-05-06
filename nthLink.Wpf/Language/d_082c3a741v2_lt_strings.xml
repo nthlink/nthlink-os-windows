@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Jūsų privatumas yra svarbiausias</string>
+      
+  <string name="privacy_notice_text">„nthLink“ NERENKA asmenį identifikuojančios informacijos ar svetainių / internetinių paslaugų, kuriose lankotės. „nthLink“ naudoja jūsų IP adresą, numatytąją įrenginio kalbą, slapukus ir pagrindinę įrenginio informaciją (pvz., operacinės sistemos informaciją), kad pritaikytų jūsų gaunamas paslaugas, t.y. nustatytų artimiausius serverius, kurie gali geriausiai palaikyti jūsų įrenginį, ir rodytų tinkamą tinklalapį prisijungus prie „nthLink“ serverio.</string>
+      
+  <string name="privacy_notice_submit">Priimti ir tęsti</string>
+      
+  <string name="connection_hint_connect">Bakstelėkite norėdami prisijungti</string>
+      
+  <string name="connection_hint_disconnect">Bakstelėkite norėdami atsijungti</string>
+      
+  <string name="connection_label_connect">Prisijungti</string>
+      
+  <string name="connection_label_disconnect">Atsijungti</string>
+      
+  <string name="connection_server_state_connected">Prisijungta</string>
+      
+  <string name="connection_server_state_connecting">Jungiamasi…</string>
+      
+  <string name="connection_server_state_disconnecting">Atsijungiama…</string>
+      
+  <string name="connection_error">ryšio klaida</string>
+      
+  <string name="feedback_page_title">Atsiliepimas</string>
+      
+  <string name="feedback_issue_category_title">Problemos kategorija</string>
+      
+    
+  <string name="feedback_description_title">Aprašymas</string>
+      
+  <string name="feedback_note_text">Jūsų aprašymas, el. pašto adresas (jei pateiktas) ir papildoma informacija bus išsiųsta „nthLink“ komandai. Norėdami sužinoti mūsų duomenų rinkimo politiką, žr. „nthLink“ svetainės privatumo politiką.</string>
+      
+  <string name="feedback_submit">Siųsti</string>
+      
+  <string name="feedback_submit_failed_message">Nepavyksta prisijungti prie „nthLink“ serverio.</string>
+      
+  <string name="feedback_submit_success_message">Dėkojame, kad padedate mums tobulėti! Lauksime jūsų nuomonės.</string>
+      
+  <string name="feedback_init_failed_message">Neturi serverio</string>
+      
+  <string name="about_page_title">Apie</string>
+      
+  <string name="about_version">%s versija</string>
+      
+  <string name="about_text">„nthLink“ buvo pradėtas 2016 m. kaip patyrusių programinės įrangos ir informacijos saugumo inžinierių grupės projektas, skirtas padėti žmogaus teisių teisininkams gauti cenzūruotą informaciją ir pateikti savo požiūrį pasaulio žmonėms.\n\nMūsų kūrėjų komanda išsiskiria tiek cenzūros apėjimo technologija, tiek paslaugos patikimumu. Turėdami ilgametę patirtį šioje specialioje srityje, vartotojams tikslinėse geografinėse vietovėse suteikiame paprastą, saugią ir patikimą prieigą prie kitaip cenzūruojamos informacijos.</string>
+      
+  <string name="menu_drawer_item_1">Pagrindinis</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Pagalba</string>
+      
+  <string name="menu_drawer_item_5">Įvertinkite programėlę</string>
+      
+  <string name="menu_web_item_1">Nukopijuoti nuorodą</string>
+      
+  <string name="menu_web_item_2">Atidaryti naršyklėje</string>
+      
+  <string name="menu_web_item_3">Dalintis nuoroda</string>
+      
+  <string name="menu_connection_item_1">Nukreipimo puslapis</string>
+      
+  <string name="word_loading">Įkeliama</string>
+      
+  <string name="word_coped_link">Nukopijuota nuoroda</string>
+      
+  <string name="word_play_preview_1">Pralaužk barjerą Išlaisvink balsus</string>
+      
+  <string name="word_play_preview_2">Patikimas šifravimas, apsaugantis informaciją</string>
+      
+  <string name="word_play_preview_3">Saugi ir patikima prieiga prie interneto</string>
+      
+  <string name="word_play_preview_4">Saugiai peržiūrėkite naujienas iš viso pasaulio</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Bendras atsiliepimas</item>
+            
+    <item>Negalima prisijungti</item>
+            
+    <item>Ryšio greitis lėtas</item>
+            
+    <item>Pasiūlymai</item>
+            
+    <item>Kita</item>
+        
+  </string-array>
+  
+</resources>

@@ -1,0 +1,418 @@
+﻿<Window x:Class="nthLink.Wpf.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:attachProperties="clr-namespace:nthLink.Wpf.AttachedProperties"
+        xmlns:mk="clr-namespace:nthLink.Wpf.MarkupExtension"
+        xmlns:viewModels="clr-namespace:nthLink.Wpf.ViewModels"
+        xmlns:converters="clr-namespace:nthLink.Wpf.Converter"
+        xmlns:local="clr-namespace:nthLink.Wpf.Views"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        Height="{StaticResource WindowHeight}"
+        WindowStartupLocation="CenterScreen"
+        SizeToContent="Width"
+        d:DataContext="{d:DesignInstance Type=viewModels:MainWindowViewModel}"
+        attachProperties:ViewModelLocator.AutoWireViewModel="True">
+    <Window.Resources>
+        <Style x:Key="WebPageButtonStyle" TargetType="Button" BasedOn="{StaticResource TransparentButton}">
+            <Style.Setters>
+                <Setter Property="Width" Value="27"/>
+                <Setter Property="Height" Value="57"/>
+                <Setter Property="Margin" Value="0,25,0,0"/>
+                <Setter Property="VerticalAlignment" Value="Top"/>
+                <Setter Property="Border.CornerRadius" Value="0,4,4,0"/>
+                <Setter Property="Background" Value="{StaticResource AppLightBackground}"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="BorderBrush" Value="Transparent"/>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{StaticResource AppDarkBackground}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="MenuButtonStyle" TargetType="Button" BasedOn="{StaticResource TransparentButton}">
+            <Style.Setters>
+                <Setter Property="Width" Value="32"/>
+                <Setter Property="Height" Value="32"/>
+                <Setter Property="HorizontalAlignment" Value="Left"/>
+                <Setter Property="VerticalAlignment" Value="Top"/>
+
+                <Setter Property="Background" Value="Transparent"/>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#40202020"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="PopupButtonStyle" TargetType="Button" BasedOn="{StaticResource TransparentButton}">
+            <Style.Setters>
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="Border.CornerRadius" Value="7"/>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#e4e1e1"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="UnexpandButtonStyle" 
+               TargetType="Button" 
+               BasedOn="{StaticResource TransparentButton}">
+            <Style.Setters>
+                <Setter Property="Background" Value="Transparent"/>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{StaticResource AppBackground}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <converters:TureFalseConverter x:Key="MenuColorConverter"
+                                       True="{StaticResource AppWhite}"
+                                       False="{StaticResource AppBlack}"/>
+
+        <converters:TureFalseConverter x:Key="BackgroundConverter"
+                                       True="{StaticResource AppBackground}"
+                                       False="{StaticResource AppWhiteBackground}"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <!--Main-->
+            <ColumnDefinition />
+            <!--Expand-->
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <!--Main-->
+        <Grid Grid.Column="0" Width="{StaticResource WindowWidth}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="27"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <local:WindowTitle Background="{StaticResource AppDarkBackground}"/>
+            </Grid>
+            <!--Main Page-->
+            <Grid x:Name="PART_MainGrid" Grid.Row="1"
+                  Background="{Binding IsConnected, Converter={StaticResource BackgroundConverter}}">
+                <!--Confuse web-->
+                <Grid Height="10"
+                      Width="10"
+                      Opacity="0"
+                      VerticalAlignment="Top"
+                      HorizontalAlignment="Center">
+                    <ContentControl Content="{Binding HttpConfuseViewModel}"/>
+                </Grid>
+                <local:MainPage Feedback="MainPage_Feedback"
+                                IsHitTestVisible="{Binding IsOpen, ElementName=PART_MenuPopup, Converter={StaticResource ReverseBooleanConverter}}"/>
+                <!--Notify Function-->
+                <Grid Visibility="{Binding CanNotify, Converter={StaticResource BooleanToVisibilityConverter}}"
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Top"
+                      Margin="277,20,0,0">
+                    <!--Notify Icon-->
+                    <Grid Width="18" Height="16"
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Top">
+                        <Path Data="M10.5755 6.01419C10.5755 7.6447 10.5755 9.27512 10.5755 10.9054C10.5755 11.3603 10.3365 11.7304 9.92889 11.9091C9.52981 12.084 9.10662 12.0079 8.80074 11.6814C8.51925 11.3815 8.25315 11.0662 7.98147 10.7565C6.97063 9.6035 5.72899 8.87629 4.25095 8.58857C4.03296 8.54622 3.80951 8.52631 3.58783 8.50598C3.46888 8.49511 3.42433 8.45954 3.42433 8.32005C3.43069 6.78883 3.43069 5.25757 3.42433 3.72626C3.42351 3.5591 3.46588 3.50447 3.62598 3.49374C4.23787 3.45308 4.82865 3.30315 5.40145 3.08023C6.50425 2.65104 7.41644 1.94544 8.17931 1.02157C8.38295 0.774976 8.59641 0.53709 8.81968 0.307911C9.12897 -0.0100219 9.5418 -0.0863993 9.93434 0.100379C10.3387 0.292382 10.5761 0.609609 10.5758 1.08947C10.575 2.731 10.5749 4.37257 10.5755 6.01419Z" Fill="{StaticResource AppWhite}"/>
+                        <Path Data="M2.75538 6.01885C2.75538 6.78982 2.7532 7.5608 2.75783 8.33177C2.75851 8.44471 2.73426 8.48565 2.61872 8.47987C2.24757 8.46137 1.87384 8.51205 1.50474 8.4529C0.672255 8.31977 0.0854271 7.68136 0.0322897 6.80733C-0.00340771 6.22073 -0.0233002 5.62821 0.0479584 5.0426C0.151781 4.19087 0.846245 3.55571 1.67928 3.52945C1.99265 3.51943 2.30602 3.53256 2.6194 3.52338C2.73644 3.52 2.75783 3.56249 2.75715 3.67331C2.75333 4.45488 2.75538 5.23686 2.75538 6.01885Z" Fill="{StaticResource AppWhite}"/>
+                        <Path Data="M1.0391 10.1417C1.0391 9.78068 1.0391 9.48322 1.0391 9.18576C1.0391 9.12703 1.0233 9.05347 1.12385 9.08453C1.50767 9.20284 1.90238 9.17178 2.29437 9.17474C2.52831 9.17658 2.76225 9.17827 2.99619 9.17333C3.0729 9.17164 3.0962 9.1938 3.0947 9.27456C3.0838 9.86906 3.11678 10.4645 3.07726 11.0583C3.06054 11.3023 2.95783 11.5314 2.78867 11.702C2.61952 11.8727 2.39573 11.9729 2.15989 11.9836C1.59132 12.0112 1.15873 11.6808 1.06717 11.1495C1.00586 10.7938 1.05845 10.4349 1.0391 10.1417Z" Fill="{StaticResource AppWhite}"/>
+                        <Path Data="M13.6387 5.64148C13.9627 5.64148 14.2868 5.63993 14.6108 5.64148C14.852 5.64303 15.0006 5.78266 15.0004 6.00092C15.0001 6.21918 14.852 6.36008 14.6108 6.36064C13.9627 6.36243 13.3146 6.36243 12.6664 6.36064C12.4255 6.36064 12.2771 6.21946 12.2769 6.00092C12.2766 5.78237 12.4255 5.64303 12.6664 5.64148C12.9903 5.63993 13.3143 5.64148 13.6387 5.64148Z" Fill="{StaticResource AppWhite}"/>
+                        <Path Data="M12.2969 8.47365C12.3845 8.46913 12.4662 8.51784 12.536 8.58998C12.8672 8.9322 13.2004 9.27286 13.5272 9.61959C13.6824 9.78407 13.6781 9.98158 13.5317 10.1302C13.3854 10.2789 13.1948 10.2765 13.0369 10.1161C12.7032 9.77574 12.3743 9.4307 12.0446 9.08721C11.9321 8.97003 11.903 8.83055 11.9661 8.67935C12.0241 8.53972 12.1339 8.47224 12.2969 8.47365Z" Fill="{StaticResource AppWhite}"/>
+                        <Path Data="M13.6385 2.1157C13.6475 2.21692 13.6112 2.30205 13.5456 2.36982C13.206 2.72502 12.8673 3.08107 12.5216 3.42978C12.3764 3.57633 12.1634 3.56884 12.0366 3.43289C11.8997 3.28592 11.9003 3.07387 12.0482 2.91844C12.3752 2.57415 12.7049 2.23212 13.0375 1.89235C13.1472 1.77941 13.2756 1.73099 13.4273 1.79833C13.5622 1.85861 13.6329 1.96464 13.6385 2.1157Z" Fill="{StaticResource AppWhite}"/>
+                    </Grid>
+                    <!--Notify Switch-->
+                    <Grid Width="32" Height="16"
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Top"
+                      Margin="19,-2,0,0">
+                        <ToggleButton IsChecked="{Binding IsNotifyEnabled, Mode=TwoWay}"
+                                  Cursor="Hand">
+                            <ToggleButton.Style>
+                                <Style TargetType="ToggleButton">
+                                    <Setter Property="IsTabStop" Value="False"/>
+                                    <Setter Property="Focusable" Value="False"/>
+                                    <Setter Property="Background" Value="Transparent"/>
+                                    <Setter Property="Foreground" Value="{StaticResource AppWhite}"/>
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="ToggleButton">
+                                                <Border BorderThickness="1"
+                                                    Background="{TemplateBinding Background}"
+                                                    BorderBrush="{TemplateBinding Foreground}"
+                                                    CornerRadius="8">
+                                                    <Grid>
+                                                        <TextBlock x:Name="on"
+                                                               FontSize="10"
+                                                               Text="ON" 
+                                                               HorizontalAlignment="Left"
+                                                               Visibility="Collapsed"
+                                                               Margin="2,0,0,0"/>
+                                                        <Ellipse x:Name="ball" Fill="{TemplateBinding Foreground}">
+                                                            <Ellipse.Style>
+                                                                <Style TargetType="Ellipse">
+                                                                    <Setter Property="HorizontalAlignment" Value="Left"/>
+                                                                    <Setter Property="Margin" Value="2,0,0,0"/>
+                                                                    <Setter Property="Width" Value="10"/>
+                                                                    <Setter Property="Height" Value="10"/>
+                                                                </Style>
+                                                            </Ellipse.Style>
+                                                        </Ellipse>
+                                                    </Grid>
+                                                </Border>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsChecked" Value="True">
+                                                        <Setter TargetName="on" Property="Visibility" Value="Visible"/>
+                                                        <Trigger.EnterActions>
+                                                            <BeginStoryboard>
+                                                                <Storyboard>
+                                                                    <ThicknessAnimation Duration="0:0:0.050"
+                                                                        To="17.5,0,0,0"
+                                                                        Storyboard.TargetName="ball"
+                                                                        Storyboard.TargetProperty="Margin"/>
+                                                                </Storyboard>
+                                                            </BeginStoryboard>
+                                                        </Trigger.EnterActions>
+                                                        <Trigger.ExitActions>
+                                                            <BeginStoryboard>
+                                                                <Storyboard>
+                                                                    <ThicknessAnimation Duration="0:0:0.050"
+                                                                        To="2,0,0,0" 
+                                                                        Storyboard.TargetName="ball"
+                                                                        Storyboard.TargetProperty="Margin"/>
+                                                                </Storyboard>
+                                                            </BeginStoryboard>
+                                                        </Trigger.ExitActions>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="{StaticResource AppDarkBackground}"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </ToggleButton.Style>
+                        </ToggleButton>
+                    </Grid>
+                </Grid>
+                <!--Other Menu-->
+                <Grid>
+                    <Button x:Name="PART_MenuButton" 
+                            Style="{StaticResource MenuButtonStyle}"
+                            Click="MenuButton_Click">
+                        <Path Data="{StaticResource IconMenuPathData}"
+                              HorizontalAlignment="Center"
+                              VerticalAlignment="Center"
+                              Stretch="Uniform"
+                              Width="24" Height="24"
+                              Fill="{Binding IsConnected, Converter={StaticResource MenuColorConverter}}"/>
+                    </Button>
+                    <Popup x:Name="PART_MenuPopup" Placement="Relative"
+                           PlacementTarget="{Binding ElementName=PART_MainGrid}"
+                           StaysOpen="False"
+                           AllowsTransparency="True">
+                        <Border CornerRadius="0,7,7,0" 
+                                Width="186"
+                                Height="{StaticResource MainPageHeight}"
+                                Background="{StaticResource AppWhite}">
+                            <StackPanel>
+                                <StackPanel.Resources>
+                                    <Style TargetType="Path">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                        <Setter Property="Width" Value="16"/>
+                                        <Setter Property="Height" Value="16"/>
+                                        <Setter Property="Margin" Value="9"/>
+                                        <Setter Property="Fill" Value="{StaticResource AppDarkGray}"/>
+                                    </Style>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FontFamily" Value="Poppins"/>
+                                        <Setter Property="HorizontalAlignment" Value="Left"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                        <Setter Property="FontWeight" Value="SemiBold"/>
+                                        <Setter Property="FontSize" Value="14"/>
+                                        <Setter Property="Margin" Value="0,2,0,0"/>
+                                        <Setter Property="Foreground" Value="{StaticResource AppDarkGray}"/>
+                                    </Style>
+                                </StackPanel.Resources>
+                                <!--Icon-->
+                                <Grid Margin="0,20,0,0" Height="64">
+                                    <Grid HorizontalAlignment="Left">
+                                        <Path Data="{StaticResource IconLeftPathData}"
+                                                  Stretch="Fill"
+                                              Width="32" Height="32"
+                                          Fill="{StaticResource AppBackground}">
+                                        </Path>
+                                        <Path Margin="40,0,0,0" Data="{StaticResource IconRightPathData}" 
+                                              Stretch="Fill"
+                                              Width="32" Height="32"
+                                          Fill="{StaticResource AppBackground}">
+                                        </Path>
+                                    </Grid>
+                                </Grid>
+                                <!--Feedback-->
+                                <Button Style="{StaticResource PopupButtonStyle}" 
+                                        Click="FeedbackButton_Click"
+                                        Margin="4,4,4,0">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Path Data="M3.84125 12.25L0.5 14.875V1C0.5 0.801088 0.579018 0.610322 0.71967 0.46967C0.860322 0.329018 1.05109 0.25 1.25 0.25H14.75C14.9489 0.25 15.1397 0.329018 15.2803 0.46967C15.421 0.610322 15.5 0.801088 15.5 1V11.5C15.5 11.6989 15.421 11.8897 15.2803 12.0303C15.1397 12.171 14.9489 12.25 14.75 12.25H3.84125ZM7.25 7.75V9.25H8.75V7.75H7.25ZM7.25 3.25V7H8.75V3.25H7.25Z"
+                                              Fill="{StaticResource AppDarkGray}"/>
+                                        <TextBlock Grid.Column="1" Text="{mk:Str menu_drawer_item_2}"/>
+                                    </Grid>
+                                </Button>
+                                <!--About-->
+                                <Button Style="{StaticResource PopupButtonStyle}"
+                                        Margin="4,4,4,0"
+                                        Click="AboutButton_Click">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Path Data="M8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8C15.4955 12.1403 12.1403 15.4955 8 15.5ZM7.25 10.25V11.75H8.75V10.25H7.25ZM7.25 4.25V8.75H8.75V4.25H7.25Z"
+                                              Fill="{StaticResource AppDarkGray}"/>
+                                        <TextBlock Grid.Column="1" Text="{mk:Str menu_drawer_item_3}"/>
+                                    </Grid>
+                                </Button>
+                                <!--Help-->
+                                <Button Style="{StaticResource PopupButtonStyle}"
+                                        Click="HelpButton_Click"
+                                        Margin="4,4,4,4">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Path Data="M8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8C15.4955 12.1403 12.1403 15.4955 8 15.5Z"
+                                              Fill="{StaticResource AppDarkGray}"/>
+                                        <Path Data="M2.97 0.377502C3.75 0.377502 4.37625 0.591253 4.84875 1.01875C5.32875 1.43875 5.56875 2.02 5.56875 2.7625C5.56875 3.4975 5.3325 4.06 4.86 4.45C4.3875 4.8325 3.76125 5.02375 2.98125 5.02375L2.93625 5.89H1.5525L1.49625 3.9775H2.0025C2.655 3.9775 3.1575 3.89125 3.51 3.71875C3.8625 3.54625 4.03875 3.23125 4.03875 2.77375C4.03875 2.44375 3.94125 2.18125 3.74625 1.98625C3.55875 1.79125 3.3 1.69375 2.97 1.69375C2.625 1.69375 2.355 1.7875 2.16 1.975C1.9725 2.1625 1.87875 2.42125 1.87875 2.75125H0.39375C0.38625 2.29375 0.483751 1.885 0.686251 1.525C0.888751 1.165 1.185 0.883753 1.575 0.681253C1.9725 0.478753 2.4375 0.377502 2.97 0.377502ZM2.23875 8.57875C1.95375 8.57875 1.7175 8.4925 1.53 8.32C1.35 8.14 1.26 7.91875 1.26 7.65625C1.26 7.39375 1.35 7.17625 1.53 7.00375C1.7175 6.82375 1.95375 6.73375 2.23875 6.73375C2.51625 6.73375 2.745 6.82375 2.925 7.00375C3.105 7.17625 3.195 7.39375 3.195 7.65625C3.195 7.91875 3.105 8.14 2.925 8.32C2.745 8.4925 2.51625 8.57875 2.23875 8.57875Z"
+                                              Margin="10,8,0,0"
+                                              Fill="{StaticResource AppWhite}"/>
+                                        <TextBlock Grid.Column="1" Text="{mk:Str menu_drawer_item_4}"/>
+                                    </Grid>
+                                </Button>
+                                <!--Rate App-->
+                                <!--<Button Grid.Row="3" Style="{StaticResource PopupButtonStyle}" Margin="4,4,4,4">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Path Data="M8.0015 13.5891L3.17431 16.5914L4.25227 10.5625L0.190254 6.38907L5.68407 5.66511L8.0015 0.083313L10.3189 5.66511L15.8128 6.38907L11.7507 10.5625L12.8287 16.5914L8.0015 13.5891Z"
+                                              Fill="{StaticResource AppDarkGray}"/>
+                                        <TextBlock Grid.Column="1" Text="{mk:Str menu_drawer_item_5}"/>
+                                    </Grid>
+                                </Button>-->
+                            </StackPanel>
+                        </Border>
+                    </Popup>
+                </Grid>
+            </Grid>
+            <!--Policy Page-->
+            <Grid Grid.Row="1" Visibility="{Binding IsPolicyAggred, Converter={StaticResource ReverseBooleanToVisibilityConverter}}"
+                  d:Visibility="Collapsed">
+                <local:PolicyPage Background="{DynamicResource AppWhiteBackground}"
+                                  About="PolicyPage_About"/>
+            </Grid>
+            <!--About Page-->
+            <Grid Grid.Row="1">
+                <local:AboutPage x:Name="PART_AboutPage" 
+                                 Background="{DynamicResource AppBackground}"
+                                 Visibility="Collapsed"
+                                 MouseDown="AboutPage_MouseDown"/>
+            </Grid>
+            <!--Feedback Page-->
+            <Grid Grid.Row="0" Grid.RowSpan="2">
+                <local:FeedbackPage x:Name="PART_FeedbackPage" Visibility="Collapsed"/>
+            </Grid>
+        </Grid>
+        <!--Expand-->
+        <Grid x:Name="PART_WebPageGrid" Grid.Column="1" Visibility="Collapsed">
+            <Grid.Style>
+                <Style TargetType="Grid">
+                    <Setter Property="Width" Value="27"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsExpand}" Value="True">
+                            <DataTrigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0.300" 
+                                                         To="{StaticResource WebPageWidth}" 
+                                                         Storyboard.TargetProperty="Width" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </DataTrigger.EnterActions>
+                            <DataTrigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0.0" 
+                                                         To="27" 
+                                                         Storyboard.TargetProperty="Width" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </DataTrigger.ExitActions>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Grid.Style>
+            <Grid Visibility="{Binding IsExpand, Converter={StaticResource BooleanToVisibilityConverter}}">
+                <Grid.RowDefinitions>
+                    <!--Web Title-->
+                    <RowDefinition Height="27"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Background="{StaticResource AppBackground}">
+                    <Button Style="{StaticResource UnexpandButtonStyle}"
+                            Width="16" Height="16"
+                            HorizontalAlignment="Right"
+                            Margin="0,0,10,0"
+                            Click="CloseWebPageButton_Click">
+                        <Path Data="M1 6.5L12 6.5M1 6.5L5.8125 12M1 6.5L5.8125 1"
+                         Stretch="None"
+                              VerticalAlignment="Center"
+                          HorizontalAlignment="Center"
+                          StrokeThickness="2"
+                          Stroke="{StaticResource AppWhite}"/>
+                    </Button>
+                </Grid>
+                <Grid Grid.Row="1" Background="{StaticResource AppLightBackground}">
+                    <ScrollViewer Margin="4" Style="{StaticResource WebPageScrollViewer}">
+                        <local:WebPage Margin="6" DataContext="{Binding WebPageViewModel}"/>
+                    </ScrollViewer>
+                </Grid>
+            </Grid>
+            <Grid Margin="0,61,0,0" Visibility="{Binding IsExpand, Converter={StaticResource ReverseBooleanToVisibilityConverter}}">
+                <Button Style="{StaticResource WebPageButtonStyle}"
+                        Click="OpenWebPageButton_Click">
+                    <!--<Button.Effect>
+                        <DropShadowEffect BlurRadius="10"
+                                          ShadowDepth="2"
+                                          Color="#372E86"/>
+                    </Button.Effect>-->
+                    <Path Data="M14 7.5L1 7.5M14 7.5L8.3125 14M14 7.5L8.3125 1"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          StrokeThickness="2"
+                          Stroke="{StaticResource AppWhite}"/>
+                </Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

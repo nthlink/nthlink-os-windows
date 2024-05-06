@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Quyền riêng tư của bạn là trên hết</string>
+      
+  <string name="privacy_notice_text">nthLink KHÔNG thu thập thông tin nhận dạng cá nhân hoặc các trang web / dịch vụ trực tuyến mà bạn truy cập. nthLink sử dụng địa chỉ IP của bạn, ngôn ngữ mặc định của thiết bị, cookie và thông tin thiết bị cơ bản (ví dụ: thông tin hệ điều hành) để tùy chỉnh các dịch vụ mà bạn nhận được, chẳng hạn như định vị các máy chủ gần nhất có thể hỗ trợ tốt nhất cho thiết bị của bạn và hiển thị trang web thích hợp khi kết nối với máy chủ nthLink.</string>
+      
+  <string name="privacy_notice_submit">Chấp nhận và tiếp tục</string>
+      
+  <string name="connection_hint_connect">Nhấn để kết nối</string>
+      
+  <string name="connection_hint_disconnect">Nhấn để ngắt kết nối</string>
+      
+  <string name="connection_label_connect">Kết nối</string>
+      
+  <string name="connection_label_disconnect">Ngắt kết nối</string>
+      
+  <string name="connection_server_state_connected">Đã kết nối</string>
+      
+  <string name="connection_server_state_connecting">Đang kết nối…</string>
+      
+  <string name="connection_server_state_disconnecting">Đang ngắt kết nối…</string>
+      
+  <string name="connection_error">lỗi kết nối</string>
+      
+  <string name="feedback_page_title">Phản hồi</string>
+      
+  <string name="feedback_issue_category_title">Danh mục vấn đề</string>
+      
+    
+  <string name="feedback_description_title">Mô tả</string>
+      
+  <string name="feedback_note_text">Nội dung mô tả, địa chỉ email của bạn (nếu được cung cấp) và các thông tin bổ sung sẽ được gửi đến đội ngũ nthLink. Vui lòng tham khảo Chính sách Bảo mật của trang web nthLink để biết chính sách thu thập dữ liệu của chúng tôi.</string>
+      
+  <string name="feedback_submit">Gửi</string>
+      
+  <string name="feedback_submit_failed_message">Không thể kết nối với máy chủ nthlink.</string>
+      
+  <string name="feedback_submit_success_message">Cảm ơn bạn đã giúp chúng tôi cải thiện! Chúng tôi rất mong nhận được phản hồi từ bạn.</string>
+      
+  <string name="feedback_init_failed_message">Không có máy chủ</string>
+      
+  <string name="about_page_title">Về</string>
+      
+  <string name="about_version">Phiên bản %s</string>
+      
+  <string name="about_text">nthLink bắt đầu từ năm 2016 với tư cách là dự án của một nhóm kỹ sư phần mềm và an ninh thông tin giàu kinh nghiệm nhằm hỗ trợ các luật sư nhân quyền có được thông tin được kiểm duyệt và thể hiện quan điểm của họ với thế giới bên ngoài.\n\nNhóm phát triển của chúng tôi vượt trội cả về sự tinh vi của công nghệ vượt qua kiểm duyệt và độ tin cậy của dịch vụ. Với nhiều năm kinh nghiệm trong lĩnh vực đặc biệt này, chúng tôi cung cấp cho người dùng trong các khu vực địa lý mục tiêu quyền truy cập đơn giản, an toàn và đáng tin cậy vào các thông tin đã được kiểm duyệt.</string>
+      
+  <string name="menu_drawer_item_1">Trang chủ</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Trợ giúp</string>
+      
+  <string name="menu_drawer_item_5">Đánh giá ứng dụng</string>
+      
+  <string name="menu_web_item_1">Sao chép đường link</string>
+      
+  <string name="menu_web_item_2">Mở trong trình duyệt</string>
+      
+  <string name="menu_web_item_3">Chia sẻ đường link</string>
+      
+  <string name="menu_connection_item_1">Trang đích</string>
+      
+  <string name="word_loading">Đang tải</string>
+      
+  <string name="word_coped_link">Liên kết đã sao chép</string>
+      
+  <string name="word_play_preview_1">Phá bỏ rào cản\nGiải phóng tiếng nói</string>
+      
+  <string name="word_play_preview_2">Mã hóa mạnh để bảo vệ thông tin</string>
+      
+  <string name="word_play_preview_3">Truy cập Internet an toàn và đáng tin cậy</string>
+      
+  <string name="word_play_preview_4">Xem tin tức trên khắp thế giới một cách an toàn</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Thông tin phản hồi chung</item>
+            
+    <item>Không thể kết nối</item>
+            
+    <item>Tốc độ kết nối chậm</item>
+            
+    <item>Gợi ý</item>
+            
+    <item>Khác</item>
+        
+  </string-array>
+  
+</resources>

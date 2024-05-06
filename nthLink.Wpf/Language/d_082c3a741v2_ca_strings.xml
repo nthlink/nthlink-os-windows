@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">La vostra privadesa és el primer</string>
+      
+  <string name="privacy_notice_text">nthLink NO recull informació d\'identificació personal o llocs web / serveis en línia que visiteu. nthLink utilitza la vostra adreça IP, l\'idioma predeterminat del dispositiu, les galetes i la informació bàsica del dispositiu ( per exemple, informació del sistema operatiu) per personalitzar els serveis que rebeu, com ara localitzar els servidors més propers que millor donen suport al vostre dispositiu i mostrar la pàgina web adequada en connectar-vos a el servidor nthLink.</string>
+      
+  <string name="privacy_notice_submit">Acceptar i continuar</string>
+      
+  <string name="connection_hint_connect">Tocar per connectar</string>
+      
+  <string name="connection_hint_disconnect">Tocar per desconnectar</string>
+      
+  <string name="connection_label_connect">Connectar</string>
+      
+  <string name="connection_label_disconnect">Desconnectar</string>
+      
+  <string name="connection_server_state_connected">Connectat</string>
+      
+  <string name="connection_server_state_connecting">S\'està connectant…</string>
+      
+  <string name="connection_server_state_disconnecting">S\'està desconnectant...</string>
+      
+  <string name="connection_error">error de connexió</string>
+      
+  <string name="feedback_page_title">Comentaris</string>
+      
+  <string name="feedback_issue_category_title">Categoria d\'error</string>
+      
+    
+  <string name="feedback_description_title">Descripció</string>
+      
+  <string name="feedback_note_text">La vostra descripció, adreça de correu electrònic (si s\'ha proporcionat) i informació addicional s\'enviaran a l\'equip de nthLink. Si us plau, consulteu la Política de privadesa del lloc web de nthLink per a la nostra política de recollida de dades.</string>
+      
+  <string name="feedback_submit">Enviar</string>
+      
+  <string name="feedback_submit_failed_message">No es pot connectar al servidor nthlink.</string>
+      
+  <string name="feedback_submit_success_message">Gràcies per ajudar-nos a millorar! Ens encanta saber de tu.</string>
+      
+  <string name="feedback_init_failed_message">No tenim servidor</string>
+      
+  <string name="about_page_title">Sobre</string>
+      
+  <string name="about_version">Versió %s</string>
+      
+  <string name="about_text">nthLink es va iniciar el 2016 com un projecte d\'un grup d\'enginyers de software i seguretat de la informació amb experiència per donar suport als advocats de drets humans per obtenir informació censurada i expressar les seves perspectives al món exterior.\n\nEl nostre equip de desenvolupament destaca tant per la sofisticació de la tecnologia d\'elusió de la censura com per la fiabilitat del servei. Amb anys d\'experiència en aquesta àrea d\'especialitat, oferim als usuaris en zones geogràfiques específiques un accés senzill, segur i fiable a la informació d\'altra manera.censurada.</string>
+      
+  <string name="menu_drawer_item_1">Inici</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Ajuda</string>
+      
+  <string name="menu_drawer_item_5">Valorar l\'aplicació</string>
+      
+  <string name="menu_web_item_1">Copiar l\'enllaç</string>
+      
+  <string name="menu_web_item_2">Obrir al navegador</string>
+      
+  <string name="menu_web_item_3">Compartir l\'enllaç</string>
+      
+  <string name="menu_connection_item_1">Pàgina d\'inici</string>
+      
+  <string name="word_loading">Carregant</string>
+      
+  <string name="word_coped_link">Enllaç copiat</string>
+      
+  <string name="word_play_preview_1">Trencar la barrera Alliberar les veus</string>
+      
+  <string name="word_play_preview_2">Xifratge potent per protegir la informació</string>
+      
+  <string name="word_play_preview_3">Accés segur i fiable a Internet</string>
+      
+  <string name="word_play_preview_4">Veure notícies d\'arreu del món amb seguretat</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Comentaris generals</item>
+            
+    <item>No es pot connectar</item>
+            
+    <item>La velocitat de connexió és lenta</item>
+            
+    <item>Suggeriments</item>
+            
+    <item>Altres</item>
+        
+  </string-array>
+  
+</resources>

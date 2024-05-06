@@ -1,0 +1,213 @@
+﻿<UserControl x:Class="nthLink.Wpf.Views.FeedbackPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:attachProperties="clr-namespace:nthLink.Wpf.AttachedProperties"
+             xmlns:mk="clr-namespace:nthLink.Wpf.MarkupExtension"
+             xmlns:viewModels="clr-namespace:nthLink.Wpf.ViewModels"
+             xmlns:converters="clr-namespace:nthLink.Wpf.Converter"
+             attachProperties:ViewModelLocator.AutoWireViewModel="True"
+        mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance Type=viewModels:FeedbackPageViewModel}">
+    <UserControl.Resources>
+        <Style x:Key="WindowsStateButtonStyle" TargetType="Button" BasedOn="{StaticResource TransparentButton}">
+            <Style.Setters>
+                <Setter Property="Width" Value="16"/>
+                <Setter Property="Height" Value="16"/>
+                <Setter Property="HorizontalAlignment" Value="Right"/>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#C0BFBF"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="SendButtonStyle" TargetType="Button" BasedOn="{StaticResource TransparentButton}">
+            <Style.Setters>
+                <Setter Property="Width" Value="228"/>
+                <Setter Property="Height" Value="37"/>
+                <Setter Property="BorderBrush" Value="Transparent"/>
+                <Setter Property="Border.CornerRadius" Value="15"/>
+                <Setter Property="Background" Value="{StaticResource AppBackground}"/>
+                <Setter Property="Foreground" Value="{StaticResource AppWhite}"/>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{StaticResource AppDarkBackground}"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" Value="{StaticResource AppDisabledForeground}"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <converters:TureFalseConverter x:Key="IsSuccessConverter">
+            <converters:TureFalseConverter.True>
+                <TextBlock Text="{mk:Str feedback_submit_success_message}"
+                                   Foreground="Black"/>
+            </converters:TureFalseConverter.True>
+            <converters:TureFalseConverter.False>
+                <TextBlock Text="{mk:Str feedback_submit_failed_message}"
+                                   Foreground="Black"/>
+            </converters:TureFalseConverter.False>
+        </converters:TureFalseConverter>
+    </UserControl.Resources>
+    <!--Main-->
+    <Grid Grid.Column="0" Width="{StaticResource WindowWidth}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="27"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#DFDEE0">
+            <TextBlock Text="{mk:Str feedback_page_title}" 
+                       Margin="12,0,0,0"
+                       FontWeight="SemiBold"
+                       Foreground="{StaticResource AppBackground}"
+                       HorizontalAlignment="Left"/>
+            <Button Style="{StaticResource WindowsStateButtonStyle}"
+                Margin="0,0,36,0"
+                Click="Minimum_Button_Click">
+                <Line Stroke="{StaticResource AppBackground}"
+                      StrokeThickness="2"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"
+                      Y1="0.5" Y2="0.5"
+                      X1="0" X2="10"/>
+            </Button>
+            <Button Style="{StaticResource WindowsStateButtonStyle}"
+                Margin="0,0,10,0"
+                Click="Close_Button_Click">
+                <Path Stroke="{StaticResource AppBackground}"
+                      StrokeThickness="2"
+                      Stretch="Uniform"
+                      Height="10" Width="10"
+                      Data="M41.999 20.002l-22 22m22 0L20 20"/>
+            </Button>
+        </Grid>
+        <!--Main Page-->
+        <Grid Grid.Row="1" Background="{StaticResource AppWhite}">
+            <TextBlock Margin="21,16,0,0"
+                       Text="{mk:Str feedback_issue_category_title}"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Foreground="{StaticResource AppDisabledForeground}"/>
+            <ComboBox Grid.Row="1"
+                      Style="{StaticResource FeedbackComboBox}"
+                      Margin="21,41,0,0"
+                      Width="297" Height="34"
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Top"
+                      ItemsSource="{Binding IssueCategories}"
+                      SelectedItem="{Binding SelectedIssueCategories, Mode=TwoWay}">
+                <ComboBox.ItemContainerStyle>
+                    <Style TargetType="ComboBoxItem">
+                        <Setter Property="OverridesDefaultStyle" Value="True"/>
+                        <Setter Property="Foreground" Value="#424F5E"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="ComboBoxItem">
+                                    <Grid Background="Transparent">
+                                        <TextBlock Text="{Binding Display}" 
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Left"
+                                       Margin="12,10,0,10"
+                                   Foreground="{TemplateBinding Foreground}"
+                                   FontSize="13"
+                                   FontWeight="SemiBold"
+                                   FontFamily="Roboto"/>
+
+                                    </Grid>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="{StaticResource AppBackground}"/>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Foreground" Value="{StaticResource AppBackground}"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ComboBox.ItemContainerStyle>
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <TextBlock Text="{Binding Display}" 
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Left"
+                                       Margin="12,0,0,0"
+                                       Foreground="#424F5E"
+                                       FontSize="13"
+                                       FontWeight="SemiBold"
+                                       FontFamily="Roboto"/>
+                        </Grid>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <TextBlock Margin="21,80,0,0"
+                       Text="Email"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Foreground="{StaticResource AppDisabledForeground}"/>
+            <TextBox Margin="21,105,0,0"
+                     Style="{StaticResource FeedbackTextBox}"
+                      Width="297" Height="34"
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Top"
+                     VerticalContentAlignment="Center"
+                     Text="{Binding Emlil, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock Margin="21,155,0,0"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Foreground="{StaticResource AppDisabledForeground}">
+                <Run Text="{mk:Str feedback_description_title}"/>
+                <Run Text="*" Foreground="Red"/>
+            </TextBlock>
+            <TextBox Margin="21,180,0,0"
+                     Style="{StaticResource FeedbackTextBox}"
+                     Width="297" Height="161"
+                     TextWrapping="Wrap"
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top"
+                     Text="{Binding Description, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock Margin="21,351,21,0"
+                       Text="{mk:Str feedback_note_text}"
+                       TextWrapping="Wrap"
+                       TextDecorations="Underline"
+                       Cursor="Hand"
+                       MouseDown="TextBlock_MouseDown"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Foreground="{StaticResource AppDisabledForeground}"/>
+            <!--https://www.nthlink.com/privacy-->
+            <Button Margin="21,461,21,0" 
+                    Style="{StaticResource SendButtonStyle}"
+                    Command="{Binding SendCommand}">
+                <TextBlock Text="{mk:Str feedback_submit}"
+                           FontSize="18"
+                           FontWeight="Bold"/>
+            </Button>
+        </Grid>
+        <Grid Grid.Row="1" Background="#89D9D9D9" MouseDown="Grid_MouseDown"
+              d:Visibility="Collapsed"
+              Visibility="{Binding IsSended, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <Border HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Width="320" Height="72"
+                    BorderThickness="1"
+                    BorderBrush="#B9B9B9"
+                    CornerRadius="7"
+                    Background="{StaticResource AppWhite}">
+                <Border.Effect>
+                    <DropShadowEffect Color="#D9D9D9" ShadowDepth="1" BlurRadius="30"/>
+                </Border.Effect>
+                <Grid>
+                    <ContentControl Content="{Binding IsSendSuccess, Converter={StaticResource IsSuccessConverter}}"/>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

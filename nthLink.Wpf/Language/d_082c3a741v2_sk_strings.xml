@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Vaše súkromie je na prvom mieste</string>
+      
+  <string name="privacy_notice_text">nthLink NEZhromažďuje osobne identifikovateľné informácie ani webové stránky / online služby, ktoré navštívite. nthLink používa vašu IP adresu, predvolený jazyk zariadenia, súbory cookie a základné informácie o zariadení ( napr. informácie o operačnom systéme) na prispôsobenie služieb, ktoré dostávate, ako je lokalizácia najbližších serverov, ktoré môžu najlepšie podporovať vaše zariadenie, a zobrazenie správnej webovej stránky po pripojení k server nthLink.</string>
+      
+  <string name="privacy_notice_submit">Prijmite a pokračujte</string>
+      
+  <string name="connection_hint_connect">Klepnite na Pripojiť</string>
+      
+  <string name="connection_hint_disconnect">Klepnite na Odpojiť</string>
+      
+  <string name="connection_label_connect">Pripojte sa</string>
+      
+  <string name="connection_label_disconnect">Odpojiť</string>
+      
+  <string name="connection_server_state_connected">Pripojené</string>
+      
+  <string name="connection_server_state_connecting">Pripája sa…</string>
+      
+  <string name="connection_server_state_disconnecting">Odpája sa…</string>
+      
+  <string name="connection_error">chyba spojenia</string>
+      
+  <string name="feedback_page_title">Spätná väzba</string>
+      
+  <string name="feedback_issue_category_title">Kategória problému</string>
+      
+    
+  <string name="feedback_description_title">Popis</string>
+      
+  <string name="feedback_note_text">Váš popis, e-mailová adresa (ak je uvedená) a ďalšie informácie budú odoslané tímu nthLink. Naše zásady zhromažďovania údajov nájdete v zásadách ochrany osobných údajov webovej lokality nthLink.</string>
+      
+  <string name="feedback_submit">Odoslať</string>
+      
+  <string name="feedback_submit_failed_message">Nedá sa pripojiť k serveru nthlink.</string>
+      
+  <string name="feedback_submit_success_message">Ďakujeme, že nám pomáhate zlepšovať sa! Radi vás počúvame.</string>
+      
+  <string name="feedback_init_failed_message">Nemáte server</string>
+      
+  <string name="about_page_title">O</string>
+      
+  <string name="about_version">Verzia %s</string>
+      
+  <string name="about_text">nthLink bol spustený v roku 2016 ako projekt skupiny skúsených softvérových a informačno-bezpečnostných inžinierov s cieľom podporiť právnikov v oblasti ľudských práv pri získavaní cenzurovaných informácií a pri vyjadrovaní ich perspektív pred vonkajším svetom.\n\nNáš vývojový tím vyniká tak sofistikovanosťou technológie na obchádzanie cenzúry, ako aj spoľahlivosťou služieb. S dlhoročnými skúsenosťami v tejto špeciálnej oblasti poskytujeme používateľom v cielených zemepisných oblastiach jednoduchý, bezpečný a spoľahlivý prístup k inak cenzurovaným informáciám.</string>
+      
+  <string name="menu_drawer_item_1">Domov</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Pomoc</string>
+      
+  <string name="menu_drawer_item_5">Hodnotiť aplikáciu</string>
+      
+  <string name="menu_web_item_1">Skopírovať odkaz</string>
+      
+  <string name="menu_web_item_2">Otvoriť v prehliadači</string>
+      
+  <string name="menu_web_item_3">Zdieľať odkaz</string>
+      
+  <string name="menu_connection_item_1">Vstupná stránka</string>
+      
+  <string name="word_loading">Načítava</string>
+      
+  <string name="word_coped_link">Zvládnutý odkaz</string>
+      
+  <string name="word_play_preview_1">Prelomte bariéru Osloboďte hlasy</string>
+      
+  <string name="word_play_preview_2">Silné šifrovanie na ochranu informácií</string>
+      
+  <string name="word_play_preview_3">Bezpečný a spoľahlivý prístup na internet</string>
+      
+  <string name="word_play_preview_4">Bezpečne si prezerajte správy z celého sveta</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Všeobecná spätná väzba</item>
+            
+    <item>Nemôže sa pripojiť</item>
+            
+    <item>Rýchlosť pripojenia je nízka</item>
+            
+    <item>Návrhy</item>
+            
+    <item>Iné</item>
+        
+  </string-array>
+  
+</resources>

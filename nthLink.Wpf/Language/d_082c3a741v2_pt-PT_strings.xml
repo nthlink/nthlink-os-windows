@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">A sua privacidade vem em primeiro lugar</string>
+      
+  <string name="privacy_notice_text">A nthLink NÃO recolhe informações de identificação pessoal ou sites / serviços online que você visite. O nthLink usa o seu endereço IP, idioma padrão do dispositivo, cookies e informações básicas do dispositivo (por exemplo, informações do sistema operacional) para personalizar os serviços que recebe, como localizar os servidores mais próximos que melhor suportam o seu dispositivo e exibir a página da Web adequada ao ligar-se ao servidor nthLink.</string>
+      
+  <string name="privacy_notice_submit">Aceitar e continuar</string>
+      
+  <string name="connection_hint_connect">Toque para ligar</string>
+      
+  <string name="connection_hint_disconnect">Toque para desligar</string>
+      
+  <string name="connection_label_connect">Ligar</string>
+      
+  <string name="connection_label_disconnect">Desligar</string>
+      
+  <string name="connection_server_state_connected">Ligado</string>
+      
+  <string name="connection_server_state_connecting">A ligar…</string>
+      
+  <string name="connection_server_state_disconnecting">A desligar…</string>
+      
+  <string name="connection_error">erro de ligação</string>
+      
+  <string name="feedback_page_title">Comentários</string>
+      
+  <string name="feedback_issue_category_title">Categoria do problema</string>
+      
+    
+  <string name="feedback_description_title">Descrição</string>
+      
+  <string name="feedback_note_text">A sua descrição, endereço de e-mail (se fornecido) e informações adicionais serão enviadas para a equipa nthLink. Por favor, consulte a Política de Privacidade do site nthLink para a nossa política de recolha de dados.</string>
+      
+  <string name="feedback_submit">Enviar</string>
+      
+  <string name="feedback_submit_failed_message">Não é possível ligar ao servidor nthlink.</string>
+      
+  <string name="feedback_submit_success_message">Obrigado por nos ajudar a melhorar! Adoramos ter notícias suas.</string>
+      
+  <string name="feedback_init_failed_message">Não tem servidor</string>
+      
+  <string name="about_page_title">Acerca de</string>
+      
+  <string name="about_version">Versão %s</string>
+      
+  <string name="about_text">O nthLink foi iniciado em 2016 como um projeto de um grupo de engenheiros experientes de software e segurança da informação para apoiar advogados de direitos humanos a obter informações censuradas e a expressar as suas perspectivas para o mundo exterior.\n\nA nossa equipa de desenvolvimento destaca-se tanto na sofisticação da tecnologia de evasão de censura quanto na fiabilidade do serviço. Com anos de experiência nesta área de especialidade, fornecemos aos utilizadores em regiões específicas acesso simples, seguro e fiável a informações censuradas.</string>
+      
+  <string name="menu_drawer_item_1">Página inicial</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Ajuda</string>
+      
+  <string name="menu_drawer_item_5">Avaliar aplicação</string>
+      
+  <string name="menu_web_item_1">Copiar ligação</string>
+      
+  <string name="menu_web_item_2">Abrir no navegador</string>
+      
+  <string name="menu_web_item_3">Partilhar ligação</string>
+      
+  <string name="menu_connection_item_1">Página de destino</string>
+      
+  <string name="word_loading">A carregar</string>
+      
+  <string name="word_coped_link">Ligação copiada</string>
+      
+  <string name="word_play_preview_1">Quebre a barreira Liberte as vozes</string>
+      
+  <string name="word_play_preview_2">Criptografia forte para proteger as informações</string>
+      
+  <string name="word_play_preview_3">Acesso seguro e fiável à Internet</string>
+      
+  <string name="word_play_preview_4">Visualize notícias com segurança em todo o mundo</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Comentários gerais</item>
+            
+    <item>Não é possível estabelecer ligação</item>
+            
+    <item>A velocidade de ligação é lenta</item>
+            
+    <item>Sugestões</item>
+            
+    <item>Outros</item>
+        
+  </string-array>
+  
+</resources>

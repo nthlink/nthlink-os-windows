@@ -1,0 +1,38 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/nthLink.Wpf;component/Theme/Color.xaml"/>
+        <ResourceDictionary Source="/nthLink.Wpf;component/Theme/Button.xaml"/>
+        <ResourceDictionary Source="/nthLink.Wpf;component/Theme/ComboBox.xaml"/>
+        <ResourceDictionary Source="/nthLink.Wpf;component/Theme/TextBox.xaml"/>
+        <ResourceDictionary Source="/nthLink.Wpf;component/Theme/ScrollViewer.xaml"/>
+        <ResourceDictionary Source="/nthLink.Wpf;component/Theme/Converter.xaml"/>
+        <ResourceDictionary Source="/nthLink.Wpf;component/Theme/DataTemplate.xaml"/>
+        <ResourceDictionary Source="/nthLink.Wpf;component/Theme/DynamicTheme.xaml"/>
+        <ResourceDictionary Source="/nthLink.Wpf;component/Theme/Image.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <sys:Double x:Key="WindowWidth">339</sys:Double>
+    <sys:Double x:Key="WindowHeight">557</sys:Double>
+    <sys:Double x:Key="MainPageHeight">530</sys:Double>
+    <sys:Double x:Key="WebPageWidth">302</sys:Double>
+
+    <Style TargetType="TextBlock">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="Poppins"/>
+        <Setter Property="Foreground" Value="{StaticResource AppForeground}"/>
+    </Style>
+    
+    <Style x:Key="DefaultTextBlock" TargetType="TextBlock">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="Poppins"/>
+        <Setter Property="Foreground" Value="{StaticResource AppForeground}"/>
+    </Style>
+    
+    <Style TargetType="ItemsControl">
+        <Setter Property="IsTabStop" Value="False"/>
+    </Style>
+</ResourceDictionary>

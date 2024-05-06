@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Dit privatliv kommer først</string>
+      
+  <string name="privacy_notice_text">nthLink indsamler IKKE personligt identificerbare oplysninger eller websteder / onlinetjenester, som du besøger. nthLink bruger din IP-adresse, enhedens standardsprog, cookies og grundlæggende enhedsoplysninger ( f.eks. operativsystemoplysninger) til at tilpasse de tjenester, du modtager, såsom at lokalisere de nærmeste servere, der bedst understøtter din enhed og vise den korrekte webside, når du opretter forbindelse til nthLink-serveren.</string>
+      
+  <string name="privacy_notice_submit">Accepter og fortsæt</string>
+      
+  <string name="connection_hint_connect">Tryk for at oprette forbindelse</string>
+      
+  <string name="connection_hint_disconnect">Tryk for at afbryde forbindelsen</string>
+      
+  <string name="connection_label_connect">Tilslut</string>
+      
+  <string name="connection_label_disconnect">Frakobling</string>
+      
+  <string name="connection_server_state_connected">Tilsluttet</string>
+      
+  <string name="connection_server_state_connecting">Tilslutning…</string>
+      
+  <string name="connection_server_state_disconnecting">Afbryder forbindelsen...</string>
+      
+  <string name="connection_error">forbindelsesfejl</string>
+      
+  <string name="feedback_page_title">Feedback</string>
+      
+  <string name="feedback_issue_category_title">Problemkategori</string>
+      
+    
+  <string name="feedback_description_title">Beskrivelse</string>
+      
+  <string name="feedback_note_text">Din beskrivelse, e-mailadresse (hvis angivet) og yderligere oplysninger vil blive sendt til nthLink-teamet. Se venligst nthLink-webstedets privatlivspolitik for vores dataindsamlingspolitik.</string>
+      
+  <string name="feedback_submit">Send</string>
+      
+  <string name="feedback_submit_failed_message">Det er ikke muligt at oprette forbindelse til nthlink-serveren.</string>
+      
+  <string name="feedback_submit_success_message">Tak for at hjælpe os med at blive bedre! Vi elsker at høre fra dig.</string>
+      
+  <string name="feedback_init_failed_message">Har ikke en server</string>
+      
+  <string name="about_page_title">Vedrørende</string>
+      
+  <string name="about_version">Version %s</string>
+      
+  <string name="about_text">nthLink blev startet i 2016 som et projekt af en gruppe erfarne software- og informationssikkerhedsingeniører for at støtte menneskerettighedsadvokater med at få censureret information og udtrykke deres perspektiver til omverdenen.\n\nVores udviklingsteam udmærker sig både i det sofistikerede i teknologien til omgåelse af censur og pålideligheden af tjenesten. Med mange års erfaring inden for dette specialeområde giver vi brugerne i målrettede geografier enkel, sikker og pålidelig adgang til ellers censureret information.</string>
+      
+  <string name="menu_drawer_item_1">Hjem</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Hjælp</string>
+      
+  <string name="menu_drawer_item_5">Bedøm app</string>
+      
+  <string name="menu_web_item_1">Kopier link</string>
+      
+  <string name="menu_web_item_2">Åbn i browser</string>
+      
+  <string name="menu_web_item_3">Del link</string>
+      
+  <string name="menu_connection_item_1">Landingsside</string>
+      
+  <string name="word_loading">Indlæser</string>
+      
+  <string name="word_coped_link">Klaret link</string>
+      
+  <string name="word_play_preview_1">Bryd barrieren Frigør stemmerne</string>
+      
+  <string name="word_play_preview_2">Stærk kryptering for at beskytte informationen</string>
+      
+  <string name="word_play_preview_3">Sikker og pålidelig adgang til internettet</string>
+      
+  <string name="word_play_preview_4">Se sikkert nyheder fra rundt om i verden</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Generel feedback</item>
+            
+    <item>Kan ikke oprette forbindelse</item>
+            
+    <item>Forbindelseshastigheden er langsom</item>
+            
+    <item>Forslag</item>
+            
+    <item>Andet</item>
+        
+  </string-array>
+  
+</resources>

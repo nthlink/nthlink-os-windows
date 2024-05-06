@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Yksityisyytesi on etusijalla</string>
+      
+  <string name="privacy_notice_text">nthLink EI kerää henkilökohtaisia tunnistetietoja tai verkkosivustoja / verkkopalveluita, joissa vierailet. nthLink käyttää IP-osoitettasi, laitteesi oletuskieltä, evästeitä ja laitteen perustietoja ( esim. käyttöjärjestelmätietoja) mukauttaakseen vastaanottamasi palvelut, kuten lähimpien palvelinten paikallistamisen, jotka voivat parhaiten tukea laitettasi ja näyttää oikean web-sivun, kun muodostat yhteyden nthLink-palvelin.</string>
+      
+  <string name="privacy_notice_submit">Hyväksy ja jatka</string>
+      
+  <string name="connection_hint_connect">Napauta Muodosta yhteys</string>
+      
+  <string name="connection_hint_disconnect">Katkaise yhteys napauttamalla</string>
+      
+  <string name="connection_label_connect">Kytkeä</string>
+      
+  <string name="connection_label_disconnect">Katkaista</string>
+      
+  <string name="connection_server_state_connected">Yhdistetty</string>
+      
+  <string name="connection_server_state_connecting">Yhdistetään…</string>
+      
+  <string name="connection_server_state_disconnecting">Katkaistaan…</string>
+      
+  <string name="connection_error">yhteysvirhe</string>
+      
+  <string name="feedback_page_title">Palaute</string>
+      
+  <string name="feedback_issue_category_title">Ongelman luokka</string>
+      
+    
+  <string name="feedback_description_title">Kuvaus</string>
+      
+  <string name="feedback_note_text">Kuvauksesi, sähköpostiosoitteesi (jos annettu) ja lisätietosi lähetetään nthLink-tiimille. Katso nthLink-verkkosivuston tietosuojakäytännöstä tiedonkeruukäytäntömme.</string>
+      
+  <string name="feedback_submit">Lähettää</string>
+      
+  <string name="feedback_submit_failed_message">Ei voi muodostaa yhteyttä nthlink-palvelimeen.</string>
+      
+  <string name="feedback_submit_success_message">Kiitos, että autat meitä parantamaan! Rakastamme kuulla sinusta.</string>
+      
+  <string name="feedback_init_failed_message">Ei ole palvelinta</string>
+      
+  <string name="about_page_title">Noin</string>
+      
+  <string name="about_version">Versio %s</string>
+      
+  <string name="about_text">nthLink käynnistettiin vuonna 2016 kokeneiden ohjelmisto- ja tietoturvainsinöörien ryhmän projektina, jonka tarkoituksena on tukea ihmisoikeusjuristeja hankkimaan sensuroitua tietoa ja ilmaisemaan näkemyksiään ulkomaailmalle.\n\nKehitystiimimme on erinomaista sekä sensuurin kiertämistekniikan hienostuneisuudessa että palvelun luotettavuudessa. Vuosien kokemuksella tällä erikoisalalla tarjoamme käyttäjille kohdistetulla maantieteellisellä alueella yksinkertaisen, turvallisen ja luotettavan pääsyn muuten sensuroituun tietoon.</string>
+      
+  <string name="menu_drawer_item_1">Koti</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Auta</string>
+      
+  <string name="menu_drawer_item_5">Arvostele sovellus</string>
+      
+  <string name="menu_web_item_1">Kopioi linkki</string>
+      
+  <string name="menu_web_item_2">Avaa selaimessa</string>
+      
+  <string name="menu_web_item_3">Jaa linkki</string>
+      
+  <string name="menu_connection_item_1">Aloitussivu</string>
+      
+  <string name="word_loading">Ladataan</string>
+      
+  <string name="word_coped_link">Selvitetty linkki</string>
+      
+  <string name="word_play_preview_1">Riko este Vapauta äänet</string>
+      
+  <string name="word_play_preview_2">Vahva salaus tietojen suojaamiseksi</string>
+      
+  <string name="word_play_preview_3">Turvallinen ja luotettava pääsy Internetiin</string>
+      
+  <string name="word_play_preview_4">Katsele uutisia turvallisesti ympäri maailmaa</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Yleinen palaute</item>
+            
+    <item>Ei pysty yhdistämään</item>
+            
+    <item>Yhteysnopeus on hidas</item>
+            
+    <item>Ehdotukset</item>
+            
+    <item>Muut</item>
+        
+  </string-array>
+  
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Vaša privatnost je na prvom mjestu</string>
+      
+  <string name="privacy_notice_text">nthLink NE prikuplja osobne podatke ili web stranice / online usluge koje posjećujete. nthLink koristi vašu IP adresu, zadani jezik uređaja, kolačiće i osnovne informacije o uređaju ( npr. informacije o operativnom sustavu) za prilagodbu usluga koje primate, kao što je lociranje najbližih poslužitelja koji mogu najbolje podržati vaš uređaj i prikazivanje odgovarajuće web stranice nakon povezivanja na poslužitelju nthLink.</string>
+      
+  <string name="privacy_notice_submit">Prihvatite i nastavite</string>
+      
+  <string name="connection_hint_connect">Dodirnite za povezivanje</string>
+      
+  <string name="connection_hint_disconnect">Dodirnite za prekid veze</string>
+      
+  <string name="connection_label_connect">Poveži se</string>
+      
+  <string name="connection_label_disconnect">Odspojite se</string>
+      
+  <string name="connection_server_state_connected">Povezano</string>
+      
+  <string name="connection_server_state_connecting">Povezivanje…</string>
+      
+  <string name="connection_server_state_disconnecting">Prekidanje veze…</string>
+      
+  <string name="connection_error">greška u povezivanju</string>
+      
+  <string name="feedback_page_title">Povratne informacije</string>
+      
+  <string name="feedback_issue_category_title">Kategorija izdanja</string>
+      
+    
+  <string name="feedback_description_title">Opis</string>
+      
+  <string name="feedback_note_text">Vaš opis, adresa e-pošte (ako je navedena) i dodatne informacije bit će poslani timu nthLink. Molimo pogledajte Politiku privatnosti web stranice nthLink za našu politiku prikupljanja podataka.</string>
+      
+  <string name="feedback_submit">Pošalji</string>
+      
+  <string name="feedback_submit_failed_message">Ne mogu se povezati s nthlink poslužiteljem.</string>
+      
+  <string name="feedback_submit_success_message">Hvala što nam pomažete da se poboljšamo! Volimo čuti od vas.</string>
+      
+  <string name="feedback_init_failed_message">Nemate server</string>
+      
+  <string name="about_page_title">O</string>
+      
+  <string name="about_version">Verzija %s</string>
+      
+  <string name="about_text">nthLink je pokrenut 2016. godine kao projekt skupine iskusnih inženjera za softver i informacijsku sigurnost kako bi podržao odvjetnike za ljudska prava u dobivanju cenzuriranih informacija i izražavanju svojih perspektiva vanjskom svijetu.\n\nNaš razvojni tim ističe se i sofisticiranošću tehnologije zaobilaženja cenzure i pouzdanošću usluge. S dugogodišnjim iskustvom u ovom specijalnom području, korisnicima u ciljanim područjima pružamo jednostavan, siguran i pouzdan pristup inače cenzuriranim informacijama.</string>
+      
+  <string name="menu_drawer_item_1">Dom</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Pomoć</string>
+      
+  <string name="menu_drawer_item_5">Ocijeni aplikaciju</string>
+      
+  <string name="menu_web_item_1">Kopiraj link</string>
+      
+  <string name="menu_web_item_2">Otvori u pretraživaču</string>
+      
+  <string name="menu_web_item_3">Podijeli poveznicu</string>
+      
+  <string name="menu_connection_item_1">Odredišna stranica</string>
+      
+  <string name="word_loading">Učitavam</string>
+      
+  <string name="word_coped_link">Uspješan link</string>
+      
+  <string name="word_play_preview_1">Slomite barijeru Oslobodite glasove</string>
+      
+  <string name="word_play_preview_2">Jaka enkripcija za zaštitu informacija</string>
+      
+  <string name="word_play_preview_3">Siguran i pouzdan pristup internetu</string>
+      
+  <string name="word_play_preview_4">Sigurno gledajte vijesti diljem svijeta</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Općenite povratne informacije</item>
+            
+    <item>Ne mogu se povezati</item>
+            
+    <item>Brzina veze je spora</item>
+            
+    <item>Prijedlozi</item>
+            
+    <item>Ostalo</item>
+        
+  </string-array>
+  
+</resources>

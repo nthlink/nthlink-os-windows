@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">خصوصيتك تأتي أولاً</string>
+      
+  <string name="privacy_notice_text">لا تجمع nthLink معلومات التعريف الشخصية أو مواقع الويب / الخدمات عبر الإنترنت التي تزورها. يستخدم nthLink عنوان IP الخاص بك واللغة الافتراضية للجهاز وملفات تعريف الارتباط ومعلومات الجهاز الأساسية ( مثل معلومات نظام التشغيل) لتخصيص الخدمات التي تتلقاها مثل تحديد موقع أقرب الخوادم التي يمكنها دعم جهازك بشكل أفضل وعرض صفحة الويب المناسبة عند الاتصال بـ خادم nthLink.</string>
+      
+  <string name="privacy_notice_submit">اقبل واستمر</string>
+      
+  <string name="connection_hint_connect">اضغط للاتصال</string>
+      
+  <string name="connection_hint_disconnect">انقر لقطع الاتصال</string>
+      
+  <string name="connection_label_connect">الاتصال</string>
+      
+  <string name="connection_label_disconnect">قطع الاتصال</string>
+      
+  <string name="connection_server_state_connected">متصل</string>
+      
+  <string name="connection_server_state_connecting">توصيل…</string>
+      
+  <string name="connection_server_state_disconnecting">جارٍ قطع الاتصال…</string>
+      
+  <string name="connection_error">خطأ في الإتصال</string>
+      
+  <string name="feedback_page_title">تعليق</string>
+      
+  <string name="feedback_issue_category_title">فئة المشكلة</string>
+      
+    
+  <string name="feedback_description_title">وصف</string>
+      
+  <string name="feedback_note_text">سيتم إرسال وصفك وعنوان بريدك الإلكتروني (إن وجد) والمعلومات الإضافية إلى فريق nthLink. يرجى الرجوع إلى سياسة الخصوصية الخاصة بموقع nthLink للاطلاع على سياسة جمع البيانات الخاصة بنا.</string>
+      
+  <string name="feedback_submit">إرسال</string>
+      
+  <string name="feedback_submit_failed_message">لا يمكن الاتصال بخادم nthlink.</string>
+      
+  <string name="feedback_submit_success_message">شكرا لمساعدتنا على التحسين! نحن نحب أن نسمع منك.</string>
+      
+  <string name="feedback_init_failed_message">ليس لديك خادم</string>
+      
+  <string name="about_page_title">عن</string>
+      
+  <string name="about_version">الإصدار %s</string>
+      
+  <string name="about_text">بدأ nthLink في عام 2016 كمشروع من قبل مجموعة من مهندسي البرمجيات وأمن المعلومات ذوي الخبرة لدعم محامي حقوق الإنسان للحصول على المعلومات الخاضعة للرقابة والتعبير عن وجهات نظرهم للعالم الخارجي.\n\nيتفوق فريق التطوير لدينا في كل من تطور تقنية التحايل على الرقابة وموثوقية الخدمة. مع سنوات من الخبرة في هذا المجال التخصصي ، نوفر للمستخدمين في المناطق الجغرافية المستهدفة وصولًا بسيطًا وآمنًا وموثوقًا إلى المعلومات الخاضعة للرقابة.</string>
+      
+  <string name="menu_drawer_item_1">مسكن</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">يساعد</string>
+      
+  <string name="menu_drawer_item_5">قيم التطبيق</string>
+      
+  <string name="menu_web_item_1">نسخ الوصلة</string>
+      
+  <string name="menu_web_item_2">فتح في المتصفح</string>
+      
+  <string name="menu_web_item_3">رابط المشاركة</string>
+      
+  <string name="menu_connection_item_1">الصفحة المقصودة</string>
+      
+  <string name="word_loading">جار التحميل</string>
+      
+  <string name="word_coped_link">رابط تم نسخه</string>
+      
+  <string name="word_play_preview_1">كسر الحاجز حرر الأصوات</string>
+      
+  <string name="word_play_preview_2">تشفير قوي لحماية المعلومات</string>
+      
+  <string name="word_play_preview_3">الوصول الآمن والموثوق إلى الإنترنت</string>
+      
+  <string name="word_play_preview_4">عرض بأمان الأخبار في جميع أنحاء العالم</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>ملاحظات عامة</item>
+            
+    <item>لا يمكن الاتصال</item>
+            
+    <item>سرعة الاتصال بطيئة</item>
+            
+    <item>اقتراحات</item>
+            
+    <item>آخر</item>
+        
+  </string-array>
+  
+</resources>

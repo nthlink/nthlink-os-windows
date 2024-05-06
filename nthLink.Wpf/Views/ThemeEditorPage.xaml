@@ -1,0 +1,131 @@
+﻿<UserControl x:Class="nthLink.Wpf.Views.ThemeEditorPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="TextBlock">
+                <Setter Property="Foreground" Value="Black"/>
+            </Style>
+            <Style TargetType="StackPanel">
+                <Setter Property="Margin" Value="4"/>
+            </Style>
+            <Style TargetType="Slider">
+                <Setter Property="Minimum" Value="0"/>
+                <Setter Property="Maximum" Value="1000"/>
+                <Setter Property="TickFrequency" Value="1"/>
+                <Setter Property="IsSnapToTickEnabled" Value="True"/>
+            </Style>
+        </Grid.Resources>
+        <StackPanel>
+            <StackPanel>
+                <TextBlock>
+                <Run Text="BubbleInfoMargin"/>
+                <Run Text="{Binding ElementName=PART_BubbleInfoMarginSlider, Path=Value}"/>
+                </TextBlock>
+                <Slider x:Name="PART_BubbleInfoMarginSlider"
+                        ValueChanged="PART_BubbleInfoMarginSlider_ValueChanged"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock>
+                <Run Text="BubbleInfoWidth"/>
+                <Run Text="{Binding ElementName=PART_BubbleInfoWidthSlider, Path=Value}"/>
+                </TextBlock>
+                <Slider x:Name="PART_BubbleInfoWidthSlider" 
+                        ValueChanged="PART_BubbleInfoWidthSlider_ValueChanged"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock>
+                <Run Text="BubbleInfoHeight"/>
+                <Run Text="{Binding ElementName=PART_BubbleInfoHeightSlider, Path=Value}"/>
+                </TextBlock>
+                <Slider x:Name="PART_BubbleInfoHeightSlider"
+                        ValueChanged="PART_BubbleInfoHeightSlider_ValueChanged"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock>
+                <Run Text="BubbleInfoCornerRadius"/>
+                <Run Text="{Binding ElementName=PART_BubbleInfoCornerRadiusSlider, Path=Value}"/>
+                </TextBlock>
+                <Slider x:Name="PART_BubbleInfoCornerRadiusSlider" 
+                        ValueChanged="PART_BubbleInfoCornerRadiusSlider_ValueChanged"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock>
+                <Run Text="BubbleInfoArrowWidth"/>
+                <Run Text="{Binding ElementName=PART_BubbleInfoArrowWidthSlider, Path=Value}"/>
+                </TextBlock>
+                <Slider x:Name="PART_BubbleInfoArrowWidthSlider" 
+                        ValueChanged="PART_BubbleInfoArrowWidthSlider_ValueChanged"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock>
+                <Run Text="BubbleInfoArrowHeight"/>
+                <Run Text="{Binding ElementName=PART_BubbleInfoArrowHeightSlider, Path=Value}"/>
+                </TextBlock>
+                <Slider x:Name="PART_BubbleInfoArrowHeightSlider"
+                        ValueChanged="PART_BubbleInfoArrowHeightSlider_ValueChanged"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock>
+                <Run Text="BubbleInfoFontSize"/>
+                <Run Text="{Binding ElementName=PART_BubbleInfoFontSizeSlider, Path=Value}"/>
+                </TextBlock>
+                <Slider x:Name="PART_BubbleInfoFontSizeSlider"
+                        ValueChanged="PART_BubbleInfoFontSizeSlider_ValueChanged"/>
+            </StackPanel>
+            <!--Color-->
+            <StackPanel>
+                <TextBlock>
+                        <Run Text="BubbleInfoFontForeground"/>
+                </TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock>
+                        <Run Text="Red"/>
+                        <Run Text="{Binding ElementName=PART_BubbleInfoFontForegroundRedSlider, Path=Value}"/>
+                    </TextBlock>
+                    <Slider x:Name="PART_BubbleInfoFontForegroundRedSlider"
+                            Margin="8,0,0,0"
+                            Width="255"
+                            Maximum="255"
+                            ValueChanged="PART_BubbleInfoFontForegroundSlider_ValueChanged"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock>
+                        <Run Text="Green"/>
+                        <Run Text="{Binding ElementName=PART_BubbleInfoFontForegroundGreenSlider, Path=Value}"/>
+                    </TextBlock>
+                    <Slider x:Name="PART_BubbleInfoFontForegroundGreenSlider"
+                            Margin="8,0,0,0"
+                            Width="255"
+                            Maximum="255"
+                            ValueChanged="PART_BubbleInfoFontForegroundSlider_ValueChanged"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock>
+                        <Run Text="Blue"/>
+                        <Run Text="{Binding ElementName=PART_BubbleInfoFontForegroundBlueSlider, Path=Value}"/>
+                    </TextBlock>
+                    <Slider x:Name="PART_BubbleInfoFontForegroundBlueSlider"
+                            Margin="8,0,0,0"
+                            Width="255"
+                            Maximum="255"
+                            ValueChanged="PART_BubbleInfoFontForegroundSlider_ValueChanged"/>
+                </StackPanel>
+            </StackPanel>
+            <!--Color-->
+            <StackPanel>
+                <TextBlock>
+                    <Run Text="BubbleInfoFontSize"/>
+                </TextBlock>
+                <CheckBox x:Name="PART_BubbleInfoFontWeightCheckBox"
+                          IsThreeState="False"
+                          Checked="PART_BubbleInfoFontWeightCheckBox_Checked"
+                          Unchecked="PART_BubbleInfoFontWeightCheckBox_Unchecked"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

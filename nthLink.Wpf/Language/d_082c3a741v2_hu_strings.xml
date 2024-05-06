@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Az Ön magánélete az első</string>
+      
+  <string name="privacy_notice_text">Az nthLink NEM gyűjt személyazonosításra alkalmas információkat vagy az Ön által meglátogatott webhelyeket / online szolgáltatásokat. Az nthLink az Ön IP-címét, az eszköz alapértelmezett nyelvét, a cookie-kat és az alapvető eszközinformációkat ( pl. az operációs rendszer információit) használja a kapott szolgáltatások testreszabásához, például megkeresi a legközelebbi szervereket, amelyek a legjobban tudják támogatni az eszközt, és a megfelelő weboldalt jeleníti meg, amikor csatlakozik az nthLink szerverhez.</string>
+      
+  <string name="privacy_notice_submit">Elfogadás és folytatás</string>
+      
+  <string name="connection_hint_connect">Koppintson a Csatlakozáshoz</string>
+      
+  <string name="connection_hint_disconnect">Koppintson a Leválasztáshoz</string>
+      
+  <string name="connection_label_connect">Csatlakozás</string>
+      
+  <string name="connection_label_disconnect">Leválasztás</string>
+      
+  <string name="connection_server_state_connected">csatlakoztatva</string>
+      
+  <string name="connection_server_state_connecting">Csatlakozás…</string>
+      
+  <string name="connection_server_state_disconnecting">Leválasztás…</string>
+      
+  <string name="connection_error">kapcsolati hiba</string>
+      
+  <string name="feedback_page_title">Visszajelzés</string>
+      
+  <string name="feedback_issue_category_title">Probléma kategória</string>
+      
+    
+  <string name="feedback_description_title">Leírás</string>
+      
+  <string name="feedback_note_text">Leírását, e-mail címét (ha megadja) és további információkat elküldjük az nthLink csapatának. Kérjük, tekintse meg az nthLink webhely adatvédelmi szabályzatát az adatgyűjtéssel kapcsolatos irányelveink megismeréséhez.</string>
+      
+  <string name="feedback_submit">Küld</string>
+      
+  <string name="feedback_submit_failed_message">Nem lehet csatlakozni az nthlink szerverhez.</string>
+      
+  <string name="feedback_submit_success_message">Köszönjük, hogy segít a fejlesztésben! Szeretünk hallani Önről.</string>
+      
+  <string name="feedback_init_failed_message">Ne legyen szervere</string>
+      
+  <string name="about_page_title">Rólunk</string>
+      
+  <string name="about_version">Verzió: %s</string>
+      
+  <string name="about_text">Az nthLink 2016-ban indult el, mint egy tapasztalt szoftver- és információbiztonsági mérnökökből álló csoport projektje annak érdekében, hogy támogassa az emberi jogi jogászokat abban, hogy cenzúrázott információkhoz jussanak, és kifejtsék álláspontjukat a külvilág felé.\n\nFejlesztőcsapatunk a cenzúra-megkerülési technológia kifinomultságában és a szolgáltatás megbízhatóságában egyaránt kiemelkedő. Az ezen a speciális területen szerzett több éves tapasztalatunkkal a célzott földrajzi területeken lévő felhasználók számára egyszerű, biztonságos és megbízható hozzáférést biztosítunk az egyébként cenzúrázott információkhoz.</string>
+      
+  <string name="menu_drawer_item_1">Kezdőoldal</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Súgó</string>
+      
+  <string name="menu_drawer_item_5">Értékelje az alkalmazást</string>
+      
+  <string name="menu_web_item_1">Link másolása</string>
+      
+  <string name="menu_web_item_2">Megnyitás böngészőben</string>
+      
+  <string name="menu_web_item_3">Hivatkozás megosztása</string>
+      
+  <string name="menu_connection_item_1">Nyitóoldal</string>
+      
+  <string name="word_loading">Betöltés</string>
+      
+  <string name="word_coped_link">Másolt hivatkozás</string>
+      
+  <string name="word_play_preview_1">Törje le a gátat Szabadítsa fel a hangokat</string>
+      
+  <string name="word_play_preview_2">Erős titkosítás az információk védelmére</string>
+      
+  <string name="word_play_preview_3">Biztonságos és megbízható hozzáférés az internethez</string>
+      
+  <string name="word_play_preview_4">Biztonságosan tekintse meg a híreket a világ minden tájáról</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Általános visszajelzés</item>
+            
+    <item>Nem tud csatlakozni</item>
+            
+    <item>A kapcsolat sebessége lassú</item>
+            
+    <item>Javaslatok</item>
+            
+    <item>Egyéb</item>
+        
+  </string-array>
+  
+</resources>

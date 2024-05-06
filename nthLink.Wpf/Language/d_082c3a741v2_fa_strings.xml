@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">حریم خصوصی شما حرف اول را می زند</string>
+      
+  <string name="privacy_notice_text">nthLink اطلاعات شناسایی شخصی یا وب سایت ها / خدمات آنلاینی را که بازدید می کنید جمع آوری نمی کند. nthLink از آدرس IP شما، زبان پیش‌فرض دستگاه، کوکی‌ها و اطلاعات اولیه دستگاه (به عنوان مثال اطلاعات سیستم عامل) برای سفارشی‌سازی سرویس‌هایی که دریافت می‌کنید، مانند مکان‌یابی نزدیک‌ترین سرورهایی که می‌توانند به بهترین شکل از دستگاه شما پشتیبانی کنند و نمایش صفحه وب مناسب هنگام اتصال به سرور nthLink استفاده می‌کند. </string>
+      
+  <string name="privacy_notice_submit">بپذیرید و ادامه دهید</string>
+      
+  <string name="connection_hint_connect">برای اتصال ضربه بزنید</string>
+      
+  <string name="connection_hint_disconnect">برای قطع ارتباط ضربه بزنید</string>
+      
+  <string name="connection_label_connect">اتصال</string>
+      
+  <string name="connection_label_disconnect">قطع شدن</string>
+      
+  <string name="connection_server_state_connected">متصل</string>
+      
+  <string name="connection_server_state_connecting">برقراری ارتباط…</string>
+      
+  <string name="connection_server_state_disconnecting">در حال قطع شدن…</string>
+      
+  <string name="connection_error">خطای اتصال</string>
+      
+  <string name="feedback_page_title">بازخورد</string>
+      
+  <string name="feedback_issue_category_title">دسته بندی موضوع</string>
+      
+    
+  <string name="feedback_description_title">شرح</string>
+      
+  <string name="feedback_note_text">توضیحات، آدرس ایمیل شما (در صورت ارائه)، و اطلاعات اضافی برای تیم nthLink ارسال خواهد شد. لطفاً برای سیاست جمع آوری داده های ما به خط مشی رازداری وب سایت nthLink مراجعه کنید.</string>
+      
+  <string name="feedback_submit">ارسال</string>
+      
+  <string name="feedback_submit_failed_message">نمی توان به سرور nthlink متصل شد.</string>
+      
+  <string name="feedback_submit_success_message">از اینکه به ما کمک کردید تا پیشرفت کنیم متشکریم! ما دوست داریم از شما بشنویم.</string>
+      
+  <string name="feedback_init_failed_message">سرور ندارید</string>
+      
+  <string name="about_page_title">در باره</string>
+      
+  <string name="about_version">نسخه %s</string>
+      
+  <string name="about_text">nthLink در سال 2016 به عنوان پروژه ای توسط گروهی از مهندسین نرم افزار و امنیت اطلاعات مجرب برای حمایت از وکلای حقوق بشر برای به دست آوردن اطلاعات سانسور شده و بیان دیدگاه های شان به جهان خارج آغاز شد.\n\nتیم توسعه ما هم در پیچیدگی فناوری دور زدن سانسور و هم از نظر قابلیت اطمینان سرویس برتر است. ما با سالها تجربه در این زمینه تخصصی، دسترسی ساده، ایمن و قابل اعتماد به اطلاعات سانسور شده را برای کاربران در مناطق جغرافیایی هدف فراهم می کنیم.</string>
+      
+  <string name="menu_drawer_item_1">صفحه اصلی</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">کمک</string>
+      
+  <string name="menu_drawer_item_5">امتیاز دادن به برنامه</string>
+      
+  <string name="menu_web_item_1">لینک را کپی کنید</string>
+      
+  <string name="menu_web_item_2">در مرور گر باز کنید</string>
+      
+  <string name="menu_web_item_3">لینک را به اشتراک بگذارید</string>
+      
+  <string name="menu_connection_item_1">صفحه فرود</string>
+      
+  <string name="word_loading">بارگذاری</string>
+      
+  <string name="word_coped_link">لینک کپی شده</string>
+      
+  <string name="word_play_preview_1">سد را بشکن صداها را آزاد کن</string>
+      
+  <string name="word_play_preview_2">رمزگذاری قوی برای محافظت از اطلاعات</string>
+      
+  <string name="word_play_preview_3">دسترسی ایمن و مطمئن به اینترنت</string>
+      
+  <string name="word_play_preview_4">اخبار سراسر جهان را با خیال راحت مشاهده کنید</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>بازخورد عمومی</item>
+            
+    <item>نمی تواند وصل شود</item>
+            
+    <item>سرعت اتصال پایین است</item>
+            
+    <item>پیشنهادات</item>
+            
+    <item>سایر</item>
+        
+  </string-array>
+  
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Ваша конфиденциальность на первом месте</string>
+      
+  <string name="privacy_notice_text">nthLink НЕ собирает личную информацию или веб-сайты/онлайн-сервисы, которые вы посещаете. nthLink использует ваш IP-адрес, язык устройства по умолчанию, файлы cookie и основную информацию об устройстве (например, информацию об операционной системе) для настройки получаемых вами услуг, таких как поиск ближайших серверов, которые могут наилучшим образом поддерживать ваше устройство, и отображение соответствующей веб-страницы при подключении к серверу nthLink.</string>
+      
+  <string name="privacy_notice_submit">Принять и продолжить</string>
+      
+  <string name="connection_hint_connect">Нажмите, чтобы подключиться</string>
+      
+  <string name="connection_hint_disconnect">Нажмите, чтобы отключить</string>
+      
+  <string name="connection_label_connect">Соединять</string>
+      
+  <string name="connection_label_disconnect">Отключить</string>
+      
+  <string name="connection_server_state_connected">Связанный</string>
+      
+  <string name="connection_server_state_connecting">Подключение…</string>
+      
+  <string name="connection_server_state_disconnecting">Отключение…</string>
+      
+  <string name="connection_error">connection_error</string>
+      
+  <string name="feedback_page_title">Обратная связь</string>
+      
+  <string name="feedback_issue_category_title">Категория проблемы</string>
+      
+    
+  <string name="feedback_description_title">Описание</string>
+      
+  <string name="feedback_note_text">Ваше описание, адрес электронной почты (если он указан) и дополнительная информация будут отправлены команде nthLink. Пожалуйста, ознакомьтесь с Политикой конфиденциальности веб-сайта nthLink, чтобы узнать о нашей политике сбора данных.</string>
+      
+  <string name="feedback_submit">Отправлять</string>
+      
+  <string name="feedback_submit_failed_message">Не удается подключиться к серверу nthlink.</string>
+      
+  <string name="feedback_submit_success_message">Спасибо, что помогаете нам стать лучше! Мы рады слышать тебя.</string>
+      
+  <string name="feedback_init_failed_message">У меня нет сервера</string>
+      
+  <string name="about_page_title">О</string>
+      
+  <string name="about_version">Версия %s</string>
+      
+  <string name="about_text">nthLink был запущен в 2016 году как проект группы опытных инженеров по программному обеспечению и информационной безопасности, чтобы помочь юристам-правозащитникам получить цензурированную информацию и выразить свое мнение внешнему миру.\n\nНаша команда разработчиков выделяется как сложностью технологии обхода цензуры, так и надежностью сервиса. Имея многолетний опыт работы в этой области, мы предоставляем пользователям в целевых географических регионах простой, безопасный и надежный доступ к цензурированной информации.</string>
+      
+  <string name="menu_drawer_item_1">Домой</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Помощь</string>
+      
+  <string name="menu_drawer_item_5">Оценить приложение</string>
+      
+  <string name="menu_web_item_1">Копировать ссылку</string>
+      
+  <string name="menu_web_item_2">Открыть в браузере</string>
+      
+  <string name="menu_web_item_3">Поделиться ссылкой</string>
+      
+  <string name="menu_connection_item_1">Целевая страница</string>
+      
+  <string name="word_loading">Загрузка</string>
+      
+  <string name="word_coped_link">Скопированная ссылка</string>
+      
+  <string name="word_play_preview_1">Сломай барьер Освободи голоса</string>
+      
+  <string name="word_play_preview_2">Надежное шифрование для защиты информации</string>
+      
+  <string name="word_play_preview_3">Безопасный и надежный доступ в Интернет</string>
+      
+  <string name="word_play_preview_4">Безопасный просмотр новостей по всему миру</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Общий отзыв</item>
+            
+    <item>Невозможно соединиться</item>
+            
+    <item>Скорость соединения низкая</item>
+            
+    <item>Предложения</item>
+            
+    <item>Другой</item>
+        
+  </string-array>
+  
+</resources>

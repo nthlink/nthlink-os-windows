@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Uw privacy staat voorop</string>
+      
+  <string name="privacy_notice_text">nthLink verzamelt GEEN persoonsgegevens of websites / online diensten die u bezoekt. nthLink gebruikt uw IP-adres, de standaardtaal van het apparaat, cookies en basisinformatie over het apparaat ( bijv. informatie over het besturingssysteem) om de services die u ontvangt aan te passen, zoals het lokaliseren van de dichtstbijzijnde servers die uw apparaat het beste kunnen ondersteunen en het weergeven van de juiste webpagina wanneer u verbinding maakt met de nthLink-server.</string>
+      
+  <string name="privacy_notice_submit">Accepteren en doorgaan</string>
+      
+  <string name="connection_hint_connect">Tik om verbinding te maken</string>
+      
+  <string name="connection_hint_disconnect">Tik om de verbinding te verbreken</string>
+      
+  <string name="connection_label_connect">Aansluiten</string>
+      
+  <string name="connection_label_disconnect">Loskoppelen</string>
+      
+  <string name="connection_server_state_connected">Verbonden</string>
+      
+  <string name="connection_server_state_connecting">Bezig te verbinden…</string>
+      
+  <string name="connection_server_state_disconnecting">Bezig verbinding te verbreken…</string>
+      
+  <string name="connection_error">verbindingsfout</string>
+      
+  <string name="feedback_page_title">Feedback</string>
+      
+  <string name="feedback_issue_category_title">Probleemcategorie</string>
+      
+    
+  <string name="feedback_description_title">Beschrijving</string>
+      
+  <string name="feedback_note_text">Uw beschrijving, e-mailadres (indien opgegeven) en aanvullende informatie worden naar het nthLink-team gestuurd. Raadpleeg het privacybeleid van de nthLink-website voor ons beleid inzake gegevensverzameling.</string>
+      
+  <string name="feedback_submit">Versturen</string>
+      
+  <string name="feedback_submit_failed_message">Kan geen verbinding met de nthlink-server maken.</string>
+      
+  <string name="feedback_submit_success_message">Bedankt voor het helpen verbeteren! We horen graag van u.</string>
+      
+  <string name="feedback_init_failed_message">Heb geen server</string>
+      
+  <string name="about_page_title">Over</string>
+      
+  <string name="about_version">Versie %s</string>
+      
+  <string name="about_text">nthLink is in 2016 gestart als een project van een groep ervaren ingenieurs die gespecialiseerd zijn in software- en informatiebeveiliging om mensenrechtenadvocaten te ondersteunen bij het verkrijgen van gecensureerde informatie en om hun perspectieven naar de buitenwereld te uiten.\n\nOns ontwikkelingsteam blinkt uit in zowel de verfijning van technologie voor het omzeilen van censuur als de betrouwbaarheid van de service. Met jarenlange ervaring op dit speciale gebied bieden we de gebruikers in gerichte geografische gebieden eenvoudige, veilige en betrouwbare toegang tot anderszins gecensureerde informatie.</string>
+      
+  <string name="menu_drawer_item_1">Thuis</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Hulp</string>
+      
+  <string name="menu_drawer_item_5">Beoordeel app</string>
+      
+  <string name="menu_web_item_1">Link kopiëren</string>
+      
+  <string name="menu_web_item_2">In de browser openen</string>
+      
+  <string name="menu_web_item_3">Link delen</string>
+      
+  <string name="menu_connection_item_1">Bestemmingspagina</string>
+      
+  <string name="word_loading">Bezig met laden</string>
+      
+  <string name="word_coped_link">Verwerkte link</string>
+      
+  <string name="word_play_preview_1">Doorbreek de barrière Bevrijd de stemmen</string>
+      
+  <string name="word_play_preview_2">Sterke encryptie om de informatie te beschermen</string>
+      
+  <string name="word_play_preview_3">Veilige en betrouwbare toegang tot internet</string>
+      
+  <string name="word_play_preview_4">Bekijk veilig nieuws over de hele wereld</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Algemene feedback</item>
+            
+    <item>Kan niet verbinden</item>
+            
+    <item>Verbindingssnelheid is traag</item>
+            
+    <item>Suggesties</item>
+            
+    <item>Overig</item>
+        
+  </string-array>
+  
+</resources>

@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<Obfuscator>
+  <Var name="InPath" value=".\ReleaseWorkspace\ReleaseData" />
+  <Var name="OutPath" value=".\ReleaseWorkspace\Confused" />
+  <Module file="$(InPath)\nthLink.Header.dll" /> 
+  <Module file="$(InPath)\nthLink.SDK.dll" /> 
+  <Module file="$(InPath)\Plugins\outline-sdk-windows.dll" /> 
+  <AssemblySearchPath path=".\DotnetSpace\shared\Microsoft.WindowsDesktop.App\6.0.20\" />
+</Obfuscator>

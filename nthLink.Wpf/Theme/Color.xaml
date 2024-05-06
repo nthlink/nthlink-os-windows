@@ -1,0 +1,40 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--Color-->
+    <Color x:Key="AppDarkBackgroundColor">#0051FF</Color>
+    <Color x:Key="AppBackgroundColor">#0061FF</Color>
+    <Color x:Key="AppLigthBackgroundColor">#0081FF</Color>
+    <Color x:Key="AppWhiteBackgroundColor">#F2EAD6</Color>
+    <Color x:Key="AppForegroundColor">#F7F6E7</Color>
+    <Color x:Key="AppForegroundColor1">#1E265C</Color>
+    <Color x:Key="AppForegroundColor2">#C7C6C7</Color>
+    <Color x:Key="AppWhiteColor">#FFFFFF</Color>
+    <Color x:Key="AppSkyBlueColor">#19E8E0</Color>
+    <Color x:Key="AppDisabledForegroundColor">Gray</Color>
+    <Color x:Key="AppDarkGrayColor">#FF444143</Color>
+    <Color x:Key="AppRedColor">#EC615B</Color>
+    <Color x:Key="AppBlackColor">Black</Color>
+    <!--Brush-->
+    <SolidColorBrush x:Key="AppDarkBackground" Color="{StaticResource AppDarkBackgroundColor}"/>
+    <SolidColorBrush x:Key="AppBackground" Color="{StaticResource AppBackgroundColor}"/>
+    <SolidColorBrush x:Key="AppLightBackground" Color="{StaticResource AppLigthBackgroundColor}"/>
+    <SolidColorBrush x:Key="AppWhiteBackground" Color="{StaticResource AppWhiteBackgroundColor}"/>
+    <SolidColorBrush x:Key="AppForeground" Color="{StaticResource AppForegroundColor}"/>
+    <SolidColorBrush x:Key="AppForeground1" Color="{StaticResource AppForegroundColor1}"/>
+    <SolidColorBrush x:Key="AppForeground2" Color="{StaticResource AppForegroundColor2}"/>
+    <SolidColorBrush x:Key="AppWhite" Color="{StaticResource AppWhiteColor}"/>
+    <SolidColorBrush x:Key="AppSkyBlue" Color="{StaticResource AppSkyBlueColor}"/>
+    <SolidColorBrush x:Key="AppDisabledForeground" Color="{StaticResource AppDisabledForegroundColor}"/>
+    <SolidColorBrush x:Key="AppDarkGray" Color="{StaticResource AppDarkGrayColor}"/>
+    <SolidColorBrush x:Key="AppRed" Color="{StaticResource AppRedColor}"/>
+    <SolidColorBrush x:Key="AppBlack" Color="{StaticResource AppBlackColor}"/>
+
+    <LinearGradientBrush x:Key="LightEllipseBackground" StartPoint="0.5,0" EndPoint="0.5,1">
+        <GradientStop Offset="0" Color="#BDC7FF"/>
+        <GradientStop Offset="1" Color="#7D8AD1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="DarkEllipseBackground" StartPoint="0.5,0" EndPoint="0.5,1">
+        <GradientStop Offset="0" Color="#825FFE"/>
+        <GradientStop Offset="1" Color="#542AE7"/>
+    </LinearGradientBrush>
+</ResourceDictionary>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+      
+
+    
+  <string name="privacy_notice_title">Jūsu privātums ir pirmajā vietā</string>
+      
+  <string name="privacy_notice_text">nthLink NEAPKOPO personu identificējošu informāciju vai jūsu apmeklētajām vietnēm/tiešsaistes pakalpojumiem. NthLink izmanto jūsu IP adresi, ierīces noklusējuma valodu, sīkfailus un ierīces pamatinformāciju (piemēram, informāciju par operētājsistēmu), lai pielāgotu saņemtos pakalpojumus, piemēram, atrastu tuvākos serverus, kas vislabāk varētu atbalstīt jūsu ierīci, un parādītu pareizo tīmekļa lapu, kad izveidojat savienojumu ar nthLink serveri.</string>
+      
+  <string name="privacy_notice_submit">Pieņemiet un turpiniet</string>
+      
+  <string name="connection_hint_connect">Pieskarieties, lai izveidotu savienojumu</string>
+      
+  <string name="connection_hint_disconnect">Pieskarieties, lai pārtrauktu savienojumu</string>
+      
+  <string name="connection_label_connect">Savienot</string>
+      
+  <string name="connection_label_disconnect">Atvienot</string>
+      
+  <string name="connection_server_state_connected">Savienots</string>
+      
+  <string name="connection_server_state_connecting">Notiek savienojuma izveide…</string>
+      
+  <string name="connection_server_state_disconnecting">Notiek savienojuma pārtraukšana…</string>
+      
+  <string name="connection_error">savienojuma kļūda</string>
+      
+  <string name="feedback_page_title">Atsauksmes</string>
+      
+  <string name="feedback_issue_category_title">Problēmas kategorija</string>
+      
+    
+  <string name="feedback_description_title">Apraksts</string>
+      
+  <string name="feedback_note_text">Jūsu apraksts, e-pasta adrese (ja tāda ir norādīta) un papildu informācija tiks nosūtīta nthLink komandai. Lūdzu, skatiet mūsu datu vākšanas politiku nthLink vietnes Konfidencialitātes politikā.</string>
+      
+  <string name="feedback_submit">Sūtīt</string>
+      
+  <string name="feedback_submit_failed_message">Nevar izveidot savienojumu ar nthlink serveri.</string>
+      
+  <string name="feedback_submit_success_message">Paldies, ka palīdzat mums pilnveidoties! Mums patīk dzirdēt no jums.</string>
+      
+  <string name="feedback_init_failed_message">Nav servera</string>
+      
+  <string name="about_page_title">Par</string>
+      
+  <string name="about_version">Versija %s</string>
+      
+  <string name="about_text">NthLink tika uzsākts 2016. gadā kā pieredzējušu programmatūras un informācijas drošības inženieru grupas projekts, lai atbalstītu cilvēktiesību juristus iegūt cenzētu informāciju un paust savu viedokli ārpasaulei.\n\nMūsu izstrādes komanda izceļas gan ar cenzūras apiešanas tehnoloģiju izsmalcinātību, gan pakalpojuma uzticamību. Ar daudzu gadu pieredzi šajā specializētajā jomā mēs sniedzam lietotājiem mērķtiecīgās ģeogrāfiskās vietās vienkāršu, drošu un uzticamu piekļuvi citādi cenzētai informācijai.</string>
+      
+  <string name="menu_drawer_item_1">Mājas</string>
+      
+  <string name="menu_drawer_item_2">@string/feedback_page_title</string>
+      
+  <string name="menu_drawer_item_3">@string/about_page_title</string>
+      
+  <string name="menu_drawer_item_4">Palīdzība</string>
+      
+  <string name="menu_drawer_item_5">Novērtēt lietotni</string>
+      
+  <string name="menu_web_item_1">Kopēt saiti</string>
+      
+  <string name="menu_web_item_2">Atvērt pārlūkprogrammā</string>
+      
+  <string name="menu_web_item_3">Kopīgot saiti</string>
+      
+  <string name="menu_connection_item_1">Galvenā lapa</string>
+      
+  <string name="word_loading">Notiek ielāde</string>
+      
+  <string name="word_coped_link">Tika galā ar saiti</string>
+      
+  <string name="word_play_preview_1">Pārkāpiet barjeru Atbrīvojiet balsis</string>
+      
+  <string name="word_play_preview_2">Spēcīga šifrēšana, lai aizsargātu informāciju</string>
+      
+  <string name="word_play_preview_3">Droša un uzticama piekļuve internetam</string>
+      
+  <string name="word_play_preview_4">Droši skatiet ziņas visā pasaulē</string>
+      
+  <string-array name="issue_categories">
+            
+    <item>Vispārīgas atsauksmes</item>
+            
+    <item>Nevar izveidot savienojumu</item>
+            
+    <item>Savienojuma ātrums ir lēns</item>
+            
+    <item>Ieteikumi</item>
+            
+    <item>Cits</item>
+        
+  </string-array>
+  
+</resources>

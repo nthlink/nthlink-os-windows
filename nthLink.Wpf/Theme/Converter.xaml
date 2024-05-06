@@ -1,0 +1,26 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:converter="clr-namespace:nthLink.Wpf.Converter"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <converter:ImageNameToImageSourceConverter x:Key="NameToImageConverter"
+                                              Path="Resource.Image" Extension="png"/>
+    <converter:LanguageStringConverter x:Key="LanguageStringConverter"/>
+    <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    <converter:TureFalseConverter x:Key="ReverseBooleanToVisibilityConverter"
+                                  True="{x:Static Visibility.Collapsed}"
+                                  False="{x:Static Visibility.Visible}"/>
+    <converter:StringToVisibilityConverter x:Key="StringToVisibilityConverter"/>
+    <converter:ObjectEqualParameterToVisibilityConverter x:Key="ObjectEqualParameterToVisibilityConverter"/>
+    <converter:TureFalseConverter x:Key="ReverseBooleanConverter">
+        <converter:TureFalseConverter.True>
+            <sys:Boolean>
+                false
+            </sys:Boolean>
+        </converter:TureFalseConverter.True>
+        <converter:TureFalseConverter.False>
+            <sys:Boolean>
+                true
+            </sys:Boolean>
+        </converter:TureFalseConverter.False>
+    </converter:TureFalseConverter>
+</ResourceDictionary>
