@@ -45,7 +45,7 @@
       
   <string name="about_version">版本 %s</string>
       
-  <string name="about_text">nthLink 由一群经验丰富的软件和信息安全工程师于 2016 年启动，旨在支持人权律师获取审查信息并向外界表达他们的观点。我们的开发团队在审查规避技术的复杂性和服务的可靠性方面都表现出色。凭借在该专业领域多年的经验，我们为目标地区的用户提供简单、安全和可靠的访问权限，以访问被审查的信息。</string>
+  <string name="about_text">我们是一群经验丰富的软件和信息安全工程师，于 2016 年创立了 nthLink，为需要获取受限信息并表达观点的人权律师提供支持。 从那时起，我们就向更广泛的公众提供了这项服务。 我们的开发团队是网络安全技术和服务可靠性方面的专家。\n\n我们的服务是免费的，并且由于我们的赞助商和合作伙伴，我们将继续免费。 他们是：\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\n我们的开发团队在审查规避技术的复杂性和服务的可靠性方面均表现出色。 凭借在这一专业领域的多年经验，我们为目标地区的用户提供简单、安全、可靠的访问方式，以获取未经审查的信息。</string>
       
   <string name="menu_drawer_item_1">主页</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">帮助</string>
       
   <string name="menu_drawer_item_5">评价应用</string>
+	<string name="menu_drawer_item_6">隐私政策</string>
       
   <string name="menu_web_item_1">复制链接</string>
       
@@ -90,5 +91,12 @@
     <item>其他</item>
         
   </string-array>
+	<string name="copied">已复制</string>
+	<string name="paste_id_telegram">请在Telegram上粘贴ID。</string>
+	<string name="check_update">检查更新</string>
+	<string name="download_new_version">你想下载最新版本的 nthLink 吗？</string>
+	<string name="last_version">你的 nthLink 是最新版本。</string>
+	<string name="visit">访问</string>
+	<string name="follow_us">关注我们</string>
   
 </resources>

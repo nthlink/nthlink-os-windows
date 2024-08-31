@@ -45,7 +45,7 @@
       
   <string name="about_version">Verzija %s</string>
       
-  <string name="about_text">nthLink je pokrenut 2016. godine kao projekt skupine iskusnih inženjera za softver i informacijsku sigurnost kako bi podržao odvjetnike za ljudska prava u dobivanju cenzuriranih informacija i izražavanju svojih perspektiva vanjskom svijetu.\n\nNaš razvojni tim ističe se i sofisticiranošću tehnologije zaobilaženja cenzure i pouzdanošću usluge. S dugogodišnjim iskustvom u ovom specijalnom području, korisnicima u ciljanim područjima pružamo jednostavan, siguran i pouzdan pristup inače cenzuriranim informacijama.</string>
+  <string name="about_text">Mi smo skupina iskusnih inženjera za softver i informacijsku sigurnost koji su pokrenuli nthLink 2016. kako bi podržali odvjetnike za ljudska prava koji su trebali dobiti ograničene informacije i izraziti svoje perspektive. Od tada smo uslugu učinili dostupnom široj javnosti. Naš razvojni tim stručnjaci su za tehnologiju mrežne sigurnosti i pouzdanost usluge.\n\nNaša usluga je besplatna i ostat će besplatna zahvaljujući našim sponzorima i partnerima. Oni su:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nNaš razvojni tim ističe se i sofisticiranošću tehnologije zaobilaženja cenzure i pouzdanošću usluge. S dugogodišnjim iskustvom u ovom specijalnom području, korisnicima u ciljanim područjima pružamo jednostavan, siguran i pouzdan pristup inače cenzuriranim informacijama.</string>
       
   <string name="menu_drawer_item_1">Dom</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">Pomoć</string>
       
   <string name="menu_drawer_item_5">Ocijeni aplikaciju</string>
+	<string name="menu_drawer_item_6">Pravila o privatnosti</string>
       
   <string name="menu_web_item_1">Kopiraj link</string>
       
@@ -90,5 +91,12 @@
     <item>Ostalo</item>
         
   </string-array>
-  
+	<string name="copied">Kopirano</string>
+	<string name="paste_id_telegram">Molimo zalijepite ID na Telegram.</string>
+	<string name="check_update">Provjerite ažuriranje</string>
+	<string name="download_new_version">Želite li preuzeti novu verziju nthLinka?</string>
+	<string name="last_version">Vaš nthLink je posljednja verzija.</string>
+	<string name="visit">Posjetite</string>
+	<string name="follow_us">Pratite nas</string>
+
 </resources>

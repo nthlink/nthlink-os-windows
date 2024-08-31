@@ -45,7 +45,7 @@
       
   <string name="about_version">Versão %s</string>
       
-  <string name="about_text">O nthLink foi iniciado em 2016 como um projeto de um grupo de engenheiros experientes de software e segurança da informação para apoiar advogados de direitos humanos a obter informações censuradas e a expressar as suas perspectivas para o mundo exterior.\n\nA nossa equipa de desenvolvimento destaca-se tanto na sofisticação da tecnologia de evasão de censura quanto na fiabilidade do serviço. Com anos de experiência nesta área de especialidade, fornecemos aos utilizadores em regiões específicas acesso simples, seguro e fiável a informações censuradas.</string>
+  <string name="about_text">Somos um grupo de engenheiros experientes de software e segurança da informação que iniciou a nthLink em 2016 para apoiar advogados de direitos humanos que precisavam obter informações restritas e expressar suas perspectivas. Desde então, disponibilizamos o serviço ao público em geral. Nossa equipe de desenvolvimento é especialista em tecnologia de segurança de rede e confiabilidade de serviço.\n\nNosso serviço é gratuito e permanecerá gratuito graças aos nossos patrocinadores e parceiros. Eles são:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nNossa equipe de desenvolvimento se destaca tanto na sofisticação da tecnologia de evasão de censura quanto na confiabilidade do serviço. Com anos de experiência nesta área de especialidade, fornecemos aos usuários em regiões específicas acesso simples, seguro e confiável a informações censuradas.</string>
       
   <string name="menu_drawer_item_1">Página inicial</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">Ajuda</string>
       
   <string name="menu_drawer_item_5">Avaliar aplicação</string>
+	<string name="menu_drawer_item_6">Política de Privacidade</string>
       
   <string name="menu_web_item_1">Copiar ligação</string>
       
@@ -90,5 +91,11 @@
     <item>Outros</item>
         
   </string-array>
-  
+	<string name="copied">Copiado</string>
+	<string name="paste_id_telegram">Por favor, cole a ID no Telegram.</string>
+	<string name="check_update">Verificar atualização</string>
+	<string name="download_new_version">Deseja baixar a nova versão do nthLink?</string>
+	<string name="last_version">O seu nthLink é a última versão.</string>
+	<string name="visit">Visita</string>
+	<string name="follow_us">Siga-nos</string>
 </resources>

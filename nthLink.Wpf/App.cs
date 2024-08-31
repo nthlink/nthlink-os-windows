@@ -1,9 +1,6 @@
-﻿using CefSharp;
-using CefSharp.Wpf;
-using nthLink.Header;
+﻿using nthLink.Header;
 using nthLink.Header.Interface;
 using nthLink.SDK.Extension;
-using nthLink.SDK.Model;
 using nthLink.Wpf.Converter;
 using nthLink.Wpf.Interface;
 using nthLink.Wpf.MarkupExtension;
@@ -47,21 +44,6 @@ namespace nthLink.Wpf
                 splashWindow.Show();
             }
 
-            const int milliseconds = 3 * 1000;
-
-            Stopwatch stopwatch = Stopwatch.StartNew();
-
-            Cef.Initialize(new CefSettings());
-
-            stopwatch.Stop();
-
-            int sub = milliseconds - (int)stopwatch.ElapsedMilliseconds;
-
-            if (sub > 0)
-            {
-                await Task.Delay(sub);
-            }
-
             MainWindow = ContainerProvider.Resolve<Views.MainWindow>();
 
             if (splashWindow != null)
@@ -82,16 +64,15 @@ namespace nthLink.Wpf
             MainThreadSyncContext mainThreadSyncContext = new MainThreadSyncContext();
             return containerProvider
                 .Register<NotifyItemViewModel, NotifyItemViewModel>()
-                .Register<WebViewModel, WebViewModel>()
-                .Register<WebItemViewModel, WebItemViewModel>()
+                .Register<UpdateViewModel, UpdateViewModel>()
                 .Register<NewsItemViewModel, NewsItemViewModel>()
-                //.RegisterSingleton<IHttpObfuscator, HttpObfuscatorImp>()
+                .RegisterSingleton<IDialogBox, DialogPageViewModel>()
                 .RegisterSingleton<IWindowsRegister, RegisterImp>()
-                .RegisterInstance<IToastWindow>(new ToastWindowImp(mainThreadSyncContext))
                 .RegisterInstance<IMainThreadSyncContext>(mainThreadSyncContext)
                 .RegisterSingleton<ILanguageService, LanguageService>()
                 .RegisterSingleton<TranslationSource, TranslationSource>()
                 .RegisterSingleton<nthLink.Header.Interface.IWebBrowser, WebBrowserImp>()
+                .RegisterSingleton<IUpdater, UpdaterImp>()
                 .RegisterInstance<Encoding>(Encoding.UTF8)
                 .LoadModule()
                 .InitializeModuleAndCreateContainerProvider();
@@ -102,6 +83,7 @@ namespace nthLink.Wpf
             base.OnExit(e);
 
             ContainerProvider.Resolve<IDataPersistence>().Unwrap().ExecuteCache();
+            ContainerProvider.Resolve<ISystemReportLog>()?.Save();
         }
     }
 }

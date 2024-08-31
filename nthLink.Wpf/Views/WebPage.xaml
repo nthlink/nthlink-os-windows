@@ -21,8 +21,6 @@
         <Grid.RowDefinitions>
             <!--Notify-->
             <RowDefinition Height="Auto"/>
-            <!--Url-->
-            <RowDefinition Height="Auto"/>
             <!--Hot News-->
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
@@ -35,7 +33,7 @@
                             <Border Grid.Column="1"
                                 Margin="0,7,0,0"
                                 CornerRadius="6" 
-                                Background="{StaticResource AppWhite}">                               
+                                Background="{StaticResource AppWhite}">
                                 <Grid Width="259" Height="26">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="Auto"/>
@@ -60,20 +58,8 @@
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
         </Grid>
-        <!--Url-->
-        <Grid Grid.Row="1">
-            <ItemsControl ItemsSource="{Binding WebItemsSource}">
-                <ItemsControl.ItemContainerStyle>
-                    <Style TargetType="ContentPresenter">
-                        <Setter Property="Margin" Value="0,10,0,0"/>
-                        <Setter Property="Width" Value="259"/>
-                        <Setter Property="Height" Value="100"/>
-                    </Style>
-                </ItemsControl.ItemContainerStyle>
-            </ItemsControl>
-        </Grid>
         <!--Hot News-->
-        <Grid Grid.Row="2">
+        <Grid Grid.Row="1">
             <ItemsControl ItemsSource="{Binding NewsItemsSource}" Margin="0,16,0,0">
                 <ItemsControl.ItemContainerStyle>
                     <Style TargetType="ContentPresenter">

@@ -1,5 +1,4 @@
-﻿using CefSharp.Wpf;
-using nthLink.Header.Enum;
+﻿using nthLink.Header.Enum;
 using nthLink.Header.Interface;
 using nthLink.SDK.Extension;
 using nthLink.Wpf.ViewModels;
@@ -29,16 +28,6 @@ namespace nthLink.Wpf.Views
                !string.IsNullOrEmpty(viewModel.Url))
             {
                 this.webBrowser.OpenUrl(viewModel.Url, EventSourceTypeEnum.User);
-            }
-        }
-
-        protected async void ChromiumWebBrowser_Loaded(object sender, RoutedEventArgs e)
-        {
-            if (sender is ChromiumWebBrowser webBrowser &&
-                webBrowser.DataContext is WebItemViewModel viewModel &&
-                !string.IsNullOrEmpty(viewModel.Url))
-            {
-                await webBrowser.LoadUrlAsync(viewModel.Url);
             }
         }
     }

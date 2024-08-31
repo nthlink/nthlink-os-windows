@@ -21,7 +21,8 @@ namespace nthLink.Wpf.AttachedProperties
 
         // Using a DependencyProperty as the backing store for AutoAttach.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty AutoWireViewModelProperty =
-            DependencyProperty.RegisterAttached("AutoWireViewModel", typeof(bool), typeof(ViewModelLocator), new PropertyMetadata(OnAutoWireViewModelPropertyValueChanged));
+            DependencyProperty.RegisterAttached("AutoWireViewModel", typeof(bool), typeof(ViewModelLocator), 
+                new PropertyMetadata(OnAutoWireViewModelPropertyValueChanged));
 
         private static void OnAutoWireViewModelPropertyValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {

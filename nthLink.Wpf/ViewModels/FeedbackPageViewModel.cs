@@ -79,6 +79,7 @@ namespace nthLink.Wpf.ViewModels
             this.mainThreadSyncContext = mainThreadSyncContext;
             this.clientInfo = clientInfo;
             this.reportService = reportService;
+
             SendCommand = new RelayCommand(OnSendCommandExecute, CanSendCommandExecute);
 
             IssueCategories = MakeItemsSource(languageService);
@@ -103,18 +104,17 @@ namespace nthLink.Wpf.ViewModels
                 feedBackType = "General feedback";
             }
 
-            string result = await Task.Run(() => this.reportService.Feedback(
-                new FeedbackParameter()
-                {
-                    AppVersion = this.clientInfo.AppVersion.ToString(),
-                    ClientId = this.clientInfo.ClientGuid,
-                    Os = "Windows",
-                    Language = CultureInfo.CurrentUICulture.Name,
-                    UtcSent = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss"),
-                    FeedbackType = feedBackType,
-                    Description = this.Description,
-                    Email = this.Emlil,
-                }));
+            string result = await Task.Run(() => this.reportService.Feedback(new FeedbackParameter()
+            {
+                AppVersion = this.clientInfo.AppVersion.ToString(),
+                ClientId = this.clientInfo.ClientGuid,
+                Os = "Windows",
+                Language = CultureInfo.CurrentUICulture.Name,
+                UtcSent = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss"),
+                FeedbackType = feedBackType,
+                Description = this.Description,
+                Email = this.Emlil,
+            }));
 
             IsSendSuccess = string.IsNullOrEmpty(result);
 

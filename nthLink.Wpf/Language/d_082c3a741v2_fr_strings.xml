@@ -45,7 +45,7 @@
       
   <string name="about_version">Version %s</string>
       
-  <string name="about_text">nthLink a été lancé en 2016 en tant que projet par un groupe d\'ingénieurs expérimentés en logiciels et en sécurité de l\'information pour aider les avocats des droits de l\'homme à obtenir des informations censurées et à exprimer leurs points de vue au monde extérieur.\n\nNotre équipe de développement excelle à la fois dans la sophistication de la technologie de contournement de la censure et dans la fiabilité du service. Avec des années d\'expérience dans ce domaine de spécialité, nous fournissons aux utilisateurs des zones géographiques ciblées un accès simple, sûr et fiable à des informations autrement censurées.</string>
+  <string name="about_text">Nous sommes un groupe d'ingénieurs expérimentés en logiciels et en sécurité de l'information qui ont lancé nthLink en 2016 pour soutenir les avocats spécialisés dans les droits de l'homme qui avaient besoin d'obtenir des informations confidentielles et d'exprimer leurs points de vue. Depuis, nous avons rendu le service accessible au plus grand public. Notre équipe de développement est experte à la fois en technologie de sécurité réseau et en fiabilité des services.\n\nNotre service est gratuit et le restera grâce à nos sponsors et partenaires. Ils sont:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nNotre équipe de développement excelle à la fois dans la sophistication de la technologie de contournement de la censure et dans la fiabilité du service. Avec des années d\'expérience dans ce domaine de spécialité, nous fournissons aux utilisateurs des zones géographiques ciblées un accès simple, sûr et fiable à des informations autrement censurées.</string>
       
   <string name="menu_drawer_item_1">Accueil</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">Aider</string>
       
   <string name="menu_drawer_item_5">Application de taux</string>
+	<string name="menu_drawer_item_6">Politique de confidentialité</string>
       
   <string name="menu_web_item_1">Copier le lien</string>
       
@@ -90,5 +91,11 @@
     <item>Autre</item>
         
   </string-array>
-  
+	<string name="copied">Copié</string>
+	<string name="paste_id_telegram">Veuillez coller l'ID sur Telegram.</string>
+	<string name="check_update">Vérifier la mise à jour</string>
+	<string name="download_new_version">Voulez-vous télécharger la nouvelle version de nthLink?</string>
+	<string name="last_version">Votre nthLink est la dernière version.</string>
+	<string name="visit">Visite</string>
+	<string name="follow_us">Suivez-nous</string>
 </resources>

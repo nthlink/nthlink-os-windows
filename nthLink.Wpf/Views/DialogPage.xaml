@@ -1,0 +1,96 @@
+﻿<UserControl x:Class="nthLink.Wpf.Views.DialogPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:nthLink.Wpf.Views"
+             xmlns:viewModels="clr-namespace:nthLink.Wpf.ViewModels"
+             xmlns:attachProperties="clr-namespace:nthLink.Wpf.AttachedProperties"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             d:DataContext="{d:DesignInstance Type=viewModels:DialogPageViewModel}"
+             attachProperties:ViewModelLocator.AutoWireViewModel="True">
+    <Grid>
+        <Border CornerRadius="7"
+                BorderThickness="1"
+                BorderBrush="{StaticResource AppDisabledForeground}"
+                Background="{StaticResource AppWhiteBackground}">
+            <Grid Margin="0,8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="{Binding Title}"
+                           Visibility="{Binding Title, Converter={StaticResource NotNullOrEmptyToVisibilityConverter}}"
+                               Margin="8,6,8,0"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"
+                           FontWeight="Bold"
+                           Foreground="{StaticResource AppBlack}"
+                           FontSize="15"/>
+                <TextBlock Grid.Row="1" Text="{Binding Message}"
+                               Margin="8,6,8,0"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"
+                           Foreground="{StaticResource AppBlack}"
+                           FontSize="13"/>
+                <Grid Grid.Row="2">
+                    <Grid.Resources>
+                        <Style TargetType="Button" BasedOn="{StaticResource TransparentButton}">
+                            <Setter Property="Height" Value="23"/>
+                            <Setter Property="Margin" Value="10,0"/>
+                        </Style>
+                        <Style x:Key="DialogButtonBorder" TargetType="Border">
+                            <Setter Property="CornerRadius" Value="7"/>
+                            <Setter Property="Background" Value="{StaticResource AppLightBackground}"/>
+                        </Style>
+                        <Style x:Key="DialogButtonTextBlock" TargetType="TextBlock">
+                            <Setter Property="FontSize" Value="11"/>
+                            <Setter Property="FontWeight" Value="SemiBold"/>
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center"/>
+                            <Setter Property="Foreground" Value="{StaticResource AppWhite}"/>
+                        </Style>
+                    </Grid.Resources>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="PART_FalseButton" Command="{Binding FalseCommand}"
+            Visibility="{Binding FalseOption, Converter={StaticResource NotNullOrEmptyToVisibilityConverter}}"
+            HorizontalAlignment="Stretch" Grid.Column="0">
+                        <Border Style="{StaticResource DialogButtonBorder}">
+                            <TextBlock Style="{StaticResource DialogButtonTextBlock}" 
+                       Text="{Binding FalseOption}"/>
+                        </Border>
+                    </Button>
+
+                    <Button x:Name="TrueButton" Command="{Binding TrueCommand}">
+                        <Button.Style>
+                            <Style TargetType="Button" BasedOn="{StaticResource TransparentButton}">
+                                <Setter Property="Height" Value="23"/>
+                                <Setter Property="Margin" Value="10,0"/>
+                                <Setter Property="Grid.Column" Value="1" />
+                                <Setter Property="Grid.ColumnSpan" Value="1" />
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding Path=Visibility, ElementName=PART_FalseButton}" Value="Collapsed">
+                                        <Setter Property="Grid.Column" Value="0" />
+                                        <Setter Property="Grid.ColumnSpan" Value="2" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Border Style="{StaticResource DialogButtonBorder}">
+                            <TextBlock Style="{StaticResource DialogButtonTextBlock}" 
+                       Text="{Binding TrueOption}"/>
+                        </Border>
+                    </Button>
+                </Grid>
+            </Grid>
+            <Border.Effect>
+                <DropShadowEffect Color="Gray" BlurRadius="8" ShadowDepth="3" Direction="260"/>
+            </Border.Effect>
+        </Border>
+    </Grid>
+</UserControl>

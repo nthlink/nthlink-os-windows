@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<Obfuscator>
+  <Var name="PluginsPath" value=".\ReleaseWorkspace\ReleaseData\Plugins\x86" />
+  <Var name="AppPath" value=".\ReleaseWorkspace\ReleaseData\x86" />
+  <Var name="OutPath" value=".\ReleaseWorkspace\ReleaseData\Plugins\x86\Confused" />
+  <Module file="$(AppPath)\nthLink.Header.dll" /> 
+  <Module file="$(AppPath)\nthLink.SDK.dll" /> 
+  <Module file="$(PluginsPath)\nthLink.Plugins.Leaf.dll" /> 
+  <Module file="$(PluginsPath)\outline-sdk-windows.dll" /> 
+  <AssemblySearchPath path=".\DotnetSpace\shared\Microsoft.WindowsDesktop.App\6.0.20\" />
+</Obfuscator>

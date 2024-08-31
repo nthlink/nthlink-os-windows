@@ -1,5 +1,7 @@
-﻿using nthLink.Header.Enum;
+﻿using nthLink.Header;
+using nthLink.Header.Enum;
 using nthLink.Header.Interface;
+using nthLink.Header.Struct;
 using nthLink.SDK.Extension;
 using nthLink.SDK.Model;
 using System;
@@ -19,13 +21,6 @@ namespace nthLink.Wpf.ViewModels
         public StateEnum State
         {
             get { return this.state; }
-            private set
-            {
-                if (SetProperty(ref this.state, value))
-                {
-                    StateChanged(this.state);
-                }
-            }
         }
 
         private bool isConnected;
@@ -95,23 +90,28 @@ namespace nthLink.Wpf.ViewModels
 
         public bool ShowServerState => !string.IsNullOrEmpty(ServerStateString);
 
-        private readonly IVpnService vpnService;
         private readonly IContainerProvider containerProvider;
         private readonly ReaderWriterLockSlim readerWriterLock = new ReaderWriterLockSlim();
-        private readonly ILogger logger;
-        //private readonly IVpsKernel vpsKernel;
         private readonly IMainThreadSyncContext mainThreadSyncContext;
         private readonly IDirectoryServerConfigProvider directoryServerConfigProvider;
         public MainPageViewModel(IContainerProvider containerProvider)
         {
             this.containerProvider = containerProvider;
-            this.vpnService = containerProvider.Resolve<IVpnService>().Unwrap();
-            this.vpnService.StateChanged += VpsService_StateChanged;
             this.mainThreadSyncContext = containerProvider.Resolve<IMainThreadSyncContext>().Unwrap();
             this.directoryServerConfigProvider = containerProvider.Resolve<IDirectoryServerConfigProvider>().Unwrap();
-            this.logger = containerProvider.Resolve<ILogger>().Unwrap();
             ConnectionCommand = new RelayCommand(OnConnectionCommandExecute, CanConnectionCommandExecute);
             NewsCommand = new RelayCommand(OnNewsCommandExecute, CanNewsCommandExecute);
+
+            if (this.containerProvider.Resolve<IEventBus<VpnServiceStateArgs>>()
+                   is IEventBus<VpnServiceStateArgs> eventBus)
+            {
+                eventBus.Subscribe(Const.Channel.VpnService, OnVpnServiceStateChanged);
+            }
+        }
+
+        private void OnVpnServiceStateChanged(string s, VpnServiceStateArgs args)
+        {
+            StateChanged(args.State, args.Message);
         }
 
         private bool CanNewsCommandExecute()
@@ -128,9 +128,16 @@ namespace nthLink.Wpf.ViewModels
             }
         }
 
-        private void StateChanged(StateEnum state)
+        private void StateChanged(StateEnum state, string message)
         {
+            if (!SetProperty(ref this.state, state))
+            {
+                return;
+            }
+
             Debug.Print(state.ToString());
+
+            ClearErrorMessage();
 
             switch (state)
             {
@@ -199,60 +206,53 @@ namespace nthLink.Wpf.ViewModels
                     break;
                 case StateEnum.Terminating:
                     {
-                        IsConnectingOrConnected = false;
-                        IsConnected = false;
-
                         ServerStateString = "connection_error";
                         ConnectButtonString = "connection_label_connect";
                         StateString = "connection_hint_connect";
                         HitToConnectString = string.Empty;
+                        IsConnectingOrConnected = false;
+                        IsConnected = false;
                     }
                     break;
                 default:
                     break;
             }
 
+            if (string.IsNullOrEmpty(message))
+            {
+                ServerErrorMessage = message;
+            }
+
             this.mainThreadSyncContext.Post(() =>
             {
+                RaisePropertyChanged(nameof(State));
                 ConnectionCommand.RaiseCanExecuteChanged();
                 NewsCommand.RaiseCanExecuteChanged();
             });
         }
 
-        private void VpsService_StateChanged(object? sender, EventArgs e)
+        private void OnConnectionCommandExecute()
         {
-            if (sender is IVpnService vpnService)
+            IEventBus<VpnServiceFunctionArgs>? functionEventBus =
+           this.containerProvider.Resolve<IEventBus<VpnServiceFunctionArgs>>();
+            if (functionEventBus != null)
             {
-                State = vpnService.State;
-            }
-        }
-
-        private async void OnConnectionCommandExecute()
-        {
-            if (this.vpnService.State == StateEnum.Waiting ||
-                this.vpnService.State == StateEnum.Stopped ||
-                this.vpnService.State == StateEnum.Terminating)
-            {
-                ClearErrorMessage();
-
-                State = StateEnum.Starting;
-
-                string errorMessage = await this.vpnService.ConnectAsync();
-
-                if (!string.IsNullOrEmpty(errorMessage))
+                if (State == StateEnum.Waiting ||
+                State == StateEnum.Stopped ||
+                State == StateEnum.Terminating)
                 {
-                    State = StateEnum.Terminating;
+                    ClearErrorMessage();
 
-                    this.logger.Log(LogLevelEnum.Error, $"Vpn service connect fail, {errorMessage}.");
+                    functionEventBus.Publish(Const.Channel.VpnService,
+                        new VpnServiceFunctionArgs(FunctionEnum.Start));
 
-                    ServerErrorMessage = errorMessage;
                 }
-            }
-            else
-            {
-                State = StateEnum.Stopping;
-                await this.vpnService.StopAsync();
-            }
+                else
+                {
+                    functionEventBus.Publish(Const.Channel.VpnService,
+                        new VpnServiceFunctionArgs(FunctionEnum.Stop));
+                }
+            };
         }
 
         private bool CanConnectionCommandExecute()

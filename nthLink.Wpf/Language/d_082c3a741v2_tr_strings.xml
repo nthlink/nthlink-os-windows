@@ -45,7 +45,7 @@
       
   <string name="about_version">Sürüm %s</string>
       
-  <string name="about_text">nthLink, bir grup deneyimli yazılım ve bilgi güvenliği mühendisi tarafından insan hakları avukatlarının sansürlü bilgi edinmelerine ve dış dünyaya bakış açılarını ifade etmelerine destek olmak amacıyla 2016 yılında başlatıldı.\n\nGeliştirme ekibimiz, hem sansür atlatma teknolojisinin gelişmişliği hem de hizmetin güvenilirliği konusunda üstündür. Bu uzmanlık alanındaki yılların deneyimiyle, hedeflenen coğrafyalardaki kullanıcılara, aksi takdirde sansürlenmiş bilgilere basit, güvenli ve güvenilir erişim sağlıyoruz.</string>
+  <string name="about_text">Kısıtlı bilgilere ihtiyaç duyan insan hakları avukatlarına destek olmak ve bakış açılarını ifade etmek amacıyla 2016 yılında nthLink'i kuran deneyimli yazılım ve bilgi güvenliği mühendislerinden oluşan bir grubuz. O zamandan bu yana hizmeti daha geniş bir kitlenin kullanımına sunduk. Geliştirme ekibimiz hem ağ güvenliği teknolojisi hem de hizmet güvenilirliği konusunda uzmandır.\n\nHizmetimiz ücretsizdir ve sponsorlarımız ve ortaklarımız sayesinde ücretsiz kalacaktır. Bunlar:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nGeliştirme ekibimiz, hem sansür atlatma teknolojisinin gelişmişliği hem de hizmetin güvenilirliği konusunda üstündür. Bu uzmanlık alanındaki yılların deneyimiyle, hedeflenen coğrafyalardaki kullanıcılara, aksi takdirde sansürlenmiş bilgilere basit, güvenli ve güvenilir erişim sağlıyoruz.</string>
       
   <string name="menu_drawer_item_1">Ev</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">Yardım</string>
       
   <string name="menu_drawer_item_5">Uygulamayı Değerlendir</string>
+	<string name="menu_drawer_item_6">Gizlilik Politikası</string>
       
   <string name="menu_web_item_1">Bağlantıyı kopyala</string>
       
@@ -90,5 +91,12 @@
     <item>Diğer</item>
         
   </string-array>
+	<string name="copied">Kopyalandı</string>
+	<string name="paste_id_telegram">Lütfen Telegram'a kimliği yapıştırın.</string>
+	<string name="check_update">Güncellemeyi kontrol et</string>
+	<string name="download_new_version">nthLink'in yeni sürümünü indirmek ister misiniz?</string>
+	<string name="last_version">nthLink'iniz son sürüm.</string>
+	<string name="visit">Ziyaret et</string>
+	<string name="follow_us">Bizi takip edin</string>
   
 </resources>

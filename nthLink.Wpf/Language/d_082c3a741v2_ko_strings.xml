@@ -4,7 +4,7 @@
     
   <string name="privacy_notice_title">귀하의 개인 정보가 우선입니다</string>
       
-  <string name="privacy_notice_text">nthLink는 귀하가 방문하는 개인 식별 정보 또는 웹사이트 / 온라인 서비스를 수집하지 않습니다. nthLink 서버에 연결하여 귀하의 IP 주소, 장치의 기본 언어, 쿠키 및 기본 장치 정보 ( 예: 운영 체제 정보)를 사용하여 귀하의 장치를 가장 잘 지원할 수 있는 가장 가까운 서버를 찾고 연결 시 적절한 웹 페이지를 표시하는 등 귀하가 받는 서비스를 사용자 정의합니다.</string>
+  <string name="privacy_notice_text">우리는 제한된 정보를 얻고 자신의 관점을 표현해야 하는 인권 변호사를 지원하기 위해 2016년 nthLink를 시작한 숙련된 소프트웨어 및 정보 보안 엔지니어 그룹입니다. 그 이후로 우리는 더 많은 대중에게 서비스를 제공했습니다. 우리 개발팀은 네트워크 보안 기술과 서비스 안정성 분야의 전문가입니다.\n\n우리의 서비스는 무료이며 후원자와 파트너 덕분에 계속 무료로 유지될 것입니다. 그들은:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\n우리 개발 팀은 검열 우회 기술의 정교함과 서비스의 신뢰성 모두에서 탁월합니다. 이 전문 분야에서 다년간의 경험을 바탕으로 대상 지역의 사용자에게 검열된 정보에 간단하고 안전하며 신뢰할 수 있는 액세스를 제공합니다.</string>
       
   <string name="privacy_notice_submit">수락 및 계속</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">도움말</string>
       
   <string name="menu_drawer_item_5">앱 평가</string>
+	<string name="menu_drawer_item_6">개인정보처리방침</string>
       
   <string name="menu_web_item_1">링크 복사</string>
       
@@ -90,5 +91,11 @@
     <item>기타</item>
         
   </string-array>
-  
+	<string name="copied">복사됨</string>
+	<string name="paste_id_telegram">Telegram에 ID를 붙여넣어주세요.</string>
+	<string name="check_update">업데이트 확인</string>
+	<string name="download_new_version">nthLink의 새 버전을 다운로드하시겠습니까?</string>
+	<string name="last_version">당신의 nthLink는 최신 버전입니다.</string>
+	<string name="visit">방문</string>
+	<string name="follow_us">팔로우하세요</string>
 </resources>

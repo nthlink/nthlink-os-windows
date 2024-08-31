@@ -11,6 +11,7 @@
                                   False="{x:Static Visibility.Visible}"/>
     <converter:StringToVisibilityConverter x:Key="StringToVisibilityConverter"/>
     <converter:ObjectEqualParameterToVisibilityConverter x:Key="ObjectEqualParameterToVisibilityConverter"/>
+    <converter:NotNullOrEmptyToVisibilityConverter x:Key="NotNullOrEmptyToVisibilityConverter"/>
     <converter:TureFalseConverter x:Key="ReverseBooleanConverter">
         <converter:TureFalseConverter.True>
             <sys:Boolean>

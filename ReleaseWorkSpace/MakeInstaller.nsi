@@ -9,18 +9,15 @@
 	!include WinMessages.nsh
 	;--------------------------------
 	
-	;!define Company_Name "Teon"
 	!define Product_Name "nthLink"
 	!define License_Folder "License"
 	!define Resource_Floder "Resource"
-	!define Source_File_Path "ReleaseData"
+	!define Source_File_Path "ReleaseData\${TargetPlatform}"
 	!define Icon_FileName "icon.ico"
 	
 	!define MUI_ICON "${Resource_Floder}\${Icon_FileName}"
 	!define MUI_UNICON "${Resource_Floder}\${Icon_FileName}"
-	
-	!define Net6X64 "windowsdesktop-runtime-win-x64.exe"
-	
+		
 	!define MUI_ABORTWARNING
 	
 	!insertmacro GetSize
@@ -55,12 +52,16 @@
 	VIAddVersionKey ProductName "${Product_Name}"
 	VIProductVersion "${Version}"
 	VIAddVersionKey ProductVersion "${Version}"
-	VIAddVersionKey LegalCopyright "Copyright(c) 2022 ${Product_Name} Corp.All rights"	
+	VIAddVersionKey LegalCopyright "Copyright(c) 2024 ${Product_Name} Corp.All rights"
 		
-	InstallDir "$PROGRAMFILES64\${Product_Name}"
+	Function .onInit
+		${If} ${TargetPlatform} == "x64"
+			StrCpy $INSTDIR "$PROGRAMFILES64\${Product_Name}"
+		${Else}
+			StrCpy $INSTDIR "$PROGRAMFILES\${Product_Name}"
+		${EndIf}
+	FunctionEnd
 	
-	
-	!define TargetPlatform "x64"	
 	OutFile "${Product_Name}_Installer_${TargetPlatform}_${Version}.exe"
 	
 	RequestExecutionLevel admin
@@ -72,10 +73,11 @@
 	!define VCPulsPuls "VC_redist.${TargetPlatform}.exe"	
 	!define Net6 "windowsdesktop-runtime-win-${TargetPlatform}.exe"
 	
+		
 	Section "Visual C++ Runtime"
 	SectionIn RO
 	SetOutPath "$INSTDIR"
-	File "${Resource_Floder}\${VCPulsPuls}"
+	File "${Resource_Floder}\${TargetPlatform}\${VCPulsPuls}"
 	ExecWait "$INSTDIR\${VCPulsPuls} /install /passive"
 	Delete "$INSTDIR\${VCPulsPuls}"
 	SectionEnd	
@@ -83,21 +85,15 @@
 	Section ".Net 6 Desktop Runtime"
 	SectionIn RO
 	SetOutPath "$INSTDIR"
-	File "${Resource_Floder}\${Net6}"
+	File "${Resource_Floder}\${TargetPlatform}\${Net6}"
 	ExecWait "$INSTDIR\${Net6} /install /quiet /norestart"
 	Delete "$INSTDIR\${Net6}"
 	SectionEnd
 	
-	Section ".Net 6 Desktop Runtime"
-	SectionIn RO
-	SetOutPath "$INSTDIR"
-	File "${Resource_Floder}\${Net6X64}"
-	ExecWait "$INSTDIR\${Net6X64} /install /quiet /norestart"
-	Delete "$INSTDIR\${Net6X64}"
-	SectionEnd
-	
-	Section "Install"	
-	
+	Section "Install"
+	  FindWindow $0 "" "nthLink"
+	  SendMessage $0 ${WM_CLOSE} 0 0
+	  Sleep 1500
 	; Clear Folder
 	Delete "$INSTDIR\*.*"
 	
@@ -133,7 +129,12 @@
 	Delete $INSTDIR\DataProtector.deps.json
 	Delete $INSTDIR\DataProtector.runtimeconfig.json
 		
-	SetRegView 64
+    ${If} ${TargetPlatform} == "x64"
+        SetRegView 64
+    ${Else}
+        SetRegView 32
+    ${EndIf}
+	
 	; Write the installation path into the registry
 	WriteRegStr HKLM "SOFTWARE\${Product_Name}" "InstallDir" "$INSTDIR"
 	WriteRegStr HKLM "SOFTWARE\${Product_Name}" "PolicyAgreed" "false"
@@ -175,7 +176,11 @@
 	
 	Section "Uninstall"	
 	; Make sure you are on the right path
-	SetRegView 64
+    ${If} ${TargetPlatform} == "x64"
+        SetRegView 64
+    ${Else}
+        SetRegView 32
+    ${EndIf}
 	
 	DeleteRegKey HKLM "SOFTWARE\${Product_Name}"
 	DeleteRegKey HKLM "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\${Product_Name}"

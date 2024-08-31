@@ -45,7 +45,7 @@
       
   <string name="about_version">الإصدار %s</string>
       
-  <string name="about_text">بدأ nthLink في عام 2016 كمشروع من قبل مجموعة من مهندسي البرمجيات وأمن المعلومات ذوي الخبرة لدعم محامي حقوق الإنسان للحصول على المعلومات الخاضعة للرقابة والتعبير عن وجهات نظرهم للعالم الخارجي.\n\nيتفوق فريق التطوير لدينا في كل من تطور تقنية التحايل على الرقابة وموثوقية الخدمة. مع سنوات من الخبرة في هذا المجال التخصصي ، نوفر للمستخدمين في المناطق الجغرافية المستهدفة وصولًا بسيطًا وآمنًا وموثوقًا إلى المعلومات الخاضعة للرقابة.</string>
+  <string name="about_text">بدأنحن مجموعة من مهندسي البرمجيات وأمن المعلومات ذوي الخبرة الذين أنشأنا nthLink في عام 2016 لدعم محامي حقوق الإنسان الذين يحتاجون إلى الحصول على معلومات مقيدة والتعبير عن وجهات نظرهم. ومنذ ذلك الحين جعلنا الخدمة متاحة للجمهور على نطاق أوسع. فريق التطوير لدينا هم خبراء في كل من تكنولوجيا أمن الشبكات وموثوقية الخدمة.\n\nخدمتنا مجانية وستظل مجانية بفضل الرعاة والشركاء. هم:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nيتفوق فريق التطوير لدينا في كل من تطور تقنية التحايل على الرقابة وموثوقية الخدمة. مع سنوات من الخبرة في هذا المجال التخصصي ، نوفر للمستخدمين في المناطق الجغرافية المستهدفة وصولًا بسيطًا وآمنًا وموثوقًا إلى المعلومات الخاضعة للرقابة.</string>
       
   <string name="menu_drawer_item_1">مسكن</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">يساعد</string>
       
   <string name="menu_drawer_item_5">قيم التطبيق</string>
+	<string name="menu_drawer_item_6">سياسة الخصوصية</string>
       
   <string name="menu_web_item_1">نسخ الوصلة</string>
       
@@ -90,5 +91,11 @@
     <item>آخر</item>
         
   </string-array>
-  
+	<string name="copied">تم النسخ</string>
+	<string name="paste_id_telegram">يرجى لصق المعرف على Telegram</string>
+	<string name="check_update">تحقق من التحديث</string>
+	<string name="download_new_version">هل تريد تنزيل النسخة الجديدة من nthLink؟</string>
+	<string name="last_version">nthLink الخاص بك هو الإصدار الأخير.</string>
+	<string name="visit">زيارة</string>
+	<string name="follow_us">تابعنا</string>
 </resources>

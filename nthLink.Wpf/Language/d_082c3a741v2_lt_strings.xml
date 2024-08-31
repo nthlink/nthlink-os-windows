@@ -45,7 +45,7 @@
       
   <string name="about_version">%s versija</string>
       
-  <string name="about_text">„nthLink“ buvo pradėtas 2016 m. kaip patyrusių programinės įrangos ir informacijos saugumo inžinierių grupės projektas, skirtas padėti žmogaus teisių teisininkams gauti cenzūruotą informaciją ir pateikti savo požiūrį pasaulio žmonėms.\n\nMūsų kūrėjų komanda išsiskiria tiek cenzūros apėjimo technologija, tiek paslaugos patikimumu. Turėdami ilgametę patirtį šioje specialioje srityje, vartotojams tikslinėse geografinėse vietovėse suteikiame paprastą, saugią ir patikimą prieigą prie kitaip cenzūruojamos informacijos.</string>
+  <string name="about_text">Esame patyrusių programinės įrangos ir informacijos saugos inžinierių grupė, kuri 2016 m. pradėjo „nthLink“, siekdama paremti žmogaus teisių teisininkus, kuriems reikėjo gauti riboto naudojimo informaciją ir išreikšti savo požiūrį. Nuo tada paslauga tapo prieinama platesnei visuomenei. Mūsų kūrėjų komanda yra tinklo saugumo technologijų ir paslaugų patikimumo ekspertai.\n\nMūsų paslauga yra nemokama ir išliks nemokama mūsų rėmėjų ir partnerių dėka. Jie yra:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nMūsų kūrėjų komanda išsiskiria tiek cenzūros apėjimo technologija, tiek paslaugos patikimumu. Turėdami ilgametę patirtį šioje specialioje srityje, vartotojams tikslinėse geografinėse vietovėse suteikiame paprastą, saugią ir patikimą prieigą prie kitaip cenzūruojamos informacijos.</string>
       
   <string name="menu_drawer_item_1">Pagrindinis</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">Pagalba</string>
       
   <string name="menu_drawer_item_5">Įvertinkite programėlę</string>
+	<string name="menu_drawer_item_6">Privatumo politika</string>
       
   <string name="menu_web_item_1">Nukopijuoti nuorodą</string>
       
@@ -90,5 +91,11 @@
     <item>Kita</item>
         
   </string-array>
-  
+	<string name="copied">Nukopijuota</string>
+	<string name="paste_id_telegram">Prašome įklijuoti ID į „Telegram“.</string>
+	<string name="check_update">Patikrinti atnaujinimą</string>
+	<string name="download_new_version">Ar norite atsisiųsti naują nthLink versiją?</string>
+	<string name="last_version">Jūsų nthLink yra naujausia versija.</string>
+	<string name="visit">Apsilankyti</string>
+	<string name="follow_us">Sekite mus</string>
 </resources>

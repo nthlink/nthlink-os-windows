@@ -45,7 +45,7 @@
       
   <string name="about_version">Versiunea %s</string>
       
-  <string name="about_text">nthLink a fost lansat în 2016 ca un proiect de către un grup de ingineri experimentați în domeniul software și al securității informațiilor pentru a sprijini avocații pentru drepturile omului să obțină informații cenzurate și să își exprime perspectivele către lumea exterioară.\n\nEchipa noastră de dezvoltare excelează atât în ceea ce privește sofisticarea tehnologiei de eludare a cenzurii, cât și fiabilitatea serviciului. Cu ani de experiență în acest domeniu de specialitate, oferim utilizatorilor din zonele geografice vizate acces simplu, sigur și de încredere la informații cenzurate altfel.</string>
+  <string name="about_text">Suntem un grup de ingineri cu experiență în software și securitate a informațiilor care au început nthLink în 2016 pentru a sprijini avocații pentru drepturile omului care aveau nevoie să obțină informații restricționate și să-și exprime perspectivele. De atunci, am pus serviciul la dispoziția publicului larg. Echipa noastră de dezvoltare este experți atât în tehnologia de securitate a rețelei, cât și în fiabilitatea serviciilor.\n\nServiciul nostru este gratuit și va rămâne gratuit datorită sponsorilor și partenerilor noștri. Sunt:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nEchipa noastră de dezvoltare excelează atât în ceea ce privește sofisticarea tehnologiei de eludare a cenzurii, cât și fiabilitatea serviciului. Cu ani de experiență în acest domeniu de specialitate, oferim utilizatorilor din zonele geografice vizate acces simplu, sigur și de încredere la informații cenzurate altfel.</string>
       
   <string name="menu_drawer_item_1">Acasă</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">Ajutor</string>
       
   <string name="menu_drawer_item_5">Evaluați aplicația</string>
+	<string name="menu_drawer_item_6">Politica de confidențialitate</string>
       
   <string name="menu_web_item_1">Copiază legătură</string>
       
@@ -90,5 +91,11 @@
     <item>Alte</item>
         
   </string-array>
-  
+	<string name="copied">Copiat</string>
+	<string name="paste_id_telegram">Vă rugăm să inserați ID-ul pe Telegram.</string>
+    <string name="check_update">Verificare actualizare</string>
+    <string name="download_new_version">Doriți să descărcați noua versiune a nthLink?</string>
+    <string name="last_version">nthLink-ul dvs. este ultima versiune.</string>
+	<string name="visit">Vizitați</string>
+	<string name="follow_us">Urmărește-ne</string>
 </resources>

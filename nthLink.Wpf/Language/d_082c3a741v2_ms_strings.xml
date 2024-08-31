@@ -45,7 +45,7 @@
       
   <string name="about_version">Versi %s</string>
       
-  <string name="about_text">nthLink dimulakan pada 2016 sebagai projek oleh sekumpulan jurutera perisian dan keselamatan maklumat yang berpengalaman untuk menyokong peguam hak asasi manusia mendapatkan maklumat yang ditapis dan untuk menyatakan perspektif mereka kepada dunia luar.\n\nPasukan pembangunan kami cemerlang dalam kecanggihan teknologi pemintasan penapisan dan kebolehpercayaan perkhidmatan. Dengan pengalaman bertahun-tahun dalam bidang khusus ini, kami menyediakan pengguna dalam kawasan sasaran akses mudah, selamat dan boleh dipercayai kepada maklumat yang ditapis sebaliknya.</string>
+  <string name="about_text">Kami adalah sekumpulan jurutera perisian dan keselamatan maklumat berpengalaman yang memulakan nthLink pada 2016 untuk menyokong peguam hak asasi manusia yang perlu mendapatkan maklumat terhad dan menyatakan perspektif mereka. Sejak itu kami telah menyediakan perkhidmatan ini kepada orang ramai. Pasukan pembangunan kami adalah pakar dalam kedua-dua teknologi keselamatan rangkaian dan kebolehpercayaan perkhidmatan.\n\nPerkhidmatan kami adalah percuma dan akan kekal percuma terima kasih kepada penaja dan rakan kongsi kami. Mereka ialah:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nPasukan pembangunan kami cemerlang dalam kecanggihan teknologi pemintasan penapisan dan kebolehpercayaan perkhidmatan. Dengan pengalaman bertahun-tahun dalam bidang khusus ini, kami menyediakan pengguna dalam kawasan sasaran akses mudah, selamat dan boleh dipercayai kepada maklumat yang ditapis sebaliknya.</string>
       
   <string name="menu_drawer_item_1">Laman Utama</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">Bantuan</string>
       
   <string name="menu_drawer_item_5">Nilai Aplikasi</string>
+	<string name="menu_drawer_item_6">Dasar Privasi</string>
       
   <string name="menu_web_item_1">Salin pautan</string>
       
@@ -90,5 +91,11 @@
     <item>Lain-lain</item>
         
   </string-array>
-  
+	<string name="copied">Disalin</string>
+	<string name="paste_id_telegram">Sila tampal ID di Telegram.</string>
+	<string name="check_update">Semak kemas kini</string>
+	<string name="download_new_version">Adakah anda mahu memuat turun versi baharu nthLink?</string>
+	<string name="last_version">nthLink anda adalah versi terkini.</string>
+	<string name="visit">Lawat</string>
+	<string name="follow_us">Ikuti kami</string>
 </resources>

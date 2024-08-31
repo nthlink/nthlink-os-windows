@@ -45,7 +45,7 @@
       
   <string name="about_version">Versió %s</string>
       
-  <string name="about_text">nthLink es va iniciar el 2016 com un projecte d\'un grup d\'enginyers de software i seguretat de la informació amb experiència per donar suport als advocats de drets humans per obtenir informació censurada i expressar les seves perspectives al món exterior.\n\nEl nostre equip de desenvolupament destaca tant per la sofisticació de la tecnologia d\'elusió de la censura com per la fiabilitat del servei. Amb anys d\'experiència en aquesta àrea d\'especialitat, oferim als usuaris en zones geogràfiques específiques un accés senzill, segur i fiable a la informació d\'altra manera.censurada.</string>
+  <string name="about_text">Som un grup d'enginyers de programari i seguretat de la informació amb experiència que van iniciar nthLink l'any 2016 per donar suport als advocats de drets humans que necessitaven obtenir informació restringida i expressar les seves perspectives. Des d'aleshores hem posat el servei a disposició del públic en general. El nostre equip de desenvolupament és expert tant en tecnologia de seguretat de xarxa com en fiabilitat del servei.\n\nEl nostre servei és gratuït i seguirà sent gratuït gràcies als nostres patrocinadors i socis. Ells són:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nEl nostre equip de desenvolupament destaca tant per la sofisticació de la tecnologia d'elusió de la censura com per la fiabilitat del servei. Amb anys d'experiència en aquesta àrea d'especialitat, oferim als usuaris en zones geogràfiques específiques un accés senzill, segur i fiable a la informació d'altra manera.censurada.</string>
       
   <string name="menu_drawer_item_1">Inici</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">Ajuda</string>
       
   <string name="menu_drawer_item_5">Valorar l\'aplicació</string>
+	<string name="menu_drawer_item_6">Política de privacitat</string>
       
   <string name="menu_web_item_1">Copiar l\'enllaç</string>
       
@@ -90,5 +91,11 @@
     <item>Altres</item>
         
   </string-array>
-  
+	<string name="copied">Copiat</string>
+	<string name="paste_id_telegram">Si us plau, enganxeu l'ID al Telegram.</string>
+	<string name="check_update">Comprova l'actualització</string>
+	<string name="download_new_version">Voleu descarregar la nova versió de nthLink?</string>
+	<string name="last_version">El vostre nthLink és l'última versió.</string>
+	<string name="visit">Visita</string>
+	<string name="follow_us">Segueix-nos</string>
 </resources>

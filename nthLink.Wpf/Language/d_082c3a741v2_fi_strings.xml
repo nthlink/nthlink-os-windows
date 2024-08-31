@@ -45,7 +45,7 @@
       
   <string name="about_version">Versio %s</string>
       
-  <string name="about_text">nthLink käynnistettiin vuonna 2016 kokeneiden ohjelmisto- ja tietoturvainsinöörien ryhmän projektina, jonka tarkoituksena on tukea ihmisoikeusjuristeja hankkimaan sensuroitua tietoa ja ilmaisemaan näkemyksiään ulkomaailmalle.\n\nKehitystiimimme on erinomaista sekä sensuurin kiertämistekniikan hienostuneisuudessa että palvelun luotettavuudessa. Vuosien kokemuksella tällä erikoisalalla tarjoamme käyttäjille kohdistetulla maantieteellisellä alueella yksinkertaisen, turvallisen ja luotettavan pääsyn muuten sensuroituun tietoon.</string>
+  <string name="about_text">Olemme joukko kokeneita ohjelmisto- ja tietoturvainsinöörejä, jotka aloittivat nthLinkin vuonna 2016 tukemaan ihmisoikeusjuristeja, jotka tarvitsivat rajoitetun tiedon hankkimista ja näkemyksensä ilmaisemista. Siitä lähtien olemme tarjonneet palvelun laajemman yleisön saataville. Kehitystiimimme on sekä verkkoturvatekniikan että palvelun luotettavuuden asiantuntijoita.\n\nPalvelumme on ilmainen ja pysyy maksuttomana sponsoridemme ja yhteistyökumppaneidemme ansiosta. He ovat:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nKehitystiimimme on erinomaista sekä sensuurin kiertämistekniikan hienostuneisuudessa että palvelun luotettavuudessa. Vuosien kokemuksella tällä erikoisalalla tarjoamme käyttäjille kohdistetulla maantieteellisellä alueella yksinkertaisen, turvallisen ja luotettavan pääsyn muuten sensuroituun tietoon.</string>
       
   <string name="menu_drawer_item_1">Koti</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">Auta</string>
       
   <string name="menu_drawer_item_5">Arvostele sovellus</string>
+	<string name="menu_drawer_item_6">Tietosuojakäytäntö</string>
       
   <string name="menu_web_item_1">Kopioi linkki</string>
       
@@ -90,5 +91,11 @@
     <item>Muut</item>
         
   </string-array>
-  
+	<string name="copied">Kopioitu</string>
+	<string name="paste_id_telegram">Liitä tunnus Telegramiin.</string>
+	<string name="check_update">Tarkista päivitys</string>
+	<string name="download_new_version">Haluatko ladata nthLinkin uuden version?</string>
+	<string name="last_version">nthLinkisi on uusin versio.</string>
+	<string name="visit">Vieraile</string>
+	<string name="follow_us">Seuraa meitä</string>
 </resources>

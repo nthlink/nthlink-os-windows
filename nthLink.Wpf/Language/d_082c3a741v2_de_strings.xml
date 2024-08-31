@@ -45,7 +45,7 @@
       
   <string name="about_version">Version %s</string>
       
-  <string name="about_text">nthLink wurde 2016 als Projekt von einer Gruppe erfahrener Software- und Informationssicherheitsingenieure gestartet, um Menschenrechtsanwälte dabei zu unterstützen, zensierte Informationen zu erhalten und ihre Perspektiven nach außen zu äußern.\n\nUnser Entwicklungsteam zeichnet sich sowohl durch die ausgeklügelte Technologie zur Umgehung der Zensur als auch durch die Zuverlässigkeit des Dienstes aus. Mit jahrelanger Erfahrung in diesem Spezialgebiet bieten wir den Benutzern in bestimmten Regionen einen einfachen, sicheren und zuverlässigen Zugriff auf ansonsten zensierte Informationen.</string>
+  <string name="about_text">Wir sind eine Gruppe erfahrener Software- und Informationssicherheitsingenieure, die nthLink im Jahr 2016 gegründet haben, um Menschenrechtsanwälte zu unterstützen, die vertrauliche Informationen erhalten und ihre Ansichten äußern mussten. Seitdem haben wir den Service einer breiten Öffentlichkeit zugänglich gemacht. Unser Entwicklungsteam besteht aus Experten sowohl für Netzwerksicherheitstechnologie als auch für Servicezuverlässigkeit.\n\nUnser Service ist kostenlos und wird dank unserer Sponsoren und Partner auch weiterhin kostenlos bleiben. Sie sind:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nUnser Entwicklungsteam zeichnet sich sowohl durch die ausgeklügelte Technologie zur Umgehung der Zensur als auch durch die Zuverlässigkeit des Dienstes aus. Mit jahrelanger Erfahrung in diesem Spezialgebiet bieten wir den Benutzern in bestimmten Regionen einen einfachen, sicheren und zuverlässigen Zugriff auf ansonsten zensierte Informationen.</string>
       
   <string name="menu_drawer_item_1">Heim</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">Hilfe</string>
       
   <string name="menu_drawer_item_5">Bewertungs App</string>
+	<string name="menu_drawer_item_6">Datenschutzrichtlinie</string>
       
   <string name="menu_web_item_1">Link kopieren</string>
       
@@ -90,5 +91,11 @@
     <item>Andere</item>
         
   </string-array>
-  
+	<string name="copied">Kopiert</string>
+	<string name="paste_id_telegram">Bitte fügen Sie die ID in Telegram ein.</string>
+	<string name="check_update">Auf Updates prüfen</string>
+	<string name="download_new_version">Möchten Sie die neue Version von nthLink herunterladen?</string>
+	<string name="last_version">Ihr nthLink ist die neueste Version.</string>
+	<string name="visit">Besuchen</string>
+	<string name="follow_us">Folgen Sie uns</string>
 </resources>

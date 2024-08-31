@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using nthLink.Header.Enum;
 using nthLink.Header.Interface;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace nthLink.Wpf.Model
@@ -52,23 +53,23 @@ namespace nthLink.Wpf.Model
 
                         if (browserPath.Contains("chrome"))
                         {
-                            privateModeParam = $"-incognito {url}";
+                            privateModeParam = $"-incognito";
                         }
                         else
                         if (browserPath.Contains("edge"))
                         {
-                            privateModeParam = $"-inprivate {url}";
+                            privateModeParam = $"-inprivate";
                         }
                         else
                         if (browserPath.Contains("firefox"))
                         {
-                            privateModeParam = $"-private-window {url}";
+                            privateModeParam = $"-private-window";
                         }
                         else
                         if (browserPath.Contains("iexplore") ||
                             browserPath.Contains("opera"))
                         {
-                            privateModeParam = $"-private {url}";
+                            privateModeParam = $"-private";
                         }
                         else
                         {
@@ -77,7 +78,22 @@ namespace nthLink.Wpf.Model
 
                         string processPath = browserPath.Substring(0, browserPath.LastIndexOf(".exe") + 4);
 
-                        Process.Start(processPath, browserPath.Replace(processPath, string.Empty).Replace("%1", privateModeParam));
+                        string args = browserPath.Replace(processPath, string.Empty).Replace("%1", privateModeParam);
+
+                        List<string> browserArgs = new List<string>();
+
+                        if (args.Contains(' '))
+                        {
+                            browserArgs.AddRange(args.Split(' ', System.StringSplitOptions.RemoveEmptyEntries));
+                        }
+                        else
+                        {
+                            browserArgs.Add(args);
+                        }
+
+                        browserArgs.Add(url);
+
+                        Process.Start(processPath, browserArgs);
                     }
 
                     browserKey.Close();

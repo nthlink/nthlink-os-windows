@@ -45,7 +45,7 @@
       
   <string name="about_version">Versie %s</string>
       
-  <string name="about_text">nthLink is in 2016 gestart als een project van een groep ervaren ingenieurs die gespecialiseerd zijn in software- en informatiebeveiliging om mensenrechtenadvocaten te ondersteunen bij het verkrijgen van gecensureerde informatie en om hun perspectieven naar de buitenwereld te uiten.\n\nOns ontwikkelingsteam blinkt uit in zowel de verfijning van technologie voor het omzeilen van censuur als de betrouwbaarheid van de service. Met jarenlange ervaring op dit speciale gebied bieden we de gebruikers in gerichte geografische gebieden eenvoudige, veilige en betrouwbare toegang tot anderszins gecensureerde informatie.</string>
+  <string name="about_text">Wij zijn een groep ervaren software- en informatiebeveiligingsingenieurs die in 2016 nthLink zijn gestart om mensenrechtenadvocaten te ondersteunen die beperkte informatie moesten verkrijgen en hun perspectieven moesten uiten. Sindsdien hebben we de dienst beschikbaar gemaakt voor een breder publiek. Ons ontwikkelingsteam is expert op het gebied van zowel netwerkbeveiligingstechnologie als servicebetrouwbaarheid.\n\nOnze dienstverlening is gratis en blijft gratis dankzij onze sponsors en partners. Zij zijn:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nOns ontwikkelingsteam blinkt uit in zowel de verfijning van technologie voor het omzeilen van censuur als de betrouwbaarheid van de service. Met jarenlange ervaring op dit speciale gebied bieden we de gebruikers in gerichte geografische gebieden eenvoudige, veilige en betrouwbare toegang tot anderszins gecensureerde informatie.</string>
       
   <string name="menu_drawer_item_1">Thuis</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">Hulp</string>
       
   <string name="menu_drawer_item_5">Beoordeel app</string>
+	<string name="menu_drawer_item_6">Privacybeleid</string>
       
   <string name="menu_web_item_1">Link kopiëren</string>
       
@@ -90,5 +91,11 @@
     <item>Overig</item>
         
   </string-array>
-  
+	<string name="copied">Gekopieerd</string>
+	<string name="paste_id_telegram">Plak de ID in Telegram.</string>
+	<string name="check_update">Update controleren</string>
+	<string name="download_new_version">Wilt u de nieuwe versie van nthLink downloaden?</string>
+	<string name="last_version">Uw nthLink is de laatste versie.</string>
+	<string name="visit">Bezoek</string>
+	<string name="follow_us">Volg ons</string>
 </resources>

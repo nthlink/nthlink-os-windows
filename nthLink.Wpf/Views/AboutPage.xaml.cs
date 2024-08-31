@@ -1,4 +1,5 @@
-﻿using System.Windows.Controls;
+﻿using System.Windows;
+using System.Windows.Controls;
 
 namespace nthLink.Wpf.Views
 {
@@ -10,6 +11,11 @@ namespace nthLink.Wpf.Views
         public AboutPage()
         {
             InitializeComponent();
+        }
+
+        private void TextBlock_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            this.SetCurrentValue(FrameworkElement.VisibilityProperty, Visibility.Collapsed);
         }
     }
 }

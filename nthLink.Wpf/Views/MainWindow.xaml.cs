@@ -1,12 +1,17 @@
 ﻿using nthLink.Header;
 using nthLink.Header.Enum;
 using nthLink.Header.Interface;
+using nthLink.Header.Struct;
+using nthLink.SDK.Extension;
+using nthLink.Wpf.Interface;
 using nthLink.Wpf.ViewModels;
 using System;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
+using System.Windows.Interop;
+using static System.Windows.Forms.AxHost;
 
 namespace nthLink.Wpf.Views
 {
@@ -15,39 +20,70 @@ namespace nthLink.Wpf.Views
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly IContainerProvider containerProvider;
         private readonly IWebBrowser webBrowser;
         private readonly ILanguageService languageService;
         private readonly IMainThreadSyncContext mainThreadSyncContext;
+        private readonly IDialogBox dialogBox;
 
-        public MainWindow(IVpnService vpnService,
+        public MainWindow(IContainerProvider containerProvider,
             IWebBrowser webBrowser,
             ILanguageService languageService,
-            IMainThreadSyncContext mainThreadSyncContext)
+            IMainThreadSyncContext mainThreadSyncContext,
+            IDialogBox dialogBox)
         {
             InitializeComponent();
-
-            vpnService.StateChanged += VpsService_StateChanged;
+            this.containerProvider = containerProvider;
             this.webBrowser = webBrowser;
             this.languageService = languageService;
             this.mainThreadSyncContext = mainThreadSyncContext;
+            this.dialogBox = dialogBox;
+            if (containerProvider.Resolve<IEventBus<VpnServiceStateArgs>>()
+                   is IEventBus<VpnServiceStateArgs> eventBus)
+            {
+                eventBus.Subscribe(Const.Channel.VpnService, OnVpnServiceStateChanged);
+            }
+        }
+        protected override void OnSourceInitialized(EventArgs e)
+        {
+            base.OnSourceInitialized(e);
+            HwndSource? source = PresentationSource.FromVisual(this) as HwndSource;
+            if (source != null)
+            {
+                source.AddHook(WndProc);
+            }
         }
 
-        private void VpsService_StateChanged(object? sender, System.EventArgs e)
+        private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
         {
-            if (sender is IVpnService vpnService)
+            const int WM_CLOSE = 0x0010;
+
+            if (msg == WM_CLOSE)
             {
-                this.mainThreadSyncContext.Post(() =>
+                IEventBus<VpnServiceFunctionArgs>? functionEventBus =
+           this.containerProvider.Resolve<IEventBus<VpnServiceFunctionArgs>>();
+                if (functionEventBus != null)
                 {
-                    if (vpnService.State == StateEnum.Started)
-                    {
-                        PART_WebPageGrid.SetCurrentValue(VisibilityProperty, Visibility.Visible);
-                    }
-                    else
-                    {
-                        PART_WebPageGrid.SetCurrentValue(VisibilityProperty, Visibility.Collapsed);
-                    }
-                });
+                    functionEventBus.Publish(Const.Channel.VpnService,
+                        new VpnServiceFunctionArgs(FunctionEnum.Stop));
+                };
             }
+
+            return IntPtr.Zero;
+        }
+        private void OnVpnServiceStateChanged(string s, VpnServiceStateArgs args)
+        {
+            this.mainThreadSyncContext.Post(() =>
+            {
+                if (args.State == StateEnum.Started)
+                {
+                    PART_WebPageGrid.SetCurrentValue(VisibilityProperty, Visibility.Visible);
+                }
+                else
+                {
+                    PART_WebPageGrid.SetCurrentValue(VisibilityProperty, Visibility.Collapsed);
+                }
+            });
         }
 
         protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
@@ -211,6 +247,36 @@ namespace nthLink.Wpf.Views
         protected void PolicyPage_About(object sender, RoutedEventArgs e)
         {
             PART_AboutPage.SetCurrentValue(FrameworkElement.VisibilityProperty, Visibility.Visible);
+        }
+
+        private void PrivacyPolicyButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.webBrowser.OpenUrlWithoutReport("https://www.nthlink.com/policies/");
+        }
+
+        private void CheckUpdateButton_Click(object sender, RoutedEventArgs e)
+        {
+            CloseMenu();
+        }
+
+        private void CloseMenu()
+        {
+            PART_MenuPopup.SetCurrentValue(Popup.IsOpenProperty, false);
+        }
+
+        private void FollowUsButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            PART_MenuPopup.SetCurrentValue(Popup.IsOpenProperty, false);
+            PART_FollowUsPage.SetCurrentValue(FrameworkElement.VisibilityProperty, Visibility.Visible);
+        }
+
+        private void FollowUsPage_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (PART_FollowUsPage is FrameworkElement frameworkElement)
+            {
+                frameworkElement.SetCurrentValue(FrameworkElement.VisibilityProperty, Visibility.Collapsed);
+            }
         }
     }
 }

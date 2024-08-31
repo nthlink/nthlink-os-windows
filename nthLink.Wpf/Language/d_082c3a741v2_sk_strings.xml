@@ -45,7 +45,7 @@
       
   <string name="about_version">Verzia %s</string>
       
-  <string name="about_text">nthLink bol spustený v roku 2016 ako projekt skupiny skúsených softvérových a informačno-bezpečnostných inžinierov s cieľom podporiť právnikov v oblasti ľudských práv pri získavaní cenzurovaných informácií a pri vyjadrovaní ich perspektív pred vonkajším svetom.\n\nNáš vývojový tím vyniká tak sofistikovanosťou technológie na obchádzanie cenzúry, ako aj spoľahlivosťou služieb. S dlhoročnými skúsenosťami v tejto špeciálnej oblasti poskytujeme používateľom v cielených zemepisných oblastiach jednoduchý, bezpečný a spoľahlivý prístup k inak cenzurovaným informáciám.</string>
+  <string name="about_text">Sme skupina skúsených inžinierov v oblasti softvéru a informačnej bezpečnosti, ktorí spustili nthLink v roku 2016 na podporu právnikov v oblasti ľudských práv, ktorí potrebovali získať obmedzené informácie a vyjadriť svoje názory. Odvtedy sme službu sprístupnili širšej verejnosti. Náš vývojový tím je odborníkmi na technológiu zabezpečenia siete a spoľahlivosť služieb.\n\nNaša služba je bezplatná a zostane bezplatná vďaka našim sponzorom a partnerom. Oni sú:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nNáš vývojový tím vyniká tak sofistikovanosťou technológie na obchádzanie cenzúry, ako aj spoľahlivosťou služieb. S dlhoročnými skúsenosťami v tejto špeciálnej oblasti poskytujeme používateľom v cielených zemepisných oblastiach jednoduchý, bezpečný a spoľahlivý prístup k inak cenzurovaným informáciám.</string>
       
   <string name="menu_drawer_item_1">Domov</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">Pomoc</string>
       
   <string name="menu_drawer_item_5">Hodnotiť aplikáciu</string>
+	<string name="menu_drawer_item_6">Zásady ochrany osobných údajov</string>
       
   <string name="menu_web_item_1">Skopírovať odkaz</string>
       
@@ -90,5 +91,12 @@
     <item>Iné</item>
         
   </string-array>
+	<string name="copied">Skopírované</string>
+	<string name="paste_id_telegram">Prosím, prilepte ID do Telegramu.</string>
+	<string name="check_update">Skontrolovať aktualizáciu</string>
+	<string name="download_new_version">Chcete stiahnuť novú verziu nthLink?</string>
+	<string name="last_version">Vaše nthLink je posledná verzia.</string>
+	<string name="visit">Navštíviť</string>
+	<string name="follow_us">Sledujte nás</string>
   
 </resources>

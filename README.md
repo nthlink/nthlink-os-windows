@@ -19,28 +19,15 @@ Basically, our app has only one main function, the other functions are related t
 ![Home page](Readme/HomePage.png)
 
 There is one button named connect in home page, which is the function of start the connection.
-After connect to VPN successfully, it launch a news website on default browser at private mode automatically,
-and home page expand right view too.
 Click the disconnect button when connected, nthlink will disconnect to VPN server.
 
-#### Home page right view
-
-![home page right view](Readme/HomePageExpand.png)
-
-Here are some announcement and hot news, users can click to open websites on default browser at private mode.
+![home page right view](Readme/HomePageConnected.png)
 
 ### Home Page Menu
 
 There is menu button at top left in home page will pop menu when click. 
 Menu has three button items feedback, about and help.
 Feedback and about button will navigate to their page when click, and help button open [help website](https://s3.us-west-1.amazonaws.com/dwo-jar-kmf-883/help.html) on default browser at private mode.
-
-### Toast Window
-
-![toast window](Readme/ToastWindow.png)
-
-On the top-right corner of Home page is notification toggle button.
-We will push hot news by toast window when toggle was on, The toast window show at bottom right on Windows OS.
 
 ### Feedback Page
 
@@ -62,11 +49,7 @@ This page has nthLink information.
 
 There are two steps within connection.
 
-1. After click connecting button, nthlink will get a configuration from Directory Server, which is
-   used to connect to VPN server.
-
-2. After get the configuration, [leaf](https://github.com/eycorsican/leaf) will connect to the VPN
-   server, which is a VPN client library, written in Rust.
+1. After click connecting button, nthlink will connect to VPN server.
 
 ### Some of the uncommon codebase
 

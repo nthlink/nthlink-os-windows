@@ -45,7 +45,7 @@
       
   <string name="about_version">Version %s</string>
       
-  <string name="about_text">nthLink startades 2016 som ett projekt av en grupp erfarna mjukvaru- och informationssäkerhetsingenjörer för att stödja människorättsadvokater att få censurerad information och att uttrycka sina perspektiv till omvärlden.\n\nVårt utvecklingsteam utmärker sig både när det gäller sofistikeringen av teknik för kringgående av censur och tjänstens tillförlitlighet. Med många års erfarenhet inom detta specialområde ger vi användarna i riktade geografier enkel, säker och pålitlig tillgång till annars censurerad information.</string>
+  <string name="about_text">Vi är en grupp erfarna mjukvaru- och informationssäkerhetsingenjörer som startade nthLink 2016 för att stödja människorättsadvokater som behövde få begränsad information och för att uttrycka sina perspektiv. Sedan dess har vi gjort tjänsten tillgänglig för en bredare allmänhet. Vårt utvecklingsteam är experter på både nätverkssäkerhetsteknik och servicetillförlitlighet.\n\nVår tjänst är gratis och kommer att förbli gratis tack vare våra sponsorer och partners. Dom är:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nVårt utvecklingsteam utmärker sig både när det gäller sofistikeringen av teknik för kringgående av censur och tjänstens tillförlitlighet. Med många års erfarenhet inom detta specialområde ger vi användarna i riktade geografier enkel, säker och pålitlig tillgång till annars censurerad information.</string>
       
   <string name="menu_drawer_item_1">Hem</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">Hjälp</string>
       
   <string name="menu_drawer_item_5">Betygsätt app</string>
+	<string name="menu_drawer_item_6">Integritetspolicy</string>
       
   <string name="menu_web_item_1">Kopiera länk</string>
       
@@ -90,5 +91,12 @@
     <item>Övrig</item>
         
   </string-array>
+	<string name="copied">Kopierat</string>
+	<string name="paste_id_telegram">Klistra in ID på Telegram.</string>
+	<string name="check_update">Sök efter uppdatering</string>
+	<string name="download_new_version">Vill du ladda ner den nya versionen av nthLink?</string>
+	<string name="last_version">Din nthLink är den senaste versionen.</string>
+	<string name="visit">Besök</string>
+	<string name="follow_us">Följ oss</string>
   
 </resources>

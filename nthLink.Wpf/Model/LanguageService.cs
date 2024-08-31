@@ -19,7 +19,11 @@ namespace nthLink.Wpf.Model
 
             InitializeStringDictionary(this.defaultStringDictionary, defaultLanguageResources);
 
+#if DEBUG
+            LanguageResources? languageResources = GetLanguageResources(CultureInfo.GetCultureInfo("zh-TW"));
+#else
             LanguageResources? languageResources = GetLanguageResources(CultureInfo.CurrentUICulture);
+#endif
 
             InitializeStringDictionary(this.stringDictionary, languageResources);
         }
@@ -51,27 +55,31 @@ namespace nthLink.Wpf.Model
                 dictionary.Add("feedback_init_failed_message", "Don\'t have a server");
                 dictionary.Add("about_page_title", "About");
                 dictionary.Add("about_version", "Version %s");
-                dictionary.Add("about_text", "nthLink was started in 2016 as a project by a group of experienced software and information security engineers to support human rights lawyers to obtain censored information and to express their perspectives to the outside world.\n\nOur development team excels in both the sophistication of censorship circumvention technology and the reliability of the service. With years of experience in this specialty area, we provide the users in targeted geographies simple, safe, and reliable access to otherwise censored information.");
+                dictionary.Add("about_text", "We are a group of experienced software and information security engineers who started nthLink in 2016 to support human rights lawyers who needed to obtain restricted information and to express their perspectives. Since then we’ve made the service available to the wider public. Our development team are experts in both network security technology and service reliability.\n\nOur service is free and will remain free thanks to our sponsors and partners. They are:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nOur development team excels in both the sophistication of censorship circumvention technology and the reliability of the service. With years of experience in this specialty area, we provide the users in targeted geographies simple, safe, and reliable access to otherwise censored information.");
                 dictionary.Add("menu_drawer_item_1", "Home");
                 dictionary.Add("menu_drawer_item_2", "@string/feedback_page_title");
                 dictionary.Add("menu_drawer_item_3", "@string/about_page_title");
                 dictionary.Add("menu_drawer_item_4", "Help");
                 dictionary.Add("menu_drawer_item_5", "Rate App");
+                dictionary.Add("menu_drawer_item_6", "Privacy Policy");
                 dictionary.Add("menu_web_item_1", "Copy link");
                 dictionary.Add("menu_web_item_2", "Open in browser");
                 dictionary.Add("menu_web_item_3", "Share link");
                 dictionary.Add("menu_connection_item_1", "Landing Page");
                 dictionary.Add("word_loading", "Loading");
                 dictionary.Add("word_coped_link", "Coped link");
-                //dictionary.Add("word_play_preview_1", "打破障礙釋放聲音");
-                //dictionary.Add("word_play_preview_2", "強加密保護信息");
-                //dictionary.Add("word_play_preview_3", "安全可靠地訪問 Internet");
-                //dictionary.Add("word_play_preview_4", "安全地查看世界各地的新聞");
                 dictionary.Add("issue_categories_0", "General feedback");
                 dictionary.Add("issue_categories_1", "Cannot connect");
                 dictionary.Add("issue_categories_2", "Connection speed is slow");
                 dictionary.Add("issue_categories_3", "Suggestions");
                 dictionary.Add("issue_categories_4", "Other");
+                dictionary.Add("copied", "Copied");
+                dictionary.Add("paste_id_telegram", "Please paste ID on Telegram.");
+                dictionary.Add("check_update", "Check update");
+                dictionary.Add("download_new_version", "Do you want to download the new version of nthLink?");
+                dictionary.Add("last_version", "Your nthLink is the last version.");
+                dictionary.Add("visit", "Visit");
+                dictionary.Add("follow_us", "Follow us");
             }
             else
             {

@@ -14,19 +14,20 @@
 		<UseWPF>true</UseWPF>
 		<RootNamespace>nthLink.Wpf</RootNamespace>
 		<StartupObject>nthLink.Wpf.Program</StartupObject>
-		<Platforms>x64;86</Platforms>
+		<Platforms>x64;x86</Platforms>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
 		<ApplicationIcon>Resource\Icon.ico</ApplicationIcon>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
 		<SelfContained>false</SelfContained>
-		<Version>6.2.5.0</Version>
+		<Version>6.4.8.0</Version>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(PlatformTarget)' == 'x64'">
 		<RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x64</RuntimeIdentifier>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(PlatformTarget)' == 'x86'">
 		<RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x86</RuntimeIdentifier>
+		<LargeAddressAware>true</LargeAddressAware>
 	</PropertyGroup>
 	<!--Language-->
 	<ItemGroup>
@@ -184,12 +185,14 @@
 		<EmbeddedResource Include="Resource\Image\nthlink-color-dark-bg.png">
 			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
 		</EmbeddedResource>
+		<EmbeddedResource Include="Resource\Image\InstagramIcon.png">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</EmbeddedResource>
 	</ItemGroup>
 
 	<!--Reference-->
-
-	<ItemGroup>
-		<PackageReference Include="CefSharp.Wpf.NETCore" Version="123.0.60" />
+	<ItemGroup Condition="'$(PlatformTarget)' == 'x86'">
+		<PackageReference Include="dotnetCampus.LargeAddressAware" Version="1.0.2" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -203,6 +206,5 @@
 		<Exec Command="IF EXIST &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\Redirector.dll&quot; ( COPY /Y &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\Redirector.dll&quot; &quot;$(TargetDir)Redirector.dll&quot; )" />
 		<Exec Command="IF EXIST &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\rootGo.dll&quot; ( COPY /Y &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\rootGo.dll&quot; &quot;$(TargetDir)rootGo.dll&quot; )" />
 		<Exec Command="IF EXIST &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\rootGo.h&quot; ( COPY /Y &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\rootGo.h&quot; &quot;$(TargetDir)rootGo.h&quot; )" />
-		<Exec Command="IF EXIST &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\leaf.dll&quot; ( COPY /Y &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\leaf.dll&quot; &quot;$(TargetDir)leaf.dll&quot; )" />
 	</Target>
 </Project>

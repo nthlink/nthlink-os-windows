@@ -45,7 +45,7 @@
       
   <string name="about_version">バージョン%s</string>
       
-  <string name="about_text">nthLink は、経験豊富なソフトウェアおよび情報セキュリティエンジニアのグループによって、人権弁護士が検閲された情報を取得し、彼らの見解を外の世界に表現することを支援するプロジェクトとして 2016 年に開始されました。&#13;\n&#13;\n私たちの開発チームは、高度な検閲回避技術とサービスの信頼性の両方に優れています。この専門分野での長年の経験により、対象地域のユーザーに、検閲された情報への簡単で安全かつ信頼性の高いアクセスを提供します。</string>
+  <string name="about_text">私たちは、経験豊富なソフトウェアおよび情報セキュリティ エンジニアのグループであり、制限された情報を入手し、自分たちの見解を表明する必要がある人権弁護士をサポートするために、2016 年に nthLink を設立しました。 それ以来、このサービスを広く一般の人が利用できるようにしてきました。 当社の開発チームは、ネットワーク セキュリティ テクノロジーとサービスの信頼性の両方の専門家です。\n\n私たちのサービスは無料であり、スポンサーとパートナーのおかげで今後も無料であり続けます。 彼らです：\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\n私たちの開発チームは、高度な検閲回避技術とサービスの信頼性の両方に優れています。この専門分野での長年の経験により、対象地域のユーザーに、検閲された情報への簡単で安全かつ信頼性の高いアクセスを提供します。</string>
       
   <string name="menu_drawer_item_1">ホーム</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">ヘルプ</string>
       
   <string name="menu_drawer_item_5">アプリを評価</string>
+	<string name="menu_drawer_item_6">プライバシーポリシー</string>
       
   <string name="menu_web_item_1">リンクをコピー</string>
       
@@ -90,5 +91,11 @@
     <item>他の</item>
         
   </string-array>
-  
+	<string name="copied">コピーしました</string>
+	<string name="paste_id_telegram">TelegramにIDを貼り付けてください。</string>
+	<string name="check_update">アップデートを確認</string>
+	<string name="download_new_version">nthLinkの新しいバージョンをダウンロードしますか？</string>
+	<string name="last_version">あなたのnthLinkは最新バージョンです。</string>
+	<string name="visit">訪問</string>
+	<string name="follow_us">フォローする</string>
 </resources>

@@ -90,7 +90,7 @@ namespace nthLink.Wpf.ViewModels
 
                 NotifyMessageItemsSource = notifyMessageItemsSource;
 
-                const int maximumNewsCount = 4;
+                const int maximumNewsCount = 3;
 
                 int headlineNewsCount = directoryServerConfig.headlineNews.Count > maximumNewsCount ?
                 maximumNewsCount : directoryServerConfig.headlineNews.Count;
@@ -109,7 +109,14 @@ namespace nthLink.Wpf.ViewModels
 
                 WebItemsSource = webItemsSource;
 
-                NewsItemViewModel[] newsItemViewModels = new NewsItemViewModel[directoryServerConfig.headlineNews.Count];
+                List<NewsItemViewModel> newsItemViewModels =
+                new List<NewsItemViewModel>(directoryServerConfig.headlineNews.Count);
+
+                ICategoriesRater? categoriesRater =
+                this.containerProvider.Resolve<ICategoriesRater>();
+
+                IClientInfo? clientInfo =
+              this.containerProvider.Resolve<IClientInfo>();
 
                 for (int i = 0; i < directoryServerConfig.headlineNews.Count; i++)
                 {
@@ -120,10 +127,21 @@ namespace nthLink.Wpf.ViewModels
                     {
                         item.ImageSource = await LoadImage(directoryServerConfig.headlineNews[i].image);
                     }
-                    newsItemViewModels[i] = item;
+
+                    if (categoriesRater != null &&
+                    directoryServerConfig.headlineNews[i].categories != null &&
+                    clientInfo != null)
+                    {
+                        item.Rate = categoriesRater.GetRate(clientInfo.FavoriteCategories,
+                            directoryServerConfig.headlineNews[i].categories);
+
+                        item.Categories = directoryServerConfig.headlineNews[i].categories.ToArray();
+                    }
+
+                    newsItemViewModels.Add(item);
                 }
 
-                NewsItemsSource = newsItemViewModels;
+                NewsItemsSource = newsItemViewModels.ToArray();
             });
         }
         private async Task<BitmapImage> LoadImage(string url)

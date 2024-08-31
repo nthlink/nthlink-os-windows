@@ -42,7 +42,8 @@ namespace nthLink.Wpf.ViewModels
             get { return this.imageSource; }
             set { SetProperty(ref this.imageSource, value); }
         }
-
+        public int Rate { get; set; }
+        public string[]? Categories { get; set; }
         public NewsItemViewModel(IWebBrowser webBrowser,
             IMainThreadSyncContext mainThreadSyncContext)
             : base(webBrowser, mainThreadSyncContext)

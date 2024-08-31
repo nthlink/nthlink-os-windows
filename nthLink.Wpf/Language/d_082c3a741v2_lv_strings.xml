@@ -45,7 +45,7 @@
       
   <string name="about_version">Versija %s</string>
       
-  <string name="about_text">NthLink tika uzsākts 2016. gadā kā pieredzējušu programmatūras un informācijas drošības inženieru grupas projekts, lai atbalstītu cilvēktiesību juristus iegūt cenzētu informāciju un paust savu viedokli ārpasaulei.\n\nMūsu izstrādes komanda izceļas gan ar cenzūras apiešanas tehnoloģiju izsmalcinātību, gan pakalpojuma uzticamību. Ar daudzu gadu pieredzi šajā specializētajā jomā mēs sniedzam lietotājiem mērķtiecīgās ģeogrāfiskās vietās vienkāršu, drošu un uzticamu piekļuvi citādi cenzētai informācijai.</string>
+  <string name="about_text">Mēs esam pieredzējušu programmatūras un informācijas drošības inženieru grupa, kas nthLink uzsāka 2016.gadā, lai atbalstītu cilvēktiesību juristus, kuriem bija nepieciešams iegūt ierobežotas pieejamības informāciju un izteikt savu viedokli. Kopš tā laika mēs esam padarījuši pakalpojumu pieejamu plašākai sabiedrībai. Mūsu izstrādes komanda ir gan tīkla drošības tehnoloģiju, gan pakalpojumu uzticamības eksperti.\n\nMūsu pakalpojums ir bezmaksas, un tas paliks bez maksas, pateicoties mūsu sponsoriem un partneriem. Viņi ir:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nMūsu izstrādes komanda izceļas gan ar cenzūras apiešanas tehnoloģiju izsmalcinātību, gan pakalpojuma uzticamību. Ar daudzu gadu pieredzi šajā specializētajā jomā mēs sniedzam lietotājiem mērķtiecīgās ģeogrāfiskās vietās vienkāršu, drošu un uzticamu piekļuvi citādi cenzētai informācijai.</string>
       
   <string name="menu_drawer_item_1">Mājas</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">Palīdzība</string>
       
   <string name="menu_drawer_item_5">Novērtēt lietotni</string>
+	<string name="menu_drawer_item_6">Privātuma politika</string>
       
   <string name="menu_web_item_1">Kopēt saiti</string>
       
@@ -90,5 +91,11 @@
     <item>Cits</item>
         
   </string-array>
-  
+	<string name="copied">Kopēts</string>
+	<string name="paste_id_telegram">Lūdzu, ielīmējiet ID Telegram.</string>
+	<string name="check_update">Pārbaudīt atjauninājumu</string>
+	<string name="download_new_version">Vai vēlaties lejupielādēt jauno nthLink versiju?</string>
+	<string name="last_version">Jūsu nthLink ir jaunākā versija.</string>
+	<string name="visit">Apmeklēt</string>
+	<string name="follow_us">Seko mums</string>
 </resources>

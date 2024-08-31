@@ -45,7 +45,7 @@
       
   <string name="about_version">Phiên bản %s</string>
       
-  <string name="about_text">nthLink bắt đầu từ năm 2016 với tư cách là dự án của một nhóm kỹ sư phần mềm và an ninh thông tin giàu kinh nghiệm nhằm hỗ trợ các luật sư nhân quyền có được thông tin được kiểm duyệt và thể hiện quan điểm của họ với thế giới bên ngoài.\n\nNhóm phát triển của chúng tôi vượt trội cả về sự tinh vi của công nghệ vượt qua kiểm duyệt và độ tin cậy của dịch vụ. Với nhiều năm kinh nghiệm trong lĩnh vực đặc biệt này, chúng tôi cung cấp cho người dùng trong các khu vực địa lý mục tiêu quyền truy cập đơn giản, an toàn và đáng tin cậy vào các thông tin đã được kiểm duyệt.</string>
+  <string name="about_text">Chúng tôi là một nhóm gồm các kỹ sư bảo mật thông tin và phần mềm giàu kinh nghiệm đã thành lập nthLink vào năm 2016 để hỗ trợ các luật sư nhân quyền, những người cần thu thập thông tin bị hạn chế và bày tỏ quan điểm của họ. Kể từ đó, chúng tôi đã cung cấp dịch vụ này cho công chúng rộng rãi hơn. Đội ngũ phát triển của chúng tôi là những chuyên gia về cả công nghệ an ninh mạng và độ tin cậy của dịch vụ.\n\nDịch vụ của chúng tôi là miễn phí và sẽ vẫn miễn phí nhờ các nhà tài trợ và đối tác của chúng tôi. Họ đang:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nNhóm phát triển của chúng tôi vượt trội cả về sự tinh vi của công nghệ vượt qua kiểm duyệt và độ tin cậy của dịch vụ. Với nhiều năm kinh nghiệm trong lĩnh vực đặc biệt này, chúng tôi cung cấp cho người dùng trong các khu vực địa lý mục tiêu quyền truy cập đơn giản, an toàn và đáng tin cậy vào các thông tin đã được kiểm duyệt.</string>
       
   <string name="menu_drawer_item_1">Trang chủ</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">Trợ giúp</string>
       
   <string name="menu_drawer_item_5">Đánh giá ứng dụng</string>
+	<string name="menu_drawer_item_6">Chính sách bảo mật</string>
       
   <string name="menu_web_item_1">Sao chép đường link</string>
       
@@ -90,5 +91,12 @@
     <item>Khác</item>
         
   </string-array>
+	<string name="copied">Đã sao chép</string>
+	<string name="paste_id_telegram">Vui lòng dán ID vào Telegram.</string>
+	<string name="check_update">Kiểm tra cập nhật</string>
+	<string name="download_new_version">Bạn có muốn tải xuống phiên bản mới của nthLink không?</string>
+	<string name="last_version">nthLink của bạn là phiên bản mới nhất.</string>
+	<string name="visit">Thăm</string>
+	<string name="follow_us">Theo dõi chúng tôi</string>
   
 </resources>

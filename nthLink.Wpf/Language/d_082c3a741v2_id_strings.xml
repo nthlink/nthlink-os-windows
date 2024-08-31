@@ -45,7 +45,7 @@
       
   <string name="about_version">Versi %s</string>
       
-  <string name="about_text">nthLink dimulai pada tahun 2016 sebagai proyek oleh sekelompok insinyur perangkat lunak dan keamanan informasi yang berpengalaman untuk mendukung pengacara hak asasi manusia untuk mendapatkan informasi yang disensor dan untuk mengekspresikan perspektif mereka ke dunia luar.\n\nTim pengembangan kami unggul dalam kecanggihan teknologi pengelakan sensor dan keandalan layanan. Dengan pengalaman bertahun-tahun di bidang khusus ini, kami menyediakan akses yang sederhana, aman, dan andal kepada pengguna di wilayah yang ditargetkan ke informasi yang disensor.</string>
+  <string name="about_text">Kami adalah sekelompok insinyur perangkat lunak dan keamanan informasi berpengalaman yang memulai nthLink pada tahun 2016 untuk mendukung pengacara hak asasi manusia yang perlu memperoleh informasi terbatas dan untuk mengekspresikan perspektif mereka. Sejak itu kami telah membuat layanan ini tersedia untuk masyarakat luas. Tim pengembangan kami ahli dalam teknologi keamanan jaringan dan keandalan layanan.\n\nLayanan kami gratis dan akan tetap gratis berkat sponsor dan mitra kami. Mereka:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nTim pengembangan kami unggul dalam kecanggihan teknologi pengelakan sensor dan keandalan layanan. Dengan pengalaman bertahun-tahun di bidang khusus ini, kami menyediakan akses yang sederhana, aman, dan andal kepada pengguna di wilayah yang ditargetkan ke informasi yang disensor.</string>
       
   <string name="menu_drawer_item_1">Rumah</string>
       
@@ -56,6 +56,7 @@
   <string name="menu_drawer_item_4">Bantuan</string>
       
   <string name="menu_drawer_item_5">Nilai Aplikasi</string>
+	<string name="menu_drawer_item_6">Kebijakan Privasi</string>
       
   <string name="menu_web_item_1">Salin tautan</string>
       
@@ -90,5 +91,11 @@
     <item>Lainnya</item>
         
   </string-array>
-  
+	<string name="copied">Disalin</string>
+	<string name="paste_id_telegram">Silakan tempel ID di Telegram.</string>
+	<string name="check_update">Periksa pembaruan</string>
+	<string name="download_new_version">Apakah Anda ingin mengunduh versi terbaru dari nthLink?</string>
+	<string name="last_version">nthLink Anda adalah versi terbaru.</string>
+	<string name="visit">Kunjungi</string>
+	<string name="follow_us">Ikuti kami</string>
 </resources>

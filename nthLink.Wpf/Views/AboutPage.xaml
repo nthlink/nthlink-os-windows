@@ -11,12 +11,6 @@
              d:DesignHeight="450" d:DesignWidth="800"
              d:DataContext="{d:DesignInstance Type=viewModels:AboutPageViewModel}">
     <Grid>
-        <!--<Image Source="{markupExtension:Object EarthBackground, Converter={StaticResource NameToImageConverter}}"
-               VerticalAlignment="Top"
-               Margin="0,6,0,0"/>
-        <Image Source="{markupExtension:Object nthlink-color-dark-bg, Converter={StaticResource NameToImageConverter}}"
-               VerticalAlignment="Top"
-               Width="110" Height="110"/>-->
         <Grid VerticalAlignment="Top" Margin="0,16,0,0">
             <Grid HorizontalAlignment="Center"
                   VerticalAlignment="Top">
@@ -30,12 +24,15 @@
         <TextBlock VerticalAlignment="Top"
                    Margin="0,102,0,0"
                    Text="{Binding AppVersion}"/>
-        <TextBlock Margin="28,122,28,0"
-                   VerticalAlignment="Top"
-                   TextWrapping="Wrap"
-                   LineStackingStrategy="BlockLineHeight"
-                   LineHeight="26"
-                   FontSize="14"
-                   Text="{Binding AboutString}"/>
+        <ScrollViewer Margin="28,122,18,28"
+                      VerticalAlignment="Top">
+            <TextBlock TextWrapping="Wrap"
+                       Margin="0,0,4,0"
+                       LineStackingStrategy="BlockLineHeight"
+                       LineHeight="26"
+                       FontSize="14"
+                       Text="{Binding AboutString}"
+                       MouseDown="TextBlock_MouseDown"/>
+        </ScrollViewer>
     </Grid>
 </UserControl>

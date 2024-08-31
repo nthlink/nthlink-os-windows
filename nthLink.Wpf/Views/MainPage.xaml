@@ -271,13 +271,12 @@
             <Button Style="{StaticResource ConnectionButtonStyle}"
                     Foreground="{StaticResource AppWhite}"
                     BorderBrush="{StaticResource AppWhite}"
-                    Width="91" Height="31"
                     Visibility="{Binding IsEnabled, Converter={StaticResource BooleanToVisibilityConverter}, 
                 RelativeSource={RelativeSource Mode=Self}}"
                     Command="{Binding NewsCommand}">
                 <Grid>
                     <TextBlock Style="{StaticResource GenericTextBlock}"
-                               Text="News"
+                               Text="Read Latest News"
                                FontSize="16"
                                Foreground="{Binding Foreground, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Button}}"/>
                 </Grid>

@@ -1,0 +1,189 @@
+﻿<UserControl x:Class="nthLink.Wpf.Views.FollowUsPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:nthLink.Wpf.Views"
+             xmlns:attachProperties="clr-namespace:nthLink.Wpf.AttachedProperties"
+             xmlns:markupExtension="clr-namespace:nthLink.Wpf.MarkupExtension"
+             xmlns:viewModels="clr-namespace:nthLink.Wpf.ViewModels"
+             xmlns:mk="clr-namespace:nthLink.Wpf.MarkupExtension"
+             attachProperties:ViewModelLocator.AutoWireViewModel="True"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800"
+             d:DataContext="{d:DesignInstance Type=viewModels:FollowUsPageViewModel}">
+    <UserControl.Resources>
+        <LinearGradientBrush x:Key="Paint0_Linear_642_184894" StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#2AABEE" Offset="0" />
+            <GradientStop Color="#229ED9" Offset="1" />
+        </LinearGradientBrush>
+        <Style TargetType="Path">
+            <Setter Property="Margin" Value="0,0,6,0"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style x:Key="LocalTextBlock" TargetType="TextBlock">
+            <Setter Property="Margin" Value="0,4,6,0"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Poppins"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        <Style x:Key="VisitButton" TargetType="Button">
+            <Setter Property="Background" Value="#0061FF"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Width" Value="68"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Rectangle Name="rect" Fill="{TemplateBinding Background}" RadiusX="5" RadiusY="5"/>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="rect" Property="Fill" Value="#0048BC"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid Margin="20,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!--Facebook-->
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="56"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <StackPanel Orientation="Horizontal">
+                    <Path Data="M23.2803 11.7256C23.2803 5.37435 18.1315 0.225586 11.7803 0.225586C5.42904 0.225586 0.280273 5.37435 0.280273 11.7256C0.280273 17.4655 4.48568 22.2232 9.9834 23.0859V15.0498H7.06348V11.7256H9.9834V9.19199C9.9834 6.3098 11.7003 4.71777 14.3272 4.71777C15.5853 4.71777 16.9014 4.94238 16.9014 4.94238V7.77246H15.4513C14.0227 7.77246 13.5771 8.65895 13.5771 9.56844V11.7256H16.7666L16.2567 15.0498H13.5771V23.0859C19.0749 22.2232 23.2803 17.4656 23.2803 11.7256Z"
+                          Fill="#1877F2"/>
+                    <TextBlock Style="{StaticResource LocalTextBlock}" Text="Facebook" FontSize="20"/>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Border Background="{StaticResource AppWhite}"
+                        CornerRadius="8">
+                    <ItemsControl ItemsSource="{Binding FacebookItems}"
+                                  Margin="24,10">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate DataType="{x:Type viewModels:VisitItemViewModel}">
+                                <Grid Margin="0,8">
+                                    <TextBlock Style="{StaticResource LocalTextBlock}" 
+                                               HorizontalAlignment="Left"
+                                           FontSize="16"
+                                           Text="{Binding Context}"/>
+                                    <Button Style="{StaticResource VisitButton}"
+                                            Command="{Binding VisitCommand}">
+                                        <TextBlock Style="{StaticResource LocalTextBlock}" 
+                                                   Margin="0,1,0,0"
+                                               FontSize="14" FontWeight="Light" Text="{mk:Str visit}"/>
+                                    </Button>
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </Border>
+            </Grid>
+        </Grid>
+        <!--Instagram-->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="56"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <StackPanel Orientation="Horizontal">
+                    <Grid>
+                        <Image Source="{markupExtension:Object InstagramIcon, Converter={StaticResource NameToImageConverter}}"
+                               Width="20" Height="20"
+                               Margin="0,1,6,0"/>
+                    </Grid>
+                    <TextBlock Style="{StaticResource LocalTextBlock}" Text="Instagram" FontSize="20"/>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Border Background="{StaticResource AppWhite}"
+             CornerRadius="8">
+                    <ItemsControl ItemsSource="{Binding InstagramItems}"
+                       Margin="24,10">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate DataType="{x:Type viewModels:VisitItemViewModel}">
+                                <Grid Margin="0,8">
+                                    <TextBlock Style="{StaticResource LocalTextBlock}" 
+                                                   HorizontalAlignment="Left"
+                                FontSize="16"
+                                Text="{Binding Context}"/>
+                                    <Button Style="{StaticResource VisitButton}"
+                                 Command="{Binding VisitCommand}">
+                                        <TextBlock Style="{StaticResource LocalTextBlock}" 
+                                                       Margin="0,1,0,0"
+                                    FontSize="14" FontWeight="Light" Text="{mk:Str visit}"/>
+                                    </Button>
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </Border>
+            </Grid>
+        </Grid>
+        <!--Other-->
+        <Grid Grid.Row="2">
+            <Border Background="{StaticResource AppWhite}"
+                    CornerRadius="8"
+                    Margin="0,20">
+                <!--Youtube-->
+                <StackPanel Margin="18,10">
+                    <StackPanel Orientation="Horizontal" Margin="0,8">
+                        <Path Data="M9.13203 11.8193L14.841 8.51934L9.13203 5.21934V11.8193ZM21.848 3.20634C21.991 3.72334 22.09 4.41634 22.156 5.29634C22.233 6.17634 22.266 6.93534 22.266 7.59534L22.332 8.51934C22.332 10.9283 22.156 12.6993 21.848 13.8323C21.573 14.8223 20.935 15.4603 19.945 15.7353C19.428 15.8783 18.482 15.9773 17.03 16.0433C15.6 16.1203 14.291 16.1533 13.081 16.1533L11.332 16.2193C6.72303 16.2193 3.85203 16.0433 2.71903 15.7353C1.72903 15.4603 1.09103 14.8223 0.816031 13.8323C0.673031 13.3153 0.574031 12.6223 0.508031 11.7423C0.431031 10.8623 0.398031 10.1033 0.398031 9.44334L0.332031 8.51934C0.332031 6.11034 0.508031 4.33934 0.816031 3.20634C1.09103 2.21634 1.72903 1.57834 2.71903 1.30334C3.23603 1.16034 4.18203 1.06134 5.63403 0.995336C7.06403 0.918336 8.37303 0.885336 9.58303 0.885336L11.332 0.819336C15.941 0.819336 18.812 0.995336 19.945 1.30334C20.935 1.57834 21.573 2.21634 21.848 3.20634Z"
+                              Fill="Red"
+                              Stretch="Uniform"
+                              Width="18" />
+                        <TextBlock Style="{StaticResource LocalTextBlock}" 
+ FontSize="15"
+ Text="{Binding YoutubeItem.Context}"/>
+                        <Button Style="{StaticResource VisitButton}"
+  Command="{Binding YoutubeItem.VisitCommand}">
+                            <TextBlock Style="{StaticResource LocalTextBlock}" 
+                        Margin="0,1,0,0"
+     FontSize="14" FontWeight="Light" Text="{mk:Str visit}"/>
+                        </Button>
+                    </StackPanel>
+                    <!--Telegram-->
+                    <StackPanel Orientation="Horizontal" Margin="0,8">
+                        <Path Data="M11.832 0.128906C8.78273 0.128906 5.85563 1.34126 3.70117 3.49715C1.54451 5.65391 0.332648 8.57886 0.332031 11.6289C0.332031 14.6777 1.54492 17.6048 3.70117 19.7607C5.85563 21.9166 8.78273 23.1289 11.832 23.1289C14.8813 23.1289 17.8084 21.9166 19.9629 19.7607C22.1191 17.6048 23.332 14.6777 23.332 11.6289C23.332 8.58015 22.1191 5.65304 19.9629 3.49715C17.8084 1.34126 14.8813 0.128906 11.832 0.128906Z M5.53734 11.5074C8.89031 10.0469 11.1256 9.08406 12.2433 8.61879C15.4381 7.29036 16.1012 7.05964 16.5342 7.05183C16.6295 7.0503 16.8415 7.07384 16.9798 7.18569C17.0948 7.28003 17.1272 7.40761 17.1434 7.49718C17.1577 7.58667 17.1775 7.79061 17.1613 7.94981C16.9888 9.76825 16.2395 14.181 15.8586 16.2178C15.6987 17.0796 15.3806 17.3685 15.0734 17.3967C14.4049 17.4582 13.8982 16.9554 13.2513 16.5315C12.2397 15.8679 11.6683 15.455 10.6854 14.8076C9.54977 14.0594 10.2865 13.6481 10.9334 12.976C11.1023 12.8001 14.0455 10.1237 14.1013 9.88092C14.1084 9.85055 14.1156 9.73735 14.0473 9.67769C13.9809 9.61785 13.882 9.63834 13.8102 9.65451C13.7077 9.67751 12.0923 10.7463 8.95859 12.8607C8.50039 13.1758 8.08531 13.3295 7.71156 13.3214C7.30188 13.3126 6.51125 13.0892 5.92367 12.8984C5.20492 12.6643 4.63172 12.5405 4.68203 12.1428C4.70719 11.9358 4.99289 11.724 5.53734 11.5074Z"
+                             Fill="{StaticResource Paint0_Linear_642_184894}"
+                             Stretch="Uniform"
+                             Width="18" />
+                        <TextBlock Style="{StaticResource LocalTextBlock}"
+                                    FontSize="15"
+Text="Telegram ID :"/>
+                        <Button Style="{StaticResource TransparentButton}"
+        Click="CopyTelegramIdButton_Click">
+                            <StackPanel Orientation="Horizontal">
+                               
+                                <TextBlock Style="{StaticResource LocalTextBlock}" 
+                                            FontSize="15"
+           Text="@nthLinkVPN"/>
+                                <Path Data="M89.62,13.96v7.73h12.19h0.01v0.02c3.85,0.01,7.34,1.57,9.86,4.1c2.5,2.51,4.06,5.98,4.07,9.82h0.02v0.02 v73.27v0.01h-0.02c-0.01,3.84-1.57,7.33-4.1,9.86c-2.51,2.5-5.98,4.06-9.82,4.07v0.02h-0.02h-61.7H40.1v-0.02 c-3.84-0.01-7.34-1.57-9.86-4.1c-2.5-2.51-4.06-5.98-4.07-9.82h-0.02v-0.02V92.51H13.96h-0.01v-0.02c-3.84-0.01-7.34-1.57-9.86-4.1 c-2.5-2.51-4.06-5.98-4.07-9.82H0v-0.02V13.96v-0.01h0.02c0.01-3.85,1.58-7.34,4.1-9.86c2.51-2.5,5.98-4.06,9.82-4.07V0h0.02h61.7 h0.01v0.02c3.85,0.01,7.34,1.57,9.86,4.1c2.5,2.51,4.06,5.98,4.07,9.82h0.02V13.96L89.62,13.96z M79.04,21.69v-7.73v-0.02h0.02 c0-0.91-0.39-1.75-1.01-2.37c-0.61-0.61-1.46-1-2.37-1v0.02h-0.01h-61.7h-0.02v-0.02c-0.91,0-1.75,0.39-2.37,1.01 c-0.61,0.61-1,1.46-1,2.37h0.02v0.01v64.59v0.02h-0.02c0,0.91,0.39,1.75,1.01,2.37c0.61,0.61,1.46,1,2.37,1v-0.02h0.01h12.19V35.65 v-0.01h0.02c0.01-3.85,1.58-7.34,4.1-9.86c2.51-2.5,5.98-4.06,9.82-4.07v-0.02h0.02H79.04L79.04,21.69z M105.18,108.92V35.65v-0.02 h0.02c0-0.91-0.39-1.75-1.01-2.37c-0.61-0.61-1.46-1-2.37-1v0.02h-0.01h-61.7h-0.02v-0.02c-0.91,0-1.75,0.39-2.37,1.01 c-0.61,0.61-1,1.46-1,2.37h0.02v0.01v73.27v0.02h-0.02c0,0.91,0.39,1.75,1.01,2.37c0.61,0.61,1.46,1,2.37,1v-0.02h0.01h61.7h0.02 v0.02c0.91,0,1.75-0.39,2.37-1.01c0.61-0.61,1-1.46,1-2.37h-0.02V108.92L105.18,108.92z"
+         Fill="{StaticResource AppBlack}"
+         Stretch="Fill"
+         Width="12" Height="12"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

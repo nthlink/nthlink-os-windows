@@ -14,6 +14,7 @@
     <Color x:Key="AppDarkGrayColor">#FF444143</Color>
     <Color x:Key="AppRedColor">#EC615B</Color>
     <Color x:Key="AppBlackColor">Black</Color>
+    <Color x:Key="DialogMaskColor">#64000000</Color>
     <!--Brush-->
     <SolidColorBrush x:Key="AppDarkBackground" Color="{StaticResource AppDarkBackgroundColor}"/>
     <SolidColorBrush x:Key="AppBackground" Color="{StaticResource AppBackgroundColor}"/>
@@ -28,6 +29,7 @@
     <SolidColorBrush x:Key="AppDarkGray" Color="{StaticResource AppDarkGrayColor}"/>
     <SolidColorBrush x:Key="AppRed" Color="{StaticResource AppRedColor}"/>
     <SolidColorBrush x:Key="AppBlack" Color="{StaticResource AppBlackColor}"/>
+    <SolidColorBrush x:Key="DialogMask" Color="{StaticResource DialogMaskColor}"/>
 
     <LinearGradientBrush x:Key="LightEllipseBackground" StartPoint="0.5,0" EndPoint="0.5,1">
         <GradientStop Offset="0" Color="#BDC7FF"/>
