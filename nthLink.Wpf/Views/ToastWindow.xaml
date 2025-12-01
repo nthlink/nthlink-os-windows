@@ -1,0 +1,82 @@
+﻿<Window x:Class="nthLink.Wpf.Views.ToastWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:nthLink.Wpf.Views"
+        xmlns:viewModels="clr-namespace:nthLink.Wpf.ViewModels"
+        xmlns:attachProperties="clr-namespace:nthLink.Wpf.AttachedProperties"
+        xmlns:markExtension="clr-namespace:nthLink.Wpf.MarkupExtension"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Width="340"
+        Height="247"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False">
+    <Window.Resources>
+        <Style x:Key="WindowsStateButtonStyle" TargetType="Button" BasedOn="{StaticResource TransparentButton}">
+            <Style.Setters>
+                <Setter Property="Width" Value="16"/>
+                <Setter Property="Height" Value="16"/>
+                <Setter Property="HorizontalAlignment" Value="Right"/>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{StaticResource AppDarkBackground}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Border CornerRadius="9"
+            Background="{StaticResource AppBackground}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Margin="0,5,0,0">
+                <Grid HorizontalAlignment="Left"
+              VerticalAlignment="Center" Margin="6,0,0,0">
+                    <Grid HorizontalAlignment="Center"
+                  VerticalAlignment="Top">
+                        <Grid.LayoutTransform>
+                            <ScaleTransform ScaleX="0.1" ScaleY="0.1"/>
+                        </Grid.LayoutTransform>
+                        <Path Data="{StaticResource IconLeftPathData}" Fill="{StaticResource AppForeground}"/>
+                        <Path Data="{StaticResource IconRightPathData}" Fill="{StaticResource AppForeground}"/>
+                    </Grid>
+                </Grid>
+                <TextBlock Margin="30,3,0,0"
+                   HorizontalAlignment="Left"
+                   FontSize="12"
+                   FontWeight="DemiBold"
+               Text="nthLink"/>
+                <!--<Image Stretch="Uniform"
+               HorizontalAlignment="Left"
+               Width="20" 
+               Height="20"
+               Margin="10,0,0,0"
+               Source="{markExtension:Object Icon, Converter={StaticResource NameToImageConverter}}"/>
+                <Image Stretch="Uniform"
+               Margin="30,0,0,0"
+               Width="40" Height="8"
+               HorizontalAlignment="Left"
+               Source="{markExtension:Object nthlink_Title, Converter={StaticResource NameToImageConverter}}"/>-->
+                <Button Style="{StaticResource WindowsStateButtonStyle}"
+                Margin="0,0,10,0"
+                Click="Close_Button_Click">
+                    <Path Stroke="{StaticResource AppForeground}"
+                      StrokeThickness="2"
+                      Stretch="Uniform"
+                      Height="10" Width="10"
+                      Data="M41.999 20.002l-22 22m22 0L20 20"/>
+                </Button>
+            </Grid>
+            <Grid Grid.Row="1">
+                <ContentControl Margin="10,5,10,10" Content="{Binding ToastContent, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:ToastWindow}}"/>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

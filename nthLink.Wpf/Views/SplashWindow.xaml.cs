@@ -1,9 +1,9 @@
-﻿using System.Windows;
+using System.Windows;
 
 namespace nthLink.Wpf.Views
 {
     /// <summary>
-    /// SplashWindow.xaml 的互動邏輯
+    /// Interaction logic for SplashWindow.xaml
     /// </summary>
     public partial class SplashWindow : Window
     {

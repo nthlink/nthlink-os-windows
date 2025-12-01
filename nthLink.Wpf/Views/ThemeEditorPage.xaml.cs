@@ -16,7 +16,7 @@ namespace nthLink.Wpf.Views
         {
             InitializeComponent();
 
-            foreach (ResourceDictionary item in Application.Current.Resources.MergedDictionaries)
+            foreach (ResourceDictionary item in System.Windows.Application.Current.Resources.MergedDictionaries)
             {
                 if (item.Source.OriginalString.Contains("dynamictheme", StringComparison.OrdinalIgnoreCase))
                 {

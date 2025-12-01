@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><resources>
+﻿<?xml version="1.0" encoding="UTF-8"?><resources>
       
 
     
@@ -93,10 +93,17 @@
   </string-array>
 	<string name="copied">Скопійовано</string>
 	<string name="paste_id_telegram">Будь ласка, вставте ID у Telegram.</string>
-	<string name="check_update">Перевірити оновлення</string>
+	<string name="update">Оновлення</string>
 	<string name="download_new_version">Бажаєте завантажити нову версію nthLink?</string>
+	<string name="install_new_version_now">The installation file has been downloaded. Do you want to install it now? (nthLink will close automatically during installation)</string>
+	<string name="failed_to_start_installer">Помилка запуску інсталятора</string>
 	<string name="last_version">Ваш nthLink є останньою версією.</string>
 	<string name="visit">Відвідати</string>
 	<string name="follow_us">Слідкуйте за нами</string>
-  
+	<string name="menu_drawer_item_11">Діагностика</string>
+	<string name="diagnostic_button">Запустити діагностику</string>
+	<string name="diagnostic_info">У nthLink ми час від часу просимо вас допомогти нам покращити наш сервіс, надаючи діагностичні дані.\r\n\r\nНатиснувши кнопку, починається процес діагностики, що збирає інформацію та передає її на наші сервери. Уся зібрана інформація є повністю анонімною.</string>
+	<string name="diagnostic_thanks">Дякуємо, що допомагаєте нам ставати краще! Ми завжди раді отримати ваші відгуки</string>
+	<string name="diagnostic_is_connected">Сервер підключено. Відключіть його перед запуском діагностики</string>
+
 </resources>

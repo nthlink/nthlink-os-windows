@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><resources>
+﻿<?xml version="1.0" encoding="UTF-8"?><resources>
       
 
     
@@ -93,9 +93,16 @@
   </string-array>
 	<string name="copied">Copiado</string>
 	<string name="paste_id_telegram">Por favor, pega el ID en Telegram.</string>
-	<string name="check_update">Buscar actualización</string>
+	<string name="update">Actualizar</string>
 	<string name="download_new_version">¿Quieres descargar la nueva versión de nthLink?</string>
+	<string name="install_new_version_now">The installation file has been downloaded. Do you want to install it now? (nthLink will close automatically during installation)</string>
+	<string name="failed_to_start_installer">Error al iniciar el instalador</string>
 	<string name="last_version">Tu nthLink es la última versión.</string>
 	<string name="visit">Visita</string>
 	<string name="follow_us">Síguenos</string>
+	<string name="menu_drawer_item_11">Diagnóstico</string>
+	<string name="diagnostic_button">Iniciar diagnóstico</string>
+	<string name="diagnostic_info">En nthLink, ocasionalmente solicitamos tu ayuda para mejorar nuestro servicio proporcionando datos de diagnóstico.\r\n\r\nAl hacer clic en el botón, el proceso de diagnóstico comenzará, recopilando información y enviándola a nuestros servidores. Ten la seguridad de que toda la información recopilada es completamente anónima.</string>
+	<string name="diagnostic_thanks">¡Gracias por ayudarnos a mejorar! Nos encanta escuchar tus comentarios</string>
+	<string name="diagnostic_is_connected">El servidor está conectado. Por favor, desconéctalo antes de ejecutar el diagnóstico</string>
 </resources>

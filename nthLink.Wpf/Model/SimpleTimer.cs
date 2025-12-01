@@ -16,7 +16,7 @@ namespace nthLink.Wpf.Model
                 }
             }
         }
-        public bool IsRuning { get; private set; }
+        public bool IsRunning { get; private set; }
 
         private bool isDisposed = false;
 
@@ -34,7 +34,7 @@ namespace nthLink.Wpf.Model
         }
         private void OnTicks(object? state)
         {
-            if (IsRuning)
+            if (IsRunning)
             {
                 if (Ticks != null)
                 {
@@ -78,12 +78,12 @@ namespace nthLink.Wpf.Model
                     throw new Exception("timer already dispose.");
                 }
 
-                if (IsRuning)
+                if (IsRunning)
                 {
                     return;
                 }
 
-                IsRuning = true;
+                IsRunning = true;
 
                 this.timer.Change(Interval, Timeout.Infinite);
             }
@@ -98,12 +98,12 @@ namespace nthLink.Wpf.Model
                     throw new Exception("timer already dispose.");
                 }
 
-                if (IsRuning)
+                if (IsRunning)
                 {
                     return;
                 }
 
-                IsRuning = true;
+                IsRunning = true;
 
                 this.timer.Change(0, Timeout.Infinite);
             }
@@ -113,12 +113,12 @@ namespace nthLink.Wpf.Model
         {
             lock (this.timer)
             {
-                if (!IsRuning)
+                if (!IsRunning)
                 {
                     return;
                 }
 
-                IsRuning = false;
+                IsRunning = false;
             }
         }
 

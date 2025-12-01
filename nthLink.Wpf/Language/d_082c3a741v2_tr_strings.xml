@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><resources>
+﻿<?xml version="1.0" encoding="UTF-8"?><resources>
       
 
     
@@ -93,10 +93,17 @@
   </string-array>
 	<string name="copied">Kopyalandı</string>
 	<string name="paste_id_telegram">Lütfen Telegram'a kimliği yapıştırın.</string>
-	<string name="check_update">Güncellemeyi kontrol et</string>
+	<string name="update">Güncelle</string>
 	<string name="download_new_version">nthLink'in yeni sürümünü indirmek ister misiniz?</string>
+	<string name="install_new_version_now">Kurulum dosyası indirildi. Şimdi kurmak istiyor musunuz? (nthLink kurulum sırasında otomatik olarak kapanacak)</string>
+	<string name="failed_to_start_installer">Yükleyici başlatılamadı</string>
 	<string name="last_version">nthLink'iniz son sürüm.</string>
 	<string name="visit">Ziyaret et</string>
 	<string name="follow_us">Bizi takip edin</string>
-  
+	<string name="menu_drawer_item_11">Tanılama</string>
+	<string name="diagnostic_button">Tanılamayı Başlat</string>
+	<string name="diagnostic_info">nthLink'te hizmetimizi geliştirmek için zaman zaman tanılama verileri sağlayarak yardımınızı istiyoruz.\r\n\r\nButona tıkladığınızda tanılama işlemi başlar, bilgiler toplanır ve sunucularımıza iletilir. Tüm toplanan bilgilerin tamamen anonim olduğunu temin ederiz.</string>
+	<string name="diagnostic_thanks">Bize yardımcı olduğunuz için teşekkürler! Geri bildirimlerinizi duymayı çok seviyoruz</string>
+	<string name="diagnostic_is_connected">Sunucu bağlı. Tanılamayı çalıştırmadan önce lütfen bağlantıyı kesin</string>
+
 </resources>

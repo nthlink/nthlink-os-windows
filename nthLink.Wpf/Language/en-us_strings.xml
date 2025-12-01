@@ -57,10 +57,17 @@
 
 	<string name="copied">Copied</string>
 	<string name="paste_id_telegram">Please paste ID on Telegram.</string>
-	<string name="check_update">Check update</string>
+	<string name="update">Update</string>
 	<string name="download_new_version">Do you want to download the new version of nthLink?</string>
+	<string name="install_new_version_now">The installation file has been downloaded. Do you want to install it now? (nthLink will close automatically during installation)</string>
+	<string name="failed_to_start_installer">Failed to start installer</string>
 	<string name="last_version">Your nthLink is the last version.</string>
 	<string name="visit">Visit</string>
 	<string name="follow_us">Follow us</string>
 
+	<string name="menu_drawer_item_11">Diagnostic</string>
+	<string name="diagnostic_button">Start Diagnostics</string>
+	<string name="diagnostic_info">At nthLink, we occasionally seek your assistance in enhancing our service by providing diagnostic data.\r\n\r\nBy clicking the button, the diagnostics process begins, collecting information and transmitting it to our servers. Rest assured, all information gathered is completely anonymous.</string>
+	<string name="diagnostic_thanks">Thanks for helping us improve! We love hearing from you</string>
+	<string name="diagnostic_is_connected">The server is connected. Please disconnect it before running diagnostics</string>	
 </resources>

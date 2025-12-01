@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><resources>
+﻿<?xml version="1.0" encoding="UTF-8"?><resources>
       
 
     
@@ -93,9 +93,16 @@
   </string-array>
 	<string name="copied">Kopēts</string>
 	<string name="paste_id_telegram">Lūdzu, ielīmējiet ID Telegram.</string>
-	<string name="check_update">Pārbaudīt atjauninājumu</string>
+	<string name="update">Atjaunināt</string>
 	<string name="download_new_version">Vai vēlaties lejupielādēt jauno nthLink versiju?</string>
+	<string name="install_new_version_now">The installation file has been downloaded. Do you want to install it now? (nthLink will close automatically during installation)</string>
+	<string name="failed_to_start_installer">Neizdevās palaist instalētāju</string>
 	<string name="last_version">Jūsu nthLink ir jaunākā versija.</string>
 	<string name="visit">Apmeklēt</string>
 	<string name="follow_us">Seko mums</string>
+	<string name="menu_drawer_item_11">Diagnostika</string>
+	<string name="diagnostic_button">Sākt diagnostiku</string>
+	<string name="diagnostic_info">nthLink mēs reizēm lūdzam jūsu palīdzību mūsu pakalpojuma uzlabošanai, sniedzot diagnostikas datus.\r\n\r\nNoklikšķinot uz pogas, tiks sākts diagnostikas process, kas apkopo informāciju un nosūta to uz mūsu serveriem. Esiet droši, ka visa savāktā informācija ir pilnībā anonīma.</string>
+	<string name="diagnostic_thanks">Paldies, ka palīdzat mums uzlabot! Mēs priecājamies uzklausīt jūsu atsauksmes</string>
+	<string name="diagnostic_is_connected">Serveris ir savienots. Lūdzu, atvienojiet to pirms diagnostikas veikšanas</string>
 </resources>

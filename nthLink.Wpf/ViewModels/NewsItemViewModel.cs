@@ -8,6 +8,7 @@ namespace nthLink.Wpf.ViewModels
     internal class NewsItemViewModel : WebItemViewModel
     {
         private static readonly BitmapImage? defaultImageSource;
+        private readonly IClientInfo clientInfo;
 
         static NewsItemViewModel()
         {
@@ -42,13 +43,31 @@ namespace nthLink.Wpf.ViewModels
             get { return this.imageSource; }
             set { SetProperty(ref this.imageSource, value); }
         }
-        public int Rate { get; set; }
-        public string[]? Categories { get; set; }
-        public NewsItemViewModel(IWebBrowser webBrowser,
-            IMainThreadSyncContext mainThreadSyncContext)
-            : base(webBrowser, mainThreadSyncContext)
-        {
 
+        public int Rate { get; set; }
+
+        public string[]? Categories { get; set; }
+
+        public NewsItemViewModel(IWebBrowser webBrowser,
+            IMainThreadSyncContext mainThreadSyncContext,
+            IEventSource eventSource,
+            IClientInfo clientInfo)
+            : base(webBrowser, mainThreadSyncContext, eventSource)
+        {
+            this.clientInfo = clientInfo;
+        }
+
+        protected override void OnOpenUrlCommandExecute()
+        {
+            if (Categories != null)
+            {
+                foreach (var item in Categories)
+                {
+                    this.clientInfo.UpdateFavoriteCategories(item, 1);
+                }
+            }
+
+            base.OnOpenUrlCommandExecute();
         }
     }
 }

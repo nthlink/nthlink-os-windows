@@ -93,10 +93,17 @@
   </string-array>
 	<string name="copied">Скопировано</string>
 	<string name="paste_id_telegram">Пожалуйста, вставьте идентификатор в Telegram.</string>
-	<string name="check_update">Проверить обновление</string>
+	<string name="update">Обновление</string>
 	<string name="download_new_version">Хотите скачать новую версию nthLink?</string>
+	<string name="install_new_version_now">Файл установки загружен. Хотите установить его сейчас? (nthLink автоматически закроется во время установки)</string>
+	<string name="failed_to_start_installer">Ошибка запуска установщика</string>
 	<string name="last_version">Ваш nthLink - последняя версия.</string>
 	<string name="visit">Посетить</string>
 	<string name="follow_us">Подписывайтесь на нас</string>
-  
+	<string name="menu_drawer_item_11">Диагностика</string>
+	<string name="diagnostic_button">Запустить диагностику</string>
+	<string name="diagnostic_info">В nthLink мы периодически просим вас помочь нам улучшить наши услуги, предоставляя диагностические данные.\r\n\r\nНажатие кнопки запускает процесс диагностики, который собирает информацию и передает её на наши серверы. Будьте уверены, вся собранная информация полностью анонимна.</string>
+	<string name="diagnostic_thanks">Спасибо за помощь в улучшении! Мы всегда рады вашим отзывам</string>
+	<string name="diagnostic_is_connected">Сервер подключен. Пожалуйста, отключите его перед запуском диагностики</string>
+
 </resources>

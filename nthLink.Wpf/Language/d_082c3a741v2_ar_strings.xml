@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><resources>
+﻿<?xml version="1.0" encoding="UTF-8"?><resources>
       
 
     
@@ -93,9 +93,17 @@
   </string-array>
 	<string name="copied">تم النسخ</string>
 	<string name="paste_id_telegram">يرجى لصق المعرف على Telegram</string>
-	<string name="check_update">تحقق من التحديث</string>
+	<string name="update">تحديث البرنامج</string>
 	<string name="download_new_version">هل تريد تنزيل النسخة الجديدة من nthLink؟</string>
+	<string name="install_new_version_now">تم تنزيل ملف التثبيت. هل تريد تثبيته الآن؟ (nthLink سيغلق تلقائياً أثناء التثبيت)</string>
+	<string name="failed_to_start_installer">فشل في تشغيل برنامج التثبيت</string>
 	<string name="last_version">nthLink الخاص بك هو الإصدار الأخير.</string>
 	<string name="visit">زيارة</string>
 	<string name="follow_us">تابعنا</string>
+	
+	<string name="menu_drawer_item_11">التشخيص</string>
+	<string name="diagnostic_button">بدء التشخيص</string>
+	<string name="diagnostic_info">في nthLink، نطلب أحيانًا مساعدتك في تحسين خدمتنا من خلال تقديم بيانات تشخيصية.\r\n\r\nعند الضغط على الزر، يبدأ عملية التشخيص، حيث يتم جمع المعلومات وإرسالها إلى خوادمنا. كن مطمئنًا، فجميع المعلومات التي يتم جمعها مجهولة تمامًا.</string>
+	<string name="diagnostic_thanks">شكرًا لمساعدتنا في التحسين! يسعدنا سماع آرائكم</string>
+	<string name="diagnostic_is_connected">الخادم متصل. يرجى فصله قبل تشغيل التشخيص</string>
 </resources>

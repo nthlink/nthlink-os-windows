@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace nthLink.Wpf.ViewModels
 {
-    internal class MainPageViewModel : NotifyPropertyChangedBase
+    internal class MainPageViewModel_Old : NotifyPropertyChangedBase
     {
         public IRelayCommand ConnectionCommand { get; }
         public IRelayCommand NewsCommand { get; }
@@ -94,11 +94,17 @@ namespace nthLink.Wpf.ViewModels
         private readonly ReaderWriterLockSlim readerWriterLock = new ReaderWriterLockSlim();
         private readonly IMainThreadSyncContext mainThreadSyncContext;
         private readonly IDirectoryServerConfigProvider directoryServerConfigProvider;
-        public MainPageViewModel(IContainerProvider containerProvider)
+        private readonly ISystemReportLog? systemReportLog;
+        private readonly IPublicPrivateKeyEncryption? publicPrivateKeyEncryption;
+        private readonly IJsonConverter? jsonConverter;
+        public MainPageViewModel_Old(IContainerProvider containerProvider)
         {
             this.containerProvider = containerProvider;
             this.mainThreadSyncContext = containerProvider.Resolve<IMainThreadSyncContext>().Unwrap();
             this.directoryServerConfigProvider = containerProvider.Resolve<IDirectoryServerConfigProvider>().Unwrap();
+            this.systemReportLog = containerProvider.Resolve<ISystemReportLog>();
+            this.publicPrivateKeyEncryption = containerProvider.Resolve<IPublicPrivateKeyEncryption>();
+            this.jsonConverter = containerProvider.Resolve<JsonConverter>();
             ConnectionCommand = new RelayCommand(OnConnectionCommandExecute, CanConnectionCommandExecute);
             NewsCommand = new RelayCommand(OnNewsCommandExecute, CanNewsCommandExecute);
 
@@ -106,6 +112,33 @@ namespace nthLink.Wpf.ViewModels
                    is IEventBus<VpnServiceStateArgs> eventBus)
             {
                 eventBus.Subscribe(Const.Channel.VpnService, OnVpnServiceStateChanged);
+            }
+
+            if (this.containerProvider.Resolve<IEventBus<RequestErrorArgs>>()
+                  is IEventBus<RequestErrorArgs> requestErrorEventBus)
+            {
+                requestErrorEventBus.Subscribe(Const.Channel.VpnService, OnRequestError);
+            }
+        }
+
+        private async void OnRequestError(string s, RequestErrorArgs args)
+        {
+            if (args.RequestError != null)
+            {
+                await this.mainThreadSyncContext.Post(() =>
+                  {
+                      ServerErrorMessage = args.RequestError.message;
+                  });
+
+                if (this.systemReportLog != null &&
+                    this.jsonConverter != null &&
+                    this.publicPrivateKeyEncryption != null)
+                {
+                    string json = this.jsonConverter.Serialize(args.RequestError);
+                    EncodePackage encodePackage = this.publicPrivateKeyEncryption.EncodingString(json);
+                    string dataFileFullPath = await this.systemReportLog.LogToFile(json);
+                    await this.systemReportLog.LogToFile($"Getting the config from the server failed, AesKey = {encodePackage.Key}, AesIV = {encodePackage.IV}, AesDataFile = {dataFileFullPath}");
+                }
             }
         }
 
@@ -167,19 +200,6 @@ namespace nthLink.Wpf.ViewModels
                         StateString = "connection_hint_disconnect";
                         ServerStateString = "connection_server_state_connected";
 
-                        if (this.directoryServerConfigProvider.DirectoryServerConfig != null &&
-                            !string.IsNullOrEmpty(this.directoryServerConfigProvider.DirectoryServerConfig.redirectUrl))
-                        {
-                            Task.Delay(TimeSpan.FromSeconds(5)).ContinueWith(task =>
-                            {
-                                this.mainThreadSyncContext.Post(() =>
-                                {
-                                    this.containerProvider.Resolve<IWebBrowser>().Unwrap()
-                                    .OpenUrl(this.directoryServerConfigProvider.DirectoryServerConfig.redirectUrl, EventSourceTypeEnum.Loading);
-                                });
-                            });
-                        }
-
                         IsConnectingOrConnected = true;
                         IsConnected = true;
                     }
@@ -233,6 +253,11 @@ namespace nthLink.Wpf.ViewModels
 
         private void OnConnectionCommandExecute()
         {
+            if (this.systemReportLog != null)
+            {
+                this.systemReportLog.Log(LogLevelEnum.Info, "Connect button clicked");
+            }
+
             IEventBus<VpnServiceFunctionArgs>? functionEventBus =
            this.containerProvider.Resolve<IEventBus<VpnServiceFunctionArgs>>();
             if (functionEventBus != null)
@@ -243,14 +268,35 @@ namespace nthLink.Wpf.ViewModels
                 {
                     ClearErrorMessage();
 
-                    functionEventBus.Publish(Const.Channel.VpnService,
-                        new VpnServiceFunctionArgs(FunctionEnum.Start));
+                    if (this.systemReportLog != null)
+                    {
+                        this.systemReportLog.Log(LogLevelEnum.Info, "Sending event to VPN service");
+                    }
+
+                    Task.Run(() =>
+                    {
+                        functionEventBus.Publish(Const.Channel.VpnService,
+                            new VpnServiceFunctionArgs(FunctionEnum.Start));
+                    });
 
                 }
                 else
                 {
-                    functionEventBus.Publish(Const.Channel.VpnService,
+                    if (this.systemReportLog != null)
+                    {
+                        this.systemReportLog.Log(LogLevelEnum.Info, $"Disconnect button clicked, current state: {State}");
+                    }
+                    
+                    Task.Run(() =>
+                    {
+                        if (this.systemReportLog != null)
+                        {
+                            this.systemReportLog.Log(LogLevelEnum.Info, "Sending stop event to VPN service");
+                        }
+                        
+                        functionEventBus.Publish(Const.Channel.VpnService,
                         new VpnServiceFunctionArgs(FunctionEnum.Stop));
+                    });
                 }
             };
         }

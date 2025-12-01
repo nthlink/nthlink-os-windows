@@ -1,7 +1,6 @@
 ﻿using nthLink.Header.Interface;
 using System;
 using System.Threading.Tasks;
-using System.Windows;
 
 namespace nthLink.Wpf.Model
 {
@@ -9,13 +8,13 @@ namespace nthLink.Wpf.Model
     {
         public async Task Post(Action action)
         {
-            if (Application.Current.Dispatcher.CheckAccess())
+            if (System.Windows.Application.Current.Dispatcher.CheckAccess())
             {
                 action.Invoke();
             }
             else
             {
-                await Application.Current.Dispatcher.BeginInvoke(action, null);
+                await System.Windows.Application.Current.Dispatcher.BeginInvoke(action, null);
             }
         }
     }

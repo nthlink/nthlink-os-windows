@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><resources>
+﻿<?xml version="1.0" encoding="UTF-8"?><resources>
       
 
     
@@ -93,10 +93,17 @@
   </string-array>
 	<string name="copied">คัดลอกแล้ว</string>
 	<string name="paste_id_telegram">กรุณาวางรหัสบน Telegram</string>
-	<string name="check_update">ตรวจสอบการอัปเดต</string>
+	<string name="update">อัปเดต</string>
 	<string name="download_new_version">คุณต้องการดาวน์โหลดเวอร์ชันใหม่ของ nthLink หรือไม่?</string>
+	<string name="install_new_version_now">ไฟล์ติดตั้งดาวน์โหลดเสร็จแล้ว คุณต้องการติดตั้งตอนนี้หรือไม่? (nthLink จะปิดโดยอัตโนมัติในระหว่างการติดตั้ง)</string>
+	<string name="failed_to_start_installer">ไม่สามารถเริ่มโปรแกรมติดตั้งได้</string>
 	<string name="last_version">nthLink ของคุณเป็นเวอร์ชันล่าสุด</string>
 	<string name="visit">เยี่ยมชม</string>
 	<string name="follow_us">ติดตามเรา</string>
-  
+	<string name="menu_drawer_item_11">การวินิจฉัย</string>
+	<string name="diagnostic_button">เริ่มการวินิจฉัย</string>
+	<string name="diagnostic_info">ที่ nthLink เราบางครั้งขอความช่วยเหลือจากคุณในการปรับปรุงบริการของเราด้วยการให้ข้อมูลการวินิจฉัย\r\n\r\nเมื่อคลิกปุ่มนี้ กระบวนการวินิจฉัยจะเริ่มต้นขึ้น รวบรวมข้อมูลและส่งไปยังเซิร์ฟเวอร์ของเรา ขอให้มั่นใจว่าข้อมูลทั้งหมดจะถูกเก็บเป็นความลับและไม่ระบุตัวตน</string>
+	<string name="diagnostic_thanks">ขอบคุณที่ช่วยให้เราปรับปรุง! เรายินดีรับฟังความคิดเห็นของคุณ</string>
+	<string name="diagnostic_is_connected">เซิร์ฟเวอร์เชื่อมต่ออยู่ กรุณาตัดการเชื่อมต่อก่อนเริ่มการวินิจฉัย</string>
+
 </resources>

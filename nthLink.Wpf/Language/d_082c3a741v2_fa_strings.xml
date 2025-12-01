@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><resources>
+﻿<?xml version="1.0" encoding="UTF-8"?><resources>
       
 
     
@@ -93,9 +93,16 @@
   </string-array>
 	<string name="copied">کپی شد</string>
 	<string name="paste_id_telegram">لطفاً شناسه را در تلگرام جای‌گذاری کنید.</string>
-	<string name="check_update">بررسی به‌روزرسانی</string>
+	<string name="update">بررسی به‌روزرسانی</string>
 	<string name="download_new_version">آیا می‌خواهید نسخه جدید nthLink را دانلود کنید؟</string>
+	<string name="install_new_version_now">The installation file has been downloaded. Do you want to install it now? (nthLink will close automatically during installation)</string>
+	<string name="failed_to_start_installer">عدم موفقیت در راه‌اندازی نصب‌کننده</string>
 	<string name="last_version">nthLink شما آخرین نسخه است.</string>
 	<string name="visit">بازدید</string>
 	<string name="follow_us">ما را دنبال کنید</string>
+	<string name="menu_drawer_item_11">تشخیص</string>
+	<string name="diagnostic_button">شروع تشخیص</string>
+	<string name="diagnostic_info">در nthLink، گاهی از شما برای بهبود خدمات خود از طریق ارائه داده‌های تشخیصی درخواست کمک می‌کنیم.\r\n\r\nبا کلیک بر روی دکمه، فرآیند تشخیص آغاز می‌شود و اطلاعات جمع‌آوری‌شده به سرورهای ما ارسال می‌شود. اطمینان داشته باشید که تمام اطلاعات به‌طور کامل ناشناس هستند.</string>
+	<string name="diagnostic_thanks">از اینکه به ما در بهبود خدمات کمک می‌کنید سپاسگزاریم! مشتاق شنیدن نظرات شما هستیم</string>
+	<string name="diagnostic_is_connected">سرور متصل است. لطفاً قبل از اجرای تشخیص آن را قطع کنید</string>
 </resources>

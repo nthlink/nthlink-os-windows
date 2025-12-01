@@ -93,10 +93,17 @@
   </string-array>
 	<string name="copied">已复制</string>
 	<string name="paste_id_telegram">请在Telegram上粘贴ID。</string>
-	<string name="check_update">检查更新</string>
-	<string name="download_new_version">你想下载最新版本的 nthLink 吗？</string>
+	<string name="update">更新</string>
+	<string name="download_new_version">你想下载新版本的 nthLink 吗？</string>
+	<string name="install_new_version_now">安装文件已下载完毕，请问要立即安装吗？（安装时nthLink会自行关闭）</string>
+	<string name="failed_to_start_installer">启动安装程序失败</string>
 	<string name="last_version">你的 nthLink 是最新版本。</string>
 	<string name="visit">访问</string>
 	<string name="follow_us">关注我们</string>
-  
+	<string name="menu_drawer_item_11">诊断</string>
+	<string name="diagnostic_button">开始诊断</string>
+	<string name="diagnostic_info">在 nthLink，我们偶尔会寻求您的帮助，通过提供诊断数据来改进我们的服务。\r\n\r\n点击按钮后，诊断过程将开始，收集信息并将其传输到我们的服务器。请放心，所有收集的信息都是完全匿名的。</string>
+	<string name="diagnostic_thanks">感谢您帮助我们改进！我们乐于听取您的反馈</string>
+	<string name="diagnostic_is_connected">服务器已连接。请在运行诊断前断开连接</string>
+
 </resources>

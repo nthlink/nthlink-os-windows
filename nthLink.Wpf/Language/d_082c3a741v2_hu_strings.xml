@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><resources>
+﻿<?xml version="1.0" encoding="UTF-8"?><resources>
       
 
     
@@ -93,9 +93,16 @@
   </string-array>
 	<string name="copied">Másolva</string>
 	<string name="paste_id_telegram">Kérem illessze be az azonosítót a Telegramon.</string>
-	<string name="check_update">Frissítés ellenőrzése</string>
+	<string name="update">Frissítés</string>
 	<string name="download_new_version">Szeretné letölteni az nthLink új verzióját?</string>
+	<string name="install_new_version_now">A telepítőfájl letöltése befejeződött. Szeretné most telepíteni? (nthLink automatikusan bezáródik a telepítés során)</string>
+	<string name="failed_to_start_installer">Nem sikerült elindítani a telepítőt</string>
 	<string name="last_version">Az ön nthLink az utolsó verzió.</string>
 	<string name="visit">Látogatás</string>
 	<string name="follow_us">Kövess minket</string>
+	<string name="menu_drawer_item_11">Diagnosztika</string>
+	<string name="diagnostic_button">Diagnosztika indítása</string>
+	<string name="diagnostic_info">Az nthLinknél időnként kérjük a segítségét szolgáltatásunk javítása érdekében, diagnosztikai adatok megadásával.\r\n\r\nA gomb megnyomásával elindul a diagnosztikai folyamat, amely információkat gyűjt és továbbítja azokat a szervereinkre. Biztos lehet benne, hogy minden összegyűjtött adat teljesen névtelen.</string>
+	<string name="diagnostic_thanks">Köszönjük, hogy segít nekünk fejlődni! Örömmel várjuk a visszajelzését</string>
+	<string name="diagnostic_is_connected">A szerver csatlakoztatva van. Kérjük, válassza le a diagnosztika futtatása előtt</string>
 </resources>

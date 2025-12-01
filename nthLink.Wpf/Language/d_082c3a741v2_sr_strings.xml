@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><resources>
+﻿<?xml version="1.0" encoding="UTF-8"?><resources>
       
 
     
@@ -93,10 +93,17 @@
   </string-array>
 	<string name="copied">Копирано</string>
 	<string name="paste_id_telegram">Молимо вас да налепите ИД на Телеграм.</string>
-	<string name="check_update">Проверите ажурирање</string>
+	<string name="update">Ажурирање</string>
 	<string name="download_new_version">Да ли желите да преузмете нову верзију nthLink-а?</string>
+	<string name="install_new_version_now">The installation file has been downloaded. Do you want to install it now? (nthLink will close automatically during installation)</string>
+	<string name="failed_to_start_installer">Неуспешно покретање инсталатера</string>
 	<string name="last_version">Ваш nthLink је последња верзија.</string>
 	<string name="visit">Посетите</string>
 	<string name="follow_us">Пратите нас</string>
-  
+	<string name="menu_drawer_item_11">Дијагностика</string>
+	<string name="diagnostic_button">Покрени дијагностику</string>
+	<string name="diagnostic_info">У nthLink-у, повремено тражимо вашу помоћ у унапређењу наших услуга пружањем дијагностичких података.\r\n\r\nКликом на дугме почиње процес дијагностике, који прикупља информације и шаље их на наше сервере. Све прикупљене информације су потпуно анонимне.</string>
+	<string name="diagnostic_thanks">Хвала што нам помажете да се унапредимо! Ваша повратна информација нам много значи</string>
+	<string name="diagnostic_is_connected">Сервер је повезан. Молимо вас да га искључите пре покретања дијагностике</string>
+
 </resources>

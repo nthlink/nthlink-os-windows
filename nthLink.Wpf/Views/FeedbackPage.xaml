@@ -56,7 +56,7 @@
         </converters:TureFalseConverter>
     </UserControl.Resources>
     <!--Main-->
-    <Grid Grid.Column="0" Width="{StaticResource WindowWidth}">
+    <Grid Width="{StaticResource WindowWidth}">
         <Grid.RowDefinitions>
             <RowDefinition Height="27"/>
             <RowDefinition/>

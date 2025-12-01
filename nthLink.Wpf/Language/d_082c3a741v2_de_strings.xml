@@ -43,7 +43,7 @@
       
   <string name="about_page_title">Etwa</string>
       
-  <string name="about_version">Version %s</string>
+  <string name="about_version">Version %s</string>
       
   <string name="about_text">Wir sind eine Gruppe erfahrener Software- und Informationssicherheitsingenieure, die nthLink im Jahr 2016 gegründet haben, um Menschenrechtsanwälte zu unterstützen, die vertrauliche Informationen erhalten und ihre Ansichten äußern mussten. Seitdem haben wir den Service einer breiten Öffentlichkeit zugänglich gemacht. Unser Entwicklungsteam besteht aus Experten sowohl für Netzwerksicherheitstechnologie als auch für Servicezuverlässigkeit.\n\nUnser Service ist kostenlos und wird dank unserer Sponsoren und Partner auch weiterhin kostenlos bleiben. Sie sind:\n• Open Technology Fund\n• Google Jigsaw\n• Cure53\n• Include Security\n• Plaintext Design\n\nUnser Entwicklungsteam zeichnet sich sowohl durch die ausgeklügelte Technologie zur Umgehung der Zensur als auch durch die Zuverlässigkeit des Dienstes aus. Mit jahrelanger Erfahrung in diesem Spezialgebiet bieten wir den Benutzern in bestimmten Regionen einen einfachen, sicheren und zuverlässigen Zugriff auf ansonsten zensierte Informationen.</string>
       
@@ -93,9 +93,17 @@
   </string-array>
 	<string name="copied">Kopiert</string>
 	<string name="paste_id_telegram">Bitte fügen Sie die ID in Telegram ein.</string>
-	<string name="check_update">Auf Updates prüfen</string>
+	<string name="update">Update</string>
 	<string name="download_new_version">Möchten Sie die neue Version von nthLink herunterladen?</string>
+	<string name="install_new_version_now">Die Installationsdatei wurde heruntergeladen. Möchten Sie sie jetzt installieren? (nthLink wird während der Installation automatisch geschlossen)</string>
+	<string name="failed_to_start_installer">Fehler beim Starten des Installers</string>
 	<string name="last_version">Ihr nthLink ist die neueste Version.</string>
 	<string name="visit">Besuchen</string>
 	<string name="follow_us">Folgen Sie uns</string>
+	<string name="menu_drawer_item_11">Diagnose</string>
+	<string name="diagnostic_button">Diagnose starten</string>
+	<string name="diagnostic_info">Bei nthLink bitten wir gelegentlich um Ihre Hilfe, um unseren Service zu verbessern, indem Sie uns Diagnose-Daten zur Verfügung stellen.\r\n\r\nDurch Klicken auf die Schaltfläche startet der Diagnoseprozess, sammelt Informationen und überträgt sie an unsere Server. Seien Sie versichert, alle gesammelten Informationen sind vollständig anonym.</string>
+	<string name="diagnostic_thanks">Vielen Dank, dass Sie uns helfen, besser zu werden! Wir freuen uns auf Ihr Feedback</string>
+	<string name="diagnostic_is_connected">Der Server ist verbunden. Bitte trennen Sie die Verbindung, bevor Sie die Diagnose starten</string>
+
 </resources>

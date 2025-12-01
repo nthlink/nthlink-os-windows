@@ -188,10 +188,10 @@
                        Foreground="{Binding IsConnected, Converter={StaticResource TextForgroundConverter}}"
                        FontSize="15"/>
         </Grid>-->
-        <Button Style="{StaticResource TransparentButton}"
+        <!--<Button Style="{StaticResource TransparentButton}"
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch"
-                Command="{Binding ConnectionCommand}"/>
+                Command="{Binding ConnectionCommand}"/>-->
         
         <Button Style="{StaticResource ConnectionButtonStyle}"
                 VerticalAlignment="Top"
@@ -285,7 +285,8 @@
 
         <!--Error message-->
         <Grid VerticalAlignment="Top" Margin="0,16,0,0"
-              Visibility="{Binding ServerErrorMessage, Converter={StaticResource StringToVisibilityConverter}}">
+              Visibility="Collapsed">
+              <!--Visibility="{Binding ServerErrorMessage, Converter={StaticResource StringToVisibilityConverter}}">-->
             <Border Background="#D9D9D9" 
                     Height="66"
                     Width="212"

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><resources>
+﻿<?xml version="1.0" encoding="UTF-8"?><resources>
       
 
     
@@ -92,11 +92,18 @@
         
   </string-array>
 	<string name="copied">Skopírované</string>
-	<string name="paste_id_telegram">Prosím, prilepte ID do Telegramu.</string>
-	<string name="check_update">Skontrolovať aktualizáciu</string>
+	<string name="paste_id_telegram">Prosím vložte ID do Telegram.</string>
+	<string name="update">Aktualizovať</string>
 	<string name="download_new_version">Chcete stiahnuť novú verziu nthLink?</string>
-	<string name="last_version">Vaše nthLink je posledná verzia.</string>
+	<string name="install_new_version_now">Inštalačný súbor bol stiahnutý. Chcete ho teraz nainštalovať? (nthLink sa počas inštalácie automaticky zatvorí)</string>
+	<string name="failed_to_start_installer">Nepodarilo sa spustiť inštalátor</string>
+	<string name="last_version">Váš nthLink je posledná verzia.</string>
 	<string name="visit">Navštíviť</string>
 	<string name="follow_us">Sledujte nás</string>
-  
+	<string name="menu_drawer_item_11">Diagnostika</string>
+	<string name="diagnostic_button">Spustiť diagnostiku</string>
+	<string name="diagnostic_info">V nthLink občas potrebujeme vašu pomoc pri zlepšovaní našich služieb poskytovaním diagnostických údajov.\r\n\r\nKliknutím na tlačidlo sa spustí diagnostický proces, ktorý zhromažďuje informácie a odosiela ich na naše servery. Všetky zhromaždené informácie sú úplne anonymné.</string>
+	<string name="diagnostic_thanks">Ďakujeme, že nám pomáhate zlepšovať! Radi si vypočujeme vašu spätnú väzbu</string>
+	<string name="diagnostic_is_connected">Server je pripojený. Pred spustením diagnostiky ho prosím odpojte</string>
+
 </resources>

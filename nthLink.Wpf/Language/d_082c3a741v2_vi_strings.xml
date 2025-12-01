@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><resources>
+﻿<?xml version="1.0" encoding="UTF-8"?><resources>
       
 
     
@@ -93,10 +93,17 @@
   </string-array>
 	<string name="copied">Đã sao chép</string>
 	<string name="paste_id_telegram">Vui lòng dán ID vào Telegram.</string>
-	<string name="check_update">Kiểm tra cập nhật</string>
+	<string name="update">Cập nhật</string>
 	<string name="download_new_version">Bạn có muốn tải xuống phiên bản mới của nthLink không?</string>
+	<string name="install_new_version_now">Tập tin cài đặt đã được tải xuống. Bạn có muốn cài đặt ngay bây giờ không? (nthLink sẽ tự động đóng trong quá trình cài đặt)</string>
+	<string name="failed_to_start_installer">Không thể khởi động trình cài đặt</string>
 	<string name="last_version">nthLink của bạn là phiên bản mới nhất.</string>
 	<string name="visit">Thăm</string>
 	<string name="follow_us">Theo dõi chúng tôi</string>
-  
+	<string name="menu_drawer_item_11">Chẩn đoán</string>
+	<string name="diagnostic_button">Bắt đầu chẩn đoán</string>
+	<string name="diagnostic_info">Tại nthLink, đôi khi chúng tôi yêu cầu bạn giúp đỡ để cải thiện dịch vụ bằng cách cung cấp dữ liệu chẩn đoán.\r\n\r\nKhi nhấn nút, quá trình chẩn đoán sẽ bắt đầu, thu thập thông tin và gửi đến máy chủ của chúng tôi. Hãy yên tâm, tất cả thông tin thu thập được đều hoàn toàn ẩn danh.</string>
+	<string name="diagnostic_thanks">Cảm ơn bạn đã giúp chúng tôi cải thiện! Chúng tôi rất mong nhận được phản hồi từ bạn</string>
+	<string name="diagnostic_is_connected">Máy chủ đang được kết nối. Vui lòng ngắt kết nối trước khi chạy chẩn đoán</string>
+
 </resources>

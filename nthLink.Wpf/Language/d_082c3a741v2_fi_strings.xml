@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><resources>
+﻿<?xml version="1.0" encoding="UTF-8"?><resources>
       
 
     
@@ -93,9 +93,17 @@
   </string-array>
 	<string name="copied">Kopioitu</string>
 	<string name="paste_id_telegram">Liitä tunnus Telegramiin.</string>
-	<string name="check_update">Tarkista päivitys</string>
+	<string name="update">Päivitys</string>
 	<string name="download_new_version">Haluatko ladata nthLinkin uuden version?</string>
+	<string name="install_new_version_now">Asennustiedosto on ladattu. Haluatko asentaa sen nyt? (nthLink sulkeutuu automaattisesti asennuksen aikana)</string>
+	<string name="failed_to_start_installer">Asennusohjelman käynnistäminen epäonnistui</string>
 	<string name="last_version">nthLinkisi on uusin versio.</string>
 	<string name="visit">Vieraile</string>
 	<string name="follow_us">Seuraa meitä</string>
+	<string name="menu_drawer_item_11">Diagnostiikka</string>
+	<string name="diagnostic_button">Aloita diagnostiikka</string>
+	<string name="diagnostic_info">nthLinkissä pyydämme ajoittain apuasi palvelumme parantamiseksi tarjoamalla diagnostiikkatietoja.\r\n\r\nPainamalla painiketta diagnostiikkaprosessi alkaa, keräten tietoa ja lähettäen sen palvelimillemme. Vakuutamme, että kaikki kerätty tieto on täysin anonyymiä.</string>
+	<string name="diagnostic_thanks">Kiitos, että autat meitä parantumaan! Kuulemme mielellämme palautettasi</string>
+	<string name="diagnostic_is_connected">Palvelin on yhdistetty. Katkaise yhteys ennen diagnostiikan suorittamista</string>
+
 </resources>

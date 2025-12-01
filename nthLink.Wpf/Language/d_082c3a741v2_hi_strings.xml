@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><resources>
+﻿<?xml version="1.0" encoding="UTF-8"?><resources>
       
 
     
@@ -93,9 +93,17 @@
   </string-array>
 	<string name="copied">कॉपी किया गया</string>
 	<string name="paste_id_telegram">कृपया टेलीग्राम पर आईडी पेस्ट करें।</string>
-	<string name="check_update">अपडेट जांचें</string>
+	<string name="update">अपडेट</string>
 	<string name="download_new_version">क्या आप nthLink का नया संस्करण डाउनलोड करना चाहते हैं?</string>
+	<string name="install_new_version_now">इंस्टॉलेशन फाइल डाउनलोड हो गई है। क्या आप इसे अभी इंस्टॉल करना चाहते हैं? (nthLink इंस्टॉलेशन के दौरान आपोआप बंद हो जाएगा)</string>
+	<string name="failed_to_start_installer">इंस्टॉलर शुरू करने में विफल</string>
 	<string name="last_version">आपका nthLink नवीनतम संस्करण है।</string>
 	<string name="visit">भ्रमण करें</string>
 	<string name="follow_us">हमें फॉलो करें</string>
+	<string name="menu_drawer_item_11">निदान</string>
+	<string name="diagnostic_button">निदान प्रारंभ करें</string>
+	<string name="diagnostic_info">nthLink में, हम समय-समय पर आपके सहयोग की सहायता से अपनी सेवा को बेहतर बनाने के लिए निदान डेटा एकत्र करते हैं।\r\n\r\nबटन क्लिक करने पर, निदान प्रक्रिया शुरू होती है, जानकारी एकत्रित की जाती है और हमारे सर्वरों पर भेजी जाती है। निश्चिंत रहें, सभी जानकारी पूरी तरह से गुमनाम है।</string>
+	<string name="diagnostic_thanks">हमें बेहतर बनाने में मदद करने के लिए धन्यवाद! हमें आपकी प्रतिक्रिया सुनना पसंद है</string>
+	<string name="diagnostic_is_connected">सर्वर कनेक्ट है। कृपया निदान शुरू करने से पहले इसे डिस्कनेक्ट करें</string>
+
 </resources>

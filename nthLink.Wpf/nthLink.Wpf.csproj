@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
-		<OutputPath>..\ReleaseWorkSpace\ReleaseData\$(PlatformTarget)</OutputPath>
 		<OutputType>WinExe</OutputType>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)' == 'Debug'">
@@ -19,8 +18,7 @@
 		<ApplicationIcon>Resource\Icon.ico</ApplicationIcon>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-		<SelfContained>false</SelfContained>
-		<Version>6.4.8.0</Version>
+		<Version>6.8.1.0</Version>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(PlatformTarget)' == 'x64'">
 		<RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x64</RuntimeIdentifier>
@@ -191,8 +189,17 @@
 	</ItemGroup>
 
 	<!--Reference-->
+
+	<ItemGroup Condition="'$(PlatformTarget)' == 'x64'">
+		<PackageReference Include="CefSharp.Common.NETCore" Version="137.0.100" />
+		<PackageReference Include="CefSharp.Wpf.NETCore" Version="137.0.100" />
+		<PackageReference Include="chromiumembeddedframework.runtime" Version="137.0.10" />
+		<PackageReference Include="QRCoder" Version="1.6.0" />
+	</ItemGroup>
 	<ItemGroup Condition="'$(PlatformTarget)' == 'x86'">
+		<PackageReference Include="CefSharp.Wpf.NETCore" Version="109.1.110" />
 		<PackageReference Include="dotnetCampus.LargeAddressAware" Version="1.0.2" />
+		<PackageReference Include="QRCoder" Version="1.6.0" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -200,7 +207,7 @@
 		<ProjectReference Include="..\nthLink-sdk-windows\nthLink.SDK\nthLink.SDK.csproj" />
 	</ItemGroup>
 
-	<Target Name="TeonPostBuild" AfterTargets="PostBuildEvent">
+	<Target Condition="'$(Configuration)'=='Debug'" Name="TeonPostBuild" AfterTargets="PostBuildEvent">
 		<Exec Command="IF EXIST &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\nfapi.dll&quot; ( COPY /Y &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\nfapi.dll&quot; &quot;$(TargetDir)nfapi.dll&quot; )" />
 		<Exec Command="IF EXIST &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\nfdriver.sys&quot; ( COPY /Y &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\nfdriver.sys&quot; &quot;$(TargetDir)nfdriver.sys&quot; )" />
 		<Exec Command="IF EXIST &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\Redirector.dll&quot; ( COPY /Y &quot;..\nthLink-sdk-windows\Library\$(PlatformTarget)\Redirector.dll&quot; &quot;$(TargetDir)Redirector.dll&quot; )" />

@@ -1,0 +1,151 @@
+﻿<UserControl x:Class="nthLink.Wpf.Views.BypassPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:nthLink.Wpf.Views"
+             xmlns:viewModels="clr-namespace:nthLink.Wpf.ViewModels"
+             xmlns:attachProperties="clr-namespace:nthLink.Wpf.AttachedProperties"
+             xmlns:mk="clr-namespace:nthLink.Wpf.MarkupExtension"
+             xmlns:converters="clr-namespace:nthLink.Wpf.Converter"
+             attachProperties:ViewModelLocator.AutoWireViewModel="True"
+             mc:Ignorable="d"
+             d:DesignHeight="800" d:DesignWidth="450"
+             d:DataContext="{d:DesignInstance Type=viewModels:BypassPageViewModel}">
+    <UserControl.Resources>
+        <Style x:Key="WindowsStateButtonStyle" TargetType="Button" BasedOn="{StaticResource TransparentButton}">
+            <Style.Setters>
+                <Setter Property="Width" Value="16"/>
+                <Setter Property="Height" Value="16"/>
+                <Setter Property="HorizontalAlignment" Value="Right"/>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#C0BFBF"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="AddButtonStyle" TargetType="Button" BasedOn="{StaticResource TransparentButton}">
+            <Style.Setters>
+                <Setter Property="Width" Value="228"/>
+                <Setter Property="Height" Value="37"/>
+                <Setter Property="BorderBrush" Value="Transparent"/>
+                <Setter Property="Border.CornerRadius" Value="15"/>
+                <Setter Property="Background" Value="{StaticResource AppBackground}"/>
+                <Setter Property="Foreground" Value="{StaticResource AppWhite}"/>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{StaticResource AppDarkBackground}"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" Value="{StaticResource AppDisabledForeground}"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    <!--Main-->
+    <Grid Width="{StaticResource WindowWidth}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="27"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#DFDEE0">
+            <TextBlock Text="Bypass" 
+                       Margin="12,0,0,0"
+                       FontWeight="SemiBold"
+                       Foreground="{StaticResource AppBackground}"
+                       HorizontalAlignment="Left"/>
+            <Button Style="{StaticResource WindowsStateButtonStyle}"
+                Margin="0,0,36,0"
+                Click="Minimum_Button_Click">
+                <Line Stroke="{StaticResource AppBackground}"
+                      StrokeThickness="2"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"
+                      Y1="0.5" Y2="0.5"
+                      X1="0" X2="10"/>
+            </Button>
+            <Button Style="{StaticResource WindowsStateButtonStyle}"
+                Margin="0,0,10,0"
+                Click="Close_Button_Click">
+                <Path Stroke="{StaticResource AppBackground}"
+                      StrokeThickness="2"
+                      Stretch="Uniform"
+                      Height="10" Width="10"
+                      Data="M41.999 20.002l-22 22m22 0L20 20"/>
+            </Button>
+        </Grid>
+        <Grid Grid.Row="1" Background="{StaticResource AppWhite}">
+            <TextBlock Margin="21,16,0,0"
+                       Text="Process Name"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Foreground="{StaticResource AppDisabledForeground}"/>
+
+            <TextBox Margin="21,38,0,0"
+                     Style="{StaticResource FeedbackTextBox}"
+                     Width="232" Height="34"
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top"
+                     VerticalContentAlignment="Center"
+                     Text="{Binding ProcessName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Button Margin="21,37,21,0" Width="58"
+                      HorizontalAlignment="Right"
+                      VerticalAlignment="Top"
+        Style="{StaticResource AddButtonStyle}"
+        Command="{Binding AddProcessNameCommand}">
+                <TextBlock Text="Add"
+               FontSize="16"
+               FontWeight="Bold"/>
+            </Button>
+
+            <Button Margin="96,84,0,0" Width="18" Height="18"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Style="{StaticResource TransparentButton}"
+                    Command="{Binding UpdateProcessListCommand}">
+                <Path Data="M15,6V1.76l-1.7,1.7A7,7,0,1,0,14.92,9H13.51a5.63,5.63,0,1,1-1.2-4.55L10.76,6Z"
+                      Stretch="Uniform" Width="14" Height="14"
+                      Fill="Blue"/>
+            </Button>
+
+            <TextBlock Margin="21,86,0,0"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Foreground="{StaticResource AppDisabledForeground}">
+                <Run Text="Process List"/>
+            </TextBlock>
+            
+            <CheckBox Margin="25,109,0,0"
+       HorizontalAlignment="Left"
+       VerticalAlignment="Top"
+       Foreground="{StaticResource AppDisabledForeground}"
+                      IsThreeState="False"
+                      IsChecked="{Binding IsSelectAll}">
+                <Run Text="Select / Unselect All"/>
+            </CheckBox>
+
+            <ScrollViewer Margin="21,128,21,21"
+                          Style="{StaticResource WebPageScrollViewer}"
+                          Foreground="{StaticResource AppBackground}"
+                          VerticalAlignment="Top">
+                <ItemsControl ItemsSource="{Binding ItemsSource}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate d:DataType="viewModels:ProcessViewModel">
+                            <StackPanel Orientation="Horizontal" Margin="4">
+                                <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay}" VerticalAlignment="Center" />
+                                <TextBlock Text="{Binding Name}" 
+                                           Margin="8,0,0,0" VerticalAlignment="Center"
+                                           Foreground="Black"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -6,8 +6,8 @@ namespace nthLink.Wpf.ViewModels
     {
         private string? notifyString;
 
-        public NotifyItemViewModel(IWebBrowser webBrowser, IMainThreadSyncContext mainThreadSyncContext)
-            : base(webBrowser, mainThreadSyncContext)
+        public NotifyItemViewModel(IWebBrowser webBrowser, IMainThreadSyncContext mainThreadSyncContext, IEventSource eventSource)
+            : base(webBrowser, mainThreadSyncContext, eventSource)
         {
         }
 

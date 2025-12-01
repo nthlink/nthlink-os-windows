@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><resources>
+﻿<?xml version="1.0" encoding="UTF-8"?><resources>
       
 
     
@@ -92,10 +92,18 @@
         
   </string-array>
 	<string name="copied">Nukopijuota</string>
-	<string name="paste_id_telegram">Prašome įklijuoti ID į „Telegram“.</string>
-	<string name="check_update">Patikrinti atnaujinimą</string>
+	<string name="paste_id_telegram">Prašome įklijuoti ID į „Telegram".</string>
+	<string name="update">Atnaujinti</string>
 	<string name="download_new_version">Ar norite atsisiųsti naują nthLink versiją?</string>
+	<string name="install_new_version_now">The installation file has been downloaded. Do you want to install it now? (nthLink will close automatically during installation)</string>
+	<string name="failed_to_start_installer">Nepavyko paleisti diegimo programos</string>
 	<string name="last_version">Jūsų nthLink yra naujausia versija.</string>
 	<string name="visit">Apsilankyti</string>
 	<string name="follow_us">Sekite mus</string>
+	<string name="menu_drawer_item_11">Diagnostika</string>
+	<string name="diagnostic_button">Pradėti diagnostiką</string>
+	<string name="diagnostic_info">nthLink retkarčiais prašo jūsų pagalbos tobulinant mūsų paslaugą, pateikiant diagnostinius duomenis.\r\n\r\nSpustelėjus mygtuką, prasidės diagnostikos procesas, kuris rinks informaciją ir perduos ją į mūsų serverius. Visi surinkti duomenys yra visiškai anonimiški.</string>
+	<string name="diagnostic_thanks">Ačiū, kad padedate mums tobulėti! Mums svarbi jūsų nuomonė</string>
+	<string name="diagnostic_is_connected">Serveris prijungtas. Prieš vykdydami diagnostiką, atjunkite jį</string>
+
 </resources>

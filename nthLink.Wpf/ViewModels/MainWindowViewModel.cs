@@ -5,12 +5,16 @@ using nthLink.Header.Struct;
 using nthLink.SDK.Extension;
 using nthLink.SDK.Model;
 using nthLink.Wpf.Interface;
+using nthLink.Wpf.Model;
+using System;
 using System.Threading.Tasks;
 
 namespace nthLink.Wpf.ViewModels
 {
     internal class MainWindowViewModel : NotifyPropertyChangedBase
     {
+        private const string IsNotifyEnabledKey = nameof(IsNotifyEnabled);
+
         private bool isPolicyAgreed;
 
         public bool IsPolicyAgreed
@@ -35,6 +39,30 @@ namespace nthLink.Wpf.ViewModels
             set { SetProperty(ref this.isExpand, value); }
         }
 
+        private bool canNotify;
+
+        public bool CanNotify
+        {
+            get { return this.canNotify; }
+            set { SetProperty(ref this.canNotify, value); }
+        }
+
+        private bool isNotifyEnabled;
+
+        public bool IsNotifyEnabled
+        {
+            get { return this.isNotifyEnabled; }
+            set
+            {
+                if (SetProperty(ref this.isNotifyEnabled, value))
+                {
+                    this.delayAction.DoAction();
+
+                    this.dataPersistence.Cache(IsNotifyEnabledKey, value ? "true" : "false");
+                }
+            }
+        }
+
         private bool isStatic;
         public bool IsStatic
         {
@@ -43,13 +71,24 @@ namespace nthLink.Wpf.ViewModels
         }
 
         public WebPageViewModel WebPageViewModel { get; }
+
+        private WebViewModel httpConfuseViewModel;
+
+        public WebViewModel HttpConfuseViewModel
+        {
+            get { return this.httpConfuseViewModel; }
+            set { SetProperty(ref this.httpConfuseViewModel, value); }
+        }
         public UpdateViewModel UpdateViewModel { get; }
         public DialogPageViewModel? DialogPageViewModel { get; }
+        public LoadAnimationViewModel? LoadAnimationViewModel { get; }
         public string AppVersion { get; }
 
+        private readonly SimpleTimer simpleTimer = new SimpleTimer();
         private readonly IContainerProvider containerProvider;
         private readonly INetwork network;
         private readonly IDataPersistence dataPersistence;
+        private readonly DelayAction delayAction;
 
         private StateEnum vpnServiceState = StateEnum.Waiting;
 
@@ -63,10 +102,24 @@ namespace nthLink.Wpf.ViewModels
             WebPageViewModel = containerProvider.Resolve<WebPageViewModel>().Unwrap();
             UpdateViewModel = containerProvider.Resolve<UpdateViewModel>().Unwrap();
             DialogPageViewModel = containerProvider.Resolve<IDialogBox>() as DialogPageViewModel;
+            LoadAnimationViewModel = containerProvider.Resolve<ILoadAnimation>() as LoadAnimationViewModel;
+
+            this.httpConfuseViewModel = containerProvider.Resolve<WebViewModel>().Unwrap();
+
+            this.simpleTimer.Interval = 30 * 60 * 1000;
+
+            this.simpleTimer.Ticks += SimpleTimer_Ticks;
 
             this.containerProvider = containerProvider;
             this.network = network;
             this.dataPersistence = dataPersistence;
+
+            if (dataPersistence.Load(IsNotifyEnabledKey).ToLower() == "true")
+            {
+                this.isNotifyEnabled = true;
+            }
+
+            this.delayAction = new DelayAction(CheckNotifyFunction);
 
             IHttpObfuscator? httpObfuscator = containerProvider.Resolve<IHttpObfuscator>();
 
@@ -127,13 +180,18 @@ namespace nthLink.Wpf.ViewModels
             if (args.State == StateEnum.Started)
             {
                 IsExpand = true;
+                CanNotify = true;
 
                 IsConnected = true;
             }
             else
             {
+                CanNotify = false;
+
                 IsConnected = false;
             }
+
+            this.delayAction.DoAction();
         }
 
         private void WindowsRegister_RegisterChanged(string arg1, string arg2)
@@ -145,9 +203,34 @@ namespace nthLink.Wpf.ViewModels
             }
         }
 
+        private void CheckNotifyFunction()
+        {
+            if (this.isNotifyEnabled &&
+                this.vpnServiceState == StateEnum.Started)
+            {
+                this.simpleTimer.StartWithTick();
+            }
+            else
+            {
+                this.simpleTimer.Stop();
+                this.containerProvider.Resolve<IToastWindow>().Unwrap().Cancel();
+            }
+        }
+
         private void HttpObfuscator_ObfuscatorUrl(object? sender, HttpObfuscatorUrlEventArgs e)
         {
+            HttpConfuseViewModel.Url = e.Url;
+
             e.IsRequestGet = false;
+        }
+
+        private void SimpleTimer_Ticks()
+        {
+            if (this.network.IsNetworkAvailable &&
+                WebPageViewModel.GetWebItemViewModel() is WebItemViewModel webItemViewModel)
+            {
+                this.containerProvider.Resolve<IToastWindow>().Unwrap().Show(webItemViewModel, TimeSpan.FromSeconds(5));
+            }
         }
     }
 }

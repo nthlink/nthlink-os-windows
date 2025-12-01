@@ -93,9 +93,17 @@
   </string-array>
 	<string name="copied">복사됨</string>
 	<string name="paste_id_telegram">Telegram에 ID를 붙여넣어주세요.</string>
-	<string name="check_update">업데이트 확인</string>
+	<string name="update">업데이트</string>
 	<string name="download_new_version">nthLink의 새 버전을 다운로드하시겠습니까?</string>
+	<string name="install_new_version_now">설치 파일 다운로드가 완료되었습니다. 지금 설치하시겠습니까? (설치 중 nthLink가 자동으로 종료됩니다)</string>
+	<string name="failed_to_start_installer">설치 프로그램을 시작하지 못했습니다</string>
 	<string name="last_version">당신의 nthLink는 최신 버전입니다.</string>
 	<string name="visit">방문</string>
 	<string name="follow_us">팔로우하세요</string>
+	<string name="menu_drawer_item_11">진단</string>
+	<string name="diagnostic_button">진단 시작</string>
+	<string name="diagnostic_info">nthLink에서는 서비스 개선을 위해 가끔 진단 데이터를 제공해 주실 것을 요청합니다.\r\n\r\n버튼을 클릭하면 진단 프로세스가 시작되어 정보를 수집하고 서버로 전송합니다. 모든 수집된 정보는 완전히 익명으로 처리되오니 안심하시기 바랍니다.</string>
+	<string name="diagnostic_thanks">도움 주셔서 감사합니다! 귀하의 의견을 기다립니다</string>
+	<string name="diagnostic_is_connected">서버가 연결되었습니다. 진단을 실행하기 전에 연결을 끊어주세요</string>
+
 </resources>

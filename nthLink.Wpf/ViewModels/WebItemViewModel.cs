@@ -5,7 +5,7 @@ using System;
 
 namespace nthLink.Wpf.ViewModels
 {
-    internal class WebItemViewModel : NotifyPropertyChangedBase, ICanLoad
+    internal class WebItemViewModel : WebViewModel, ICanLoad
     {
         private string? url;
         private readonly IWebBrowser webBrowser;
@@ -13,7 +13,7 @@ namespace nthLink.Wpf.ViewModels
 
         public event Action<ICanLoad>? Loaded;
 
-        public string? Url
+        public override string? Url
         {
             get { return this.url; }
             set
@@ -27,7 +27,8 @@ namespace nthLink.Wpf.ViewModels
 
         public IRelayCommand OpenUrlCommand { get; }
         public WebItemViewModel(IWebBrowser webBrowser,
-            IMainThreadSyncContext mainThreadSyncContext) : base()
+            IMainThreadSyncContext mainThreadSyncContext,
+            IEventSource eventSource) : base(eventSource)
         {
             OpenUrlCommand = new RelayCommand(OnOpenUrlCommandExecute, CanOpenUrlCommandExecute);
             this.webBrowser = webBrowser;
@@ -47,8 +48,10 @@ namespace nthLink.Wpf.ViewModels
             return !string.IsNullOrEmpty(Url);
         }
 
-        public void RaiseLoadedEvent()
+        public override void RaiseLoadedEvent()
         {
+            base.RaiseLoadedEvent();
+
             if (Loaded != null)
             {
                 Loaded.Invoke(this);

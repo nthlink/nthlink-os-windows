@@ -1,4 +1,4 @@
-﻿using nthLink.Header.Interface;
+using nthLink.Header.Interface;
 using nthLink.SDK.Extension;
 using nthLink.Wpf.Interface;
 using System.Windows;
@@ -7,7 +7,7 @@ using System.Windows.Controls;
 namespace nthLink.Wpf.Views
 {
     /// <summary>
-    /// FollowUsPage.xaml 的互動邏輯
+    /// Interaction logic for FollowUsPage.xaml
     /// </summary>
     public partial class FollowUsPage : UserControl
     {

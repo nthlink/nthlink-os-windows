@@ -4,14 +4,15 @@ using nthLink.Header.Interface;
 using nthLink.Header.Struct;
 using nthLink.SDK.Extension;
 using nthLink.Wpf.Interface;
+using nthLink.Wpf.Struct;
 using nthLink.Wpf.ViewModels;
 using System;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls.Primitives;
+using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Interop;
-using static System.Windows.Forms.AxHost;
 
 namespace nthLink.Wpf.Views
 {
@@ -22,9 +23,9 @@ namespace nthLink.Wpf.Views
     {
         private readonly IContainerProvider containerProvider;
         private readonly IWebBrowser webBrowser;
-        private readonly ILanguageService languageService;
         private readonly IMainThreadSyncContext mainThreadSyncContext;
-        private readonly IDialogBox dialogBox;
+        private bool isDeactivated;
+        private StateEnum vpnState;
 
         public MainWindow(IContainerProvider containerProvider,
             IWebBrowser webBrowser,
@@ -35,15 +36,37 @@ namespace nthLink.Wpf.Views
             InitializeComponent();
             this.containerProvider = containerProvider;
             this.webBrowser = webBrowser;
-            this.languageService = languageService;
             this.mainThreadSyncContext = mainThreadSyncContext;
-            this.dialogBox = dialogBox;
             if (containerProvider.Resolve<IEventBus<VpnServiceStateArgs>>()
                    is IEventBus<VpnServiceStateArgs> eventBus)
             {
                 eventBus.Subscribe(Const.Channel.VpnService, OnVpnServiceStateChanged);
             }
+
+            Activated += MainWindow_Activated;
+            Deactivated += MainWindow_Deactivated;
         }
+
+        private void MainWindow_Deactivated(object? sender, EventArgs e)
+        {
+            this.isDeactivated = true;
+        }
+
+        private void MainWindow_Activated(object? sender, EventArgs e)
+        {
+            if (this.isDeactivated)
+            {
+                if (this.containerProvider.Resolve<IEventBus<AppEventArgs>>()
+                               is IEventBus<AppEventArgs> appEvent)
+                {
+                    appEvent.Publish(AppEventArgs.AppEventArgsMessage.AppEvent,
+                        new AppEventArgs(AppEventArgs.AppEventArgsMessage.WindowActivated));
+                }
+
+                this.isDeactivated = false;
+            }
+        }
+
         protected override void OnSourceInitialized(EventArgs e)
         {
             base.OnSourceInitialized(e);
@@ -66,13 +89,15 @@ namespace nthLink.Wpf.Views
                 {
                     functionEventBus.Publish(Const.Channel.VpnService,
                         new VpnServiceFunctionArgs(FunctionEnum.Stop));
-                };
+                }
             }
 
             return IntPtr.Zero;
         }
         private void OnVpnServiceStateChanged(string s, VpnServiceStateArgs args)
         {
+            this.vpnState = args.State;
+
             this.mainThreadSyncContext.Post(() =>
             {
                 if (args.State == StateEnum.Started)
@@ -188,7 +213,7 @@ namespace nthLink.Wpf.Views
 
             ReleaseNotifyIcon();
 
-            Application.Current.Shutdown();
+            System.Windows.Application.Current.Shutdown();
         }
 
         protected override void OnClosing(CancelEventArgs e)
@@ -266,7 +291,6 @@ namespace nthLink.Wpf.Views
 
         private void FollowUsButton_Click(object sender, RoutedEventArgs e)
         {
-
             PART_MenuPopup.SetCurrentValue(Popup.IsOpenProperty, false);
             PART_FollowUsPage.SetCurrentValue(FrameworkElement.VisibilityProperty, Visibility.Visible);
         }
@@ -276,6 +300,46 @@ namespace nthLink.Wpf.Views
             if (PART_FollowUsPage is FrameworkElement frameworkElement)
             {
                 frameworkElement.SetCurrentValue(FrameworkElement.VisibilityProperty, Visibility.Collapsed);
+            }
+        }
+
+        private void DiagnosticButton_Click(object sender, RoutedEventArgs e)
+        {
+            PART_MenuPopup.SetCurrentValue(Popup.IsOpenProperty, false);
+            PART_DiagnosticPage.SetCurrentValue(FrameworkElement.VisibilityProperty, Visibility.Visible);
+        }
+
+        private void BypassButton_Click(object sender, RoutedEventArgs e)
+        {
+            PART_MenuPopup.SetCurrentValue(Popup.IsOpenProperty, false);
+
+            if (this.vpnState == StateEnum.Started)
+            {
+                if (this.containerProvider.Resolve<IDialogBox>() is IDialogBox dialogBox)
+                {
+                    dialogBox.ShowDialog(string.Empty, "Please disconnect the VPN before modifying the bypass settings.", "Ok");
+                }
+            }
+            else
+            {
+                PART_BypassPage.SetCurrentValue(FrameworkElement.VisibilityProperty, Visibility.Visible);
+            }
+        }
+
+        private void PhoneConnect_Click(object sender, RoutedEventArgs e)
+        {
+            PART_MenuPopup.SetCurrentValue(Popup.IsOpenProperty, false);
+
+            if (this.vpnState == StateEnum.Started)
+            {
+                if (this.containerProvider.Resolve<IDialogBox>() is IDialogBox dialogBox)
+                {
+                    dialogBox.ShowDialog(string.Empty, "Please disconnect your current VPN or network connection before starting Phone Connect.", "Ok");
+                }
+            }
+            else
+            {
+                PART_PhoneConnectPage.SetCurrentValue(FrameworkElement.VisibilityProperty, Visibility.Visible);
             }
         }
     }

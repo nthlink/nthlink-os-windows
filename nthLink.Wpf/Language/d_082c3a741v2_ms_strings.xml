@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><resources>
+﻿<?xml version="1.0" encoding="UTF-8"?><resources>
       
 
     
@@ -93,9 +93,17 @@
   </string-array>
 	<string name="copied">Disalin</string>
 	<string name="paste_id_telegram">Sila tampal ID di Telegram.</string>
-	<string name="check_update">Semak kemas kini</string>
+	<string name="update">Kemas kini</string>
 	<string name="download_new_version">Adakah anda mahu memuat turun versi baharu nthLink?</string>
+	<string name="install_new_version_now">The installation file has been downloaded. Do you want to install it now? (nthLink will close automatically during installation)</string>
+	<string name="failed_to_start_installer">Gagal memulakan pemasang</string>
 	<string name="last_version">nthLink anda adalah versi terkini.</string>
 	<string name="visit">Lawat</string>
 	<string name="follow_us">Ikuti kami</string>
+	<string name="menu_drawer_item_11">Diagnostik</string>
+	<string name="diagnostic_button">Mula Diagnostik</string>
+	<string name="diagnostic_info">Di nthLink, kami kadangkala memohon bantuan anda untuk meningkatkan perkhidmatan kami dengan menyediakan data diagnostik.\r\n\r\nDengan menekan butang ini, proses diagnostik akan bermula, mengumpul maklumat dan menghantarnya ke pelayan kami. Jangan risau, semua maklumat yang dikumpul adalah tanpa nama sepenuhnya.</string>
+	<string name="diagnostic_thanks">Terima kasih kerana membantu kami meningkatkan! Kami suka mendengar maklum balas anda</string>
+	<string name="diagnostic_is_connected">Pelayan sedang bersambung. Sila putuskan sambungan sebelum menjalankan diagnostik</string>
+
 </resources>

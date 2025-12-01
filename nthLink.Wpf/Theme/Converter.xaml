@@ -24,4 +24,5 @@
             </sys:Boolean>
         </converter:TureFalseConverter.False>
     </converter:TureFalseConverter>
+    <converter:StringToQRCodeImageConverter x:Key="StringToQRCodeImageConverter"/>
 </ResourceDictionary>

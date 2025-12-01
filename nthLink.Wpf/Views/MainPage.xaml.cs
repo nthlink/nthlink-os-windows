@@ -1,4 +1,4 @@
-﻿using nthLink.Wpf.ViewModels;
+using nthLink.Wpf.ViewModels;
 using System;
 using System.Windows;
 using System.Windows.Controls;
@@ -6,7 +6,7 @@ using System.Windows.Controls;
 namespace nthLink.Wpf.Views
 {
     /// <summary>
-    /// MainPage.xaml 的互動邏輯
+    /// Interaction logic for MainPage.xaml
     /// </summary>
     public partial class MainPage : UserControl
     {

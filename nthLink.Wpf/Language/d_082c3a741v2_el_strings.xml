@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><resources>
+﻿<?xml version="1.0" encoding="UTF-8"?><resources>
       
 
     
@@ -93,9 +93,17 @@
   </string-array>
 	<string name="copied">Αντιγράφηκε</string>
 	<string name="paste_id_telegram">Παρακαλώ επικολλήστε το ID στο Telegram.</string>
-	<string name="check_update">Έλεγχος για ενημέρωση</string>
+	<string name="update">Έλεγχος ενημερώσεων</string>
 	<string name="download_new_version">Θέλετε να κατεβάσετε την νέα έκδοση του nthLink;</string>
+	<string name="install_new_version_now">The installation file has been downloaded. Do you want to install it now? (nthLink will close automatically during installation)</string>
+	<string name="failed_to_start_installer">Αποτυχία εκκίνησης του προγράμματος εγκατάστασης</string>
 	<string name="last_version">Το nthLink σας είναι η τελευταία έκδοση.</string>
 	<string name="visit">Επισκεφτείτε</string>
 	<string name="follow_us">Ακολουθήστε μας</string>
+	<string name="menu_drawer_item_11">Διαγνωστικά</string>
+	<string name="diagnostic_button">Έναρξη διαγνωστικών</string>
+	<string name="diagnostic_info">Στην nthLink, ζητάμε περιστασιακά τη βοήθειά σας για τη βελτίωση της υπηρεσίας μας μέσω της παροχής διαγνωστικών δεδομένων.\r\n\r\nΜε το πάτημα του κουμπιού, ξεκινά η διαδικασία διαγνωστικών, συλλέγοντας πληροφορίες και μεταδίδοντάς τις στους διακομιστές μας. Όλες οι πληροφορίες είναι πλήρως ανώνυμες.</string>
+	<string name="diagnostic_thanks">Ευχαριστούμε που μας βοηθάτε να βελτιωθούμε! Μας αρέσει να ακούμε τη γνώμη σας</string>
+	<string name="diagnostic_is_connected">Ο διακομιστής είναι συνδεδεμένος. Αποσυνδέστε τον πριν εκτελέσετε τα διαγνωστικά</string>
+
 </resources>

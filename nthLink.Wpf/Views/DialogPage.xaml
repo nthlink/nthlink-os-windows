@@ -30,7 +30,7 @@
                            Foreground="{StaticResource AppBlack}"
                            FontSize="15"/>
                 <TextBlock Grid.Row="1" Text="{Binding Message}"
-                               Margin="8,6,8,0"
+                               Margin="8,6,8,12"
                                TextWrapping="Wrap"
                                TextAlignment="Center"
                            Foreground="{StaticResource AppBlack}"

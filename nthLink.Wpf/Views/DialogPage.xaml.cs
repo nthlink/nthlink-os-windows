@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace nthLink.Wpf.Views
 {
     /// <summary>
-    /// DialogPage.xaml 的互動邏輯
+    /// Interaction logic for DialogPage.xaml
     /// </summary>
     public partial class DialogPage : UserControl
     {

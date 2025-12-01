@@ -4,9 +4,6 @@ using nthLink.SDK.Extension;
 using System;
 using System.Diagnostics;
 using System.IO;
-using System.Security.Cryptography;
-using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading;
 
 namespace nthLink.Wpf

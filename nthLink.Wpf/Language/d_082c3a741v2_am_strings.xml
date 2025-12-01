@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <resources>
 
 
@@ -57,7 +57,7 @@
 	<string name="menu_drawer_item_4">እገዛ</string>
 
 	<string name="menu_drawer_item_5">መተግበሪያ ደረጃ ይስጡ</string>
-	<string name="menu_drawer_item_6">Siyaasadda Asturnaanta</string>
+	<string name="menu_drawer_item_6">የግላዊነት ፖሊሲ</string>
 
 	<string name="menu_web_item_1">አገናኝ ቅዳ</string>
 
@@ -92,11 +92,19 @@
 		<item>ሌላ</item>
 
 	</string-array>
-	<string name="copied">Yekupotolo</string>
-	<string name="paste_id_telegram">Baza ID kan Telegiram</string>
-	<string name="check_update">Hubi Cusboonaysiinta</string>
-	<string name="download_new_version">Ma rabtaa inaad soo dejiso nooca cusub ee nthLink?</string>
-	<string name="last_version">nthLink-kaagu waa noocii ugu dambeeyay.</string>
-	<string name="visit">Booqo</string>
-	<string name="follow_us">Raac</string>
+	<string name="copied">ተቀድቷል</string>
+	<string name="paste_id_telegram">የ ቴሌግራም መታወቂያን ለጥፍ</string>
+	<string name="update">ለዝማኔ ይፈትሹ</string>
+	<string name="download_new_version">የnthLink አዲስ ስሪትን ለመውረድ ይፈልጋሉ?</string>
+	<string name="install_new_version_now">የመጫኛው ፋይል ወደተወረደ ጨርሷል። አሁን ልትጫኑት ይፈልጋሉ? (በመጫን ጊዜ nthLink በራሱ ይዘጋል)</string>
+	<string name="failed_to_start_installer">የመጫኛውን መጀመር አልተሳካም</string>
+	<string name="last_version">nthLink የእርሶ ቅርብ እትም ነው።</string>
+	<string name="visit">ጎብኝ</string>
+	<string name="follow_us">ተከተልን</string>
+	
+	<string name="menu_drawer_item_11">ምርመራ</string>
+	<string name="diagnostic_button">ምርመራ ጀምር</string>
+	<string name="diagnostic_info">በ nthLink ላይ አንዳንድ ጊዜ የኛን አገልግሎት ለማሻሻል የሚረዱ የምርመራ ውሂብ እንዲያቀርቡ እርዳታዎን እንጠይቃለን።\r\n\r\nቁልፉን ሲጫኑ፣ የምርመራ ሂደቱ ይጀምራል፣ መረጃዎችን ይሰበስባል እና ወደ አገልጋዮቻችን ይልካል። ሁሉም የሚሰበሰቡ መረጃዎች ሙሉ በሙሉ ስም-አልባ መሆናቸውን ልናረጋግጥልዎ እንወዳለን።</string>
+	<string name="diagnostic_thanks">እኛን ለማሻሻል ስላረዱን እናመሰግናለን! እኛ እርስዎን ማንሳትን እናወዳለን።</string>
+	<string name="diagnostic_is_connected">አገልግሎት አውታረ መረብ ተያይዟል። እባኮትን ምርመራ ሲያከናውኑ እርሱን ለማቋረጥ ይሞክሩ።</string>
 </resources>
